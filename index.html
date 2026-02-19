@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matias J. Ortiz — Escritor</title>
+  <meta name="description" content="Matias J. Ortiz, escritor de ciencia ficción especulativa. Rosario, Argentina. Voz obrera, universo Egixi, literatura que sangra desde adentro.">
+  <meta property="og:title" content="Matias J. Ortiz — Escritor">
+  <meta property="og:description" content="Ciencia ficción especulativa. Rosario, Argentina.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Barlow+Condensed:wght@300;400;700&family=Barlow:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --negro:    #08070a;
+      --grafito:  #111118;
+      --acero:    #1c1c26;
+      --oxido:    #b84a1a;
+      --ambar:    #d97a2a;
+      --raiz:     #7fc47a;
+      --crema:    #e8e0d0;
+      --gris:     #8a8890;
+      --linea:    rgba(255,255,255,0.07);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--negro);
+      color: var(--crema);
+      font-family: 'Barlow', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 999;
+      opacity: 0.4;
+    }
+
+    /* HEADER */
+    header {
+      position: relative;
+      border-bottom: 1px solid var(--linea);
+      padding: 1.6rem 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, var(--oxido), transparent 60%);
+    }
+
+    /* LOGO — Cormorant serif dramático, nada plano */
+    .site-logo {
+      font-family: 'Cormorant Garamond', serif;
+      text-decoration: none;
+      display: flex;
+      align-items: baseline;
+      line-height: 1;
+    }
+
+    .site-logo .l-nombre {
+      font-weight: 300;
+      font-size: 1.45rem;
+      color: var(--crema);
+      letter-spacing: 0.02em;
+    }
+
+    .site-logo .l-inicial {
+      font-style: italic;
+      font-weight: 600;
+      font-size: 2rem;
+      color: var(--oxido);
+      margin: 0 0.05em;
+      line-height: 1;
+    }
+
+    .site-logo .l-apellido {
+      font-weight: 600;
+      font-size: 1.7rem;
+      color: var(--crema);
+      letter-spacing: 0.01em;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.8rem;
+    }
+
+    nav a {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 300;
+      font-size: 0.85rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gris);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: var(--crema); }
+
+    /* HERO */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 90vh;
+      border-bottom: 1px solid var(--linea);
+    }
+
+    .hero-foto {
+      position: relative;
+      overflow: hidden;
+      background: var(--grafito);
+      border-right: 1px solid var(--linea);
+    }
+
+    .hero-foto img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.75;
+      filter: contrast(1.1) sepia(0.15);
+    }
+
+    .foto-placeholder {
+      width: 100%;
+      height: 100%;
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      color: var(--gris);
+      font-family: 'Barlow Condensed', sans-serif;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      background: linear-gradient(160deg, var(--grafito) 0%, #0f0e14 100%);
+    }
+
+    .foto-placeholder .icon {
+      width: 64px; height: 64px;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      opacity: 0.4;
+    }
+
+    .foto-hint {
+      margin-top: 0.5rem;
+      font-size: 0.7rem;
+      color: var(--oxido);
+      opacity: 0.7;
+      text-align: center;
+      max-width: 180px;
+      text-transform: none;
+      letter-spacing: 0.05em;
+    }
+
+    .hero-foto::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, transparent 70%, var(--negro) 100%);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .hero-texto {
+      padding: 4rem 3.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+    }
+
+    .hero-etiqueta {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 300;
+      font-size: 0.78rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--oxido);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-nombre {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: clamp(3.2rem, 6vw, 5.5rem);
+      line-height: 0.95;
+      color: var(--crema);
+      margin-bottom: 1.8rem;
+    }
+
+    .hero-nombre em {
+      font-style: italic;
+      color: var(--ambar);
+    }
+
+    .hero-bajada {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.25rem;
+      color: var(--gris);
+      line-height: 1.5;
+      max-width: 400px;
+      margin-bottom: 2.5rem;
+      border-left: 2px solid var(--oxido);
+      padding-left: 1.2rem;
+    }
+
+    .hero-datos {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      color: var(--gris);
+    }
+
+    .hero-datos strong {
+      color: var(--crema);
+      font-weight: 400;
+    }
+
+    .raiz-deco {
+      position: absolute;
+      bottom: 0; right: 0;
+      width: 200px; height: 300px;
+      opacity: 0.06;
+      pointer-events: none;
+    }
+
+    /* LAYOUT */
+    .contenedor {
+      display: grid;
+      grid-template-columns: 240px 1fr 220px;
+      gap: 0;
+      min-height: 60vh;
+    }
+
+    /* SIDEBAR IZQ */
+    .sidebar-izq {
+      border-right: 1px solid var(--linea);
+      padding: 2.5rem 1.8rem;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    .sidebar-izq::-webkit-scrollbar { width: 3px; }
+    .sidebar-izq::-webkit-scrollbar-thumb { background: var(--oxido); border-radius: 2px; }
+
+    .widget { margin-bottom: 2.5rem; }
+
+    .widget-titulo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.7rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--oxido);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--linea);
+    }
+
+    .pub-item {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--linea);
+    }
+    .pub-item:last-child { border-bottom: none; }
+
+    .pub-titulo {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 0.95rem;
+      color: var(--crema);
+      margin-bottom: 0.2rem;
+    }
+
+    .pub-donde {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.73rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gris);
+    }
+
+    .estado-badge {
+      display: inline-block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 2px 6px;
+      border-radius: 2px;
+      margin-top: 0.3rem;
+    }
+
+    .badge-publicado { background: rgba(127,196,122,0.15); color: var(--raiz); }
+    .badge-concurso  { background: rgba(184,74,26,0.15);   color: var(--ambar); }
+
+    .escribiendo-item {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.95rem;
+      color: var(--gris);
+      margin-bottom: 0.6rem;
+      position: relative;
+      padding-left: 0.8rem;
+    }
+
+    .escribiendo-item::before {
+      content: '↳';
+      position: absolute;
+      left: 0;
+      color: var(--oxido);
+      font-family: sans-serif;
+    }
+
+    /* FEED */
+    .feed { padding: 2.5rem 2.8rem; }
+
+    .entrada {
+      margin-bottom: 4rem;
+      padding-bottom: 3.5rem;
+      border-bottom: 1px solid var(--linea);
+      animation: entrada-fade 0.6s ease both;
+    }
+
+    @keyframes entrada-fade {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .entrada:nth-child(2) { animation-delay: 0.1s; }
+    .entrada:nth-child(3) { animation-delay: 0.2s; }
+
+    .entrada-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .entrada-tipo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--oxido);
+    }
+
+    .entrada-fecha {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      color: var(--gris);
+    }
+
+    .entrada-titulo {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: 1.8rem;
+      line-height: 1.2;
+      color: var(--crema);
+      margin-bottom: 1.2rem;
+      transition: color 0.2s;
+      cursor: pointer;
+    }
+
+    .entrada-titulo:hover { color: var(--ambar); }
+
+    .entrada-cuerpo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.08rem;
+      line-height: 1.75;
+      color: #c8c0b0;
+      max-width: 68ch;
+    }
+
+    .entrada-cuerpo em { color: var(--crema); font-style: italic; }
+    .entrada-cuerpo p  { margin-bottom: 1rem; }
+
+    .leer-mas {
+      display: inline-block;
+      margin-top: 1rem;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--oxido);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .leer-mas:hover { color: var(--ambar); border-bottom-color: var(--ambar); }
+
+    /* SIDEBAR DER */
+    .sidebar-der {
+      border-left: 1px solid var(--linea);
+      padding: 2.5rem 1.5rem;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    .sidebar-der::-webkit-scrollbar { width: 3px; }
+    .sidebar-der::-webkit-scrollbar-thumb { background: var(--acero); border-radius: 2px; }
+
+    .lectura-item {
+      margin-bottom: 1.3rem;
+      padding-bottom: 1.3rem;
+      border-bottom: 1px solid var(--linea);
+    }
+    .lectura-item:last-child { border-bottom: none; }
+
+    .lectura-titulo {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 0.9rem;
+      color: var(--crema);
+      margin-bottom: 0.15rem;
+    }
+
+    .lectura-autor {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      color: var(--gris);
+    }
+
+    .video-item { margin-bottom: 1.3rem; cursor: pointer; }
+
+    .video-thumb {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: var(--acero);
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.6;
+      margin-bottom: 0.4rem;
+      transition: opacity 0.2s;
+      position: relative;
+    }
+    .video-thumb:hover { opacity: 0.9; }
+    .video-thumb::after {
+      content: '▶';
+      position: absolute;
+      font-size: 1.2rem;
+      color: var(--crema);
+      opacity: 0.8;
+    }
+
+    .video-desc {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.73rem;
+      color: var(--gris);
+      letter-spacing: 0.05em;
+    }
+
+    /* FOOTER */
+    footer {
+      position: relative;
+      border-top: 1px solid var(--linea);
+      padding: 2.2rem 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    footer::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, var(--oxido), transparent 40%);
+    }
+
+    .footer-firma {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.92rem;
+      color: var(--gris);
+      line-height: 1.6;
+    }
+
+    .footer-firma strong {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--crema);
+    }
+
+    .footer-firma em {
+      color: var(--oxido);
+      font-style: italic;
+    }
+
+    .footer-links { display: flex; gap: 1.5rem; }
+
+    .footer-links a {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gris);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--crema); }
+
+    /* RESPONSIVE */
+    @media (max-width: 1000px) {
+      .contenedor { grid-template-columns: 200px 1fr; }
+      .sidebar-der { display: none; }
+    }
+
+    @media (max-width: 700px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-foto { min-height: 55vw; }
+      .hero-texto { padding: 2.5rem 1.5rem; }
+      .hero-nombre { font-size: 2.8rem; }
+      .contenedor { grid-template-columns: 1fr; }
+      .sidebar-izq {
+        position: static;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--linea);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 2rem;
+        padding: 1.8rem;
+      }
+      .feed { padding: 2rem 1.5rem; }
+      header { flex-direction: column; align-items: flex-start; }
+      nav { flex-wrap: wrap; gap: 1rem; }
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a href="#" class="site-logo">
+      <span class="l-nombre">Matias&thinsp;</span><span class="l-inicial">J.</span><span class="l-apellido">&thinsp;Ortiz</span>
+    </a>
+    <nav>
+      <a href="#escritos">Escritos</a>
+      <a href="#lecturas">Lecturas</a>
+      <a href="#sobre">Sobre mí</a>
+      <a href="mailto:tuemail@ejemplo.com">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-foto">
+      <!--
+        REEMPLAZAR: borrar todo el div.foto-placeholder y poner:
+        <img src="tu-foto.jpg" alt="Matias J. Ortiz">
+      -->
+      <div class="foto-placeholder">
+        <div class="icon">◉</div>
+        <span>Tu foto acá</span>
+        <span class="foto-hint">Una foto tuya con libro en mano, luz natural</span>
+      </div>
+    </div>
+
+    <div class="hero-texto">
+      <p class="hero-etiqueta">Rosario · Santa Fe · Argentina</p>
+      <h1 class="hero-nombre">Matias<br><em>J. Ortiz</em></h1>
+      <p class="hero-bajada">
+        Ciencia ficción especulativa desde adentro de la fábrica.
+        Voz obrera. Universo Egixi. Literatura que sangra desde donde no se ve.
+      </p>
+      <div class="hero-datos">
+        <div><strong>Publicado en:</strong> Custodio / Editorial Patas de Cabra &middot; La Granja / Distopía Nébula / Editorial Rubin</div>
+        <div><strong>En competencia:</strong> Fundación El Libro 2026 · Premio UPC 2026</div>
+        <div><strong>Soldador. Escritor. Rosarino.</strong></div>
+      </div>
+
+      <svg class="raiz-deco" viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100 0 C100 80 60 100 50 180 C40 240 80 280 100 300" stroke="#7fc47a" stroke-width="1.5"/>
+        <path d="M100 60 C80 80 40 90 20 130" stroke="#7fc47a" stroke-width="0.8" opacity="0.6"/>
+        <path d="M100 110 C120 130 160 140 170 170" stroke="#7fc47a" stroke-width="0.8" opacity="0.6"/>
+        <path d="M90 170 C60 180 40 200 30 230" stroke="#7fc47a" stroke-width="0.6" opacity="0.4"/>
+        <circle cx="100" cy="180" r="2" fill="#7fc47a" opacity="0.8"/>
+        <circle cx="50" cy="130" r="1.5" fill="#7fc47a" opacity="0.5"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- LAYOUT -->
+  <div class="contenedor">
+
+    <!-- SIDEBAR IZQ -->
+    <aside class="sidebar-izq">
+
+      <div class="widget">
+        <h3 class="widget-titulo">Publicaciones</h3>
+
+        <div class="pub-item">
+          <div class="pub-titulo">Custodio</div>
+          <div class="pub-donde">Editorial Patas de Cabra · Rosario</div>
+          <span class="estado-badge badge-publicado">Publicado</span>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-titulo">La Granja</div>
+          <div class="pub-donde">Distopía Nébula / Editorial Rubin</div>
+          <span class="estado-badge badge-publicado">Publicado</span>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-titulo">Egixi</div>
+          <div class="pub-donde">Fundación El Libro 2026</div>
+          <span class="estado-badge badge-concurso">En competencia</span>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-titulo">Promesa y Castigo</div>
+          <div class="pub-donde">Fundación El Libro 2026</div>
+          <span class="estado-badge badge-concurso">En competencia</span>
+        </div>
+      </div>
+
+      <div class="widget">
+        <h3 class="widget-titulo">Escribiendo ahora</h3>
+        <div class="escribiendo-item">Metal que Crece (díptico)</div>
+        <div class="escribiendo-item">Reina Madre (novela corta)</div>
+        <div class="escribiendo-item">Universo Egixi en expansión</div>
+      </div>
+
+    </aside>
+
+    <!-- FEED -->
+    <main class="feed" id="escritos">
+
+      <article class="entrada">
+        <div class="entrada-meta">
+          <span class="entrada-tipo">El universo</span>
+          <span class="entrada-fecha">Febrero 2026</span>
+        </div>
+        <h2 class="entrada-titulo">Qué es Egixi</h2>
+        <div class="entrada-cuerpo">
+          <p>
+            Egixi es una civilización extraterrestre que ocupa Rosario. No la invadió con naves
+            ni con explosiones — llegó de a poco, como llegan todas las ocupaciones que duran.
+            Hoy administra la ciudad. Hace que las cosas funcionen.
+            Los que vivimos acá seguimos yendo a trabajar.
+          </p>
+          <p>
+            El universo Egixi no es una pregunta sobre el espacio.
+            Es una pregunta sobre la clase.
+            Sobre quién hace el trabajo sucio cuando cambia el dueño del mundo
+            pero el trabajo sucio sigue siendo el mismo.
+          </p>
+          <p>
+            <em>Seis relatos. Dos libros. Una ciudad que ya no es del todo nuestra
+            y que tal vez nunca lo fue.</em>
+          </p>
+        </div>
+        <a href="#" class="leer-mas">Seguir leyendo &#8594;</a>
+      </article>
+
+      <article class="entrada">
+        <div class="entrada-meta">
+          <span class="entrada-tipo">Proceso</span>
+          <span class="entrada-fecha">Febrero 2026</span>
+        </div>
+        <h2 class="entrada-titulo">Nueve horas antes de sentarme a escribir</h2>
+        <div class="entrada-cuerpo">
+          <p>
+            La soldadura enseña algo que ningún taller literario puede enseñar:
+            que hay cosas que si no las hacés bien, se caen.
+            No metafóricamente. Se caen de verdad.
+          </p>
+          <p>
+            Cuando volvés de la fábrica y abrís el documento, traés eso con vos.
+            La precisión obligatoria. El ruido que todavía te zumba.
+            Los dedos que todavía saben el peso de lo real.
+          </p>
+          <p>
+            <em>No escribo a pesar de trabajar en una fábrica.
+            Escribo porque trabajo en una fábrica.</em>
+          </p>
+        </div>
+        <a href="#" class="leer-mas">Seguir leyendo &#8594;</a>
+      </article>
+
+      <article class="entrada">
+        <div class="entrada-meta">
+          <span class="entrada-tipo">Nota de trabajo</span>
+          <span class="entrada-fecha">Enero 2026</span>
+        </div>
+        <h2 class="entrada-titulo">Sobre escribir desde adentro del alien</h2>
+        <div class="entrada-cuerpo">
+          <p>
+            Uno de los problemas más viejos de la ciencia ficción es que los aliens
+            piensan como humanos con casco.
+            Tienen motivaciones humanas, conflictos humanos, arquitectura emocional humana.
+            Solo les cambiaron la ropa.
+          </p>
+          <p>
+            En el universo Egixi hay relatos narrados desde adentro de una conciencia
+            que no piensa en palabras, que no tiene infancia, que tiene un cuerpo
+            que muda cada cierta cantidad de ciclos y que cataloga el mundo en categorías
+            sin equivalente en ningún idioma que hablemos nosotros.
+          </p>
+          <p>
+            <em>El desafío no fue inventar ese lenguaje. Fue inventar su silencio.</em>
+          </p>
+        </div>
+        <a href="#" class="leer-mas">Seguir leyendo &#8594;</a>
+      </article>
+
+    </main>
+
+    <!-- SIDEBAR DER -->
+    <aside class="sidebar-der" id="lecturas">
+
+      <div class="widget">
+        <h3 class="widget-titulo">Leyendo ahora</h3>
+        <div class="lectura-item">
+          <div class="lectura-titulo">Trafalgar</div>
+          <div class="lectura-autor">Angélica Gorodischer</div>
+        </div>
+        <div class="lectura-item">
+          <div class="lectura-titulo">Annihilation</div>
+          <div class="lectura-autor">Jeff VanderMeer</div>
+        </div>
+        <div class="lectura-item">
+          <div class="lectura-titulo">Zama</div>
+          <div class="lectura-autor">Antonio Di Benedetto</div>
+        </div>
+        <div class="lectura-item">
+          <div class="lectura-titulo">Los pichiciegos</div>
+          <div class="lectura-autor">Rodolfo Fogwill</div>
+        </div>
+      </div>
+
+      <div class="widget">
+        <h3 class="widget-titulo">En video</h3>
+        <div class="video-item">
+          <div class="video-thumb" style="background: #0f1520;"></div>
+          <div class="video-desc">Leyendo en voz alta — Universo Egixi</div>
+        </div>
+        <div class="video-item">
+          <div class="video-thumb" style="background: #150f10;"></div>
+          <div class="video-desc">Al piano — sin título todavía</div>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-firma">
+      <strong>Matias J. Ortiz</strong> &mdash; Rosario, Argentina.<br>
+      <em>La fábrica no enseña a escribir. Te enseña a no mentir.</em>
+    </p>
+    <div class="footer-links">
+      <a href="mailto:tuemail@ejemplo.com">Email</a>
+      <a href="#" target="_blank">Instagram</a>
+      <a href="#" target="_blank">Twitter / X</a>
+    </div>
+  </footer>
+
+</body>
+</html>
