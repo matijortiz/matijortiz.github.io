@@ -98,12 +98,10 @@
 
     /* ── HERO ── */
     .hero {
-    display: grid;
-    grid-template-columns: 42% 58%;
-    height: 75vh;        /* ← esta línea es la que falta */
-    min-height: 480px;
-    max-height: 820px;
-    border-bottom: 1px solid var(--linea);
+      display: grid;
+      grid-template-columns: 42% 58%;
+      height: clamp(480px, 75vh, 820px);
+      border-bottom: 1px solid var(--linea);
     }
 
     .hero-foto {
@@ -111,6 +109,7 @@
       overflow: hidden;
       background: var(--grafito);
       border-right: 1px solid var(--linea);
+      height: 100%;
     }
 
     .hero-foto img {
@@ -582,7 +581,7 @@
     }
 
     @media (max-width: 700px) {
-      .hero { grid-template-columns: 1fr; max-height: none; }
+      .hero { grid-template-columns: 1fr; height: auto; max-height: none; }
       .hero-foto { height: 60vw; }
       .hero-texto { padding: 2.5rem 1.5rem; }
       .hero-nombre { font-size: 3.5rem; }
