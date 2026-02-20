@@ -8,7 +8,6 @@
   <meta property="og:title" content="Matias J. Ortiz — Escritor">
   <meta property="og:description" content="Ciencia ficción especulativa. Rosario, Argentina.">
 
-  <!-- FAVICON SVG inline -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%2308070a'/><path d='M16 2 C16 14 11 17 10 26 C9 31 13 31 16 32' stroke='%23b84a1a' stroke-width='1.5' fill='none'/><path d='M16 8 C13 11 8 12 5 17' stroke='%237fc47a' stroke-width='0.8' fill='none' opacity='0.7'/><path d='M16 16 C19 19 23 20 24 24' stroke='%237fc47a' stroke-width='0.8' fill='none' opacity='0.5'/></svg>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,16 +77,16 @@
       line-height: 1;
     }
 
-    .site-logo .l-nombre  { font-weight: 300; font-size: 1.45rem; color: var(--crema); letter-spacing: 0.02em; }
-    .site-logo .l-inicial { font-style: italic; font-weight: 600; font-size: 2rem; color: var(--oxido); margin: 0 0.05em; }
-    .site-logo .l-apellido{ font-weight: 600; font-size: 1.7rem; color: var(--crema); letter-spacing: 0.01em; }
+    .site-logo .l-nombre   { font-weight: 300; font-size: 1.45rem; color: var(--crema); letter-spacing: 0.02em; }
+    .site-logo .l-inicial  { font-style: italic; font-weight: 600; font-size: 2rem; color: var(--oxido); margin: 0 0.05em; }
+    .site-logo .l-apellido { font-weight: 600; font-size: 1.7rem; color: var(--crema); letter-spacing: 0.01em; }
 
     nav { display: flex; gap: 1.8rem; }
 
     nav a {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 300;
-      font-size: 0.85rem;
+      font-size: 0.88rem;
       letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--gris);
@@ -131,7 +130,6 @@
       pointer-events: none;
     }
 
-    /* dark bottom gradient on photo */
     .hero-foto::after {
       content: '';
       position: absolute;
@@ -153,14 +151,13 @@
     .hero-etiqueta {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 300;
-      font-size: 0.78rem;
+      font-size: 0.82rem;
       letter-spacing: 0.3em;
       text-transform: uppercase;
       color: var(--oxido);
       margin-bottom: 1.2rem;
     }
 
-    /* BIGGER name as requested */
     .hero-nombre {
       font-family: 'Cormorant Garamond', serif;
       font-weight: 600;
@@ -192,7 +189,7 @@
       flex-direction: column;
       gap: 0.4rem;
       font-family: 'Barlow Condensed', sans-serif;
-      font-size: 0.88rem;
+      font-size: 0.9rem;
       letter-spacing: 0.1em;
       color: var(--gris);
     }
@@ -210,7 +207,7 @@
     /* ── LAYOUT ── */
     .contenedor {
       display: grid;
-      grid-template-columns: 2800px 1fr 220px;
+      grid-template-columns: 280px 1fr 220px;  /* FIX: era 2800px */
       min-height: 60vh;
     }
 
@@ -232,7 +229,7 @@
     .widget-titulo {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 700;
-      font-size: 0.7rem;
+      font-size: 0.75rem;
       letter-spacing: 0.3em;
       text-transform: uppercase;
       color: var(--oxido);
@@ -251,7 +248,7 @@
     .pub-titulo {
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
-      font-size: 0.95rem;
+      font-size: 1rem;
       color: var(--crema);
       margin-bottom: 0.2rem;
     }
@@ -259,7 +256,7 @@
     .pub-donde {
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 0.78rem;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
       color: var(--gris);
     }
@@ -267,10 +264,10 @@
     .estado-badge {
       display: inline-block;
       font-family: 'Barlow Condensed', sans-serif;
-      font-size: 0.65rem;
-      letter-spacing: 0.15em;
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      padding: 2px 6px;
+      padding: 2px 7px;
       border-radius: 2px;
       margin-top: 0.3rem;
     }
@@ -281,7 +278,7 @@
 
     .escribiendo-item {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 0.95rem;
+      font-size: 1rem;
       color: var(--gris);
       margin-bottom: 0.6rem;
       position: relative;
@@ -296,13 +293,24 @@
     }
 
     /* ── FEED ── */
-    .feed { padding: 2.5rem 3rem; max-width: 780px; width: 100%; }
+    .feed {
+      padding: 2.5rem 3rem;
+      max-width: 780px;
+      width: 100%;
+    }
 
-    /* Entry image */
+    /* ══════════════════════════════════════════
+       PARA AGREGAR UN NUEVO ARTÍCULO:
+       Copiá el bloque <article class="entrada">
+       completo desde el comentario de inicio
+       hasta su </article> de cierre,
+       pegalo al principio del <main class="feed">
+       y editá el contenido. Eso es todo.
+    ══════════════════════════════════════════ */
+
     .entrada-imagen {
       width: 100%;
-      max-width: 68ch;
-      height: 220px;
+      height: 240px;
       object-fit: cover;
       display: block;
       margin-bottom: 1.5rem;
@@ -324,14 +332,16 @@
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    .entrada:nth-child(2) { animation-delay: 0.07s; }
-    .entrada:nth-child(3) { animation-delay: 0.14s; }
-    .entrada:nth-child(4) { animation-delay: 0.20s; }
-    .entrada:nth-child(5) { animation-delay: 0.26s; }
-    .entrada:nth-child(6) { animation-delay: 0.32s; }
-    .entrada:nth-child(7) { animation-delay: 0.38s; }
-    .entrada:nth-child(8) { animation-delay: 0.44s; }
-    .entrada:nth-child(9) { animation-delay: 0.50s; }
+    .entrada:nth-child(2)  { animation-delay: 0.07s; }
+    .entrada:nth-child(3)  { animation-delay: 0.14s; }
+    .entrada:nth-child(4)  { animation-delay: 0.20s; }
+    .entrada:nth-child(5)  { animation-delay: 0.26s; }
+    .entrada:nth-child(6)  { animation-delay: 0.32s; }
+    .entrada:nth-child(7)  { animation-delay: 0.38s; }
+    .entrada:nth-child(8)  { animation-delay: 0.44s; }
+    .entrada:nth-child(9)  { animation-delay: 0.50s; }
+    .entrada:nth-child(10) { animation-delay: 0.56s; }
+    .entrada:nth-child(11) { animation-delay: 0.62s; }
 
     .entrada-meta {
       display: flex;
@@ -342,7 +352,7 @@
 
     .entrada-tipo {
       font-family: 'Barlow Condensed', sans-serif;
-      font-size: 0.7rem;
+      font-size: 0.75rem;
       letter-spacing: 0.25em;
       text-transform: uppercase;
       color: var(--oxido);
@@ -350,7 +360,7 @@
 
     .entrada-fecha {
       font-family: 'Barlow Condensed', sans-serif;
-      font-size: 0.7rem;
+      font-size: 0.75rem;
       letter-spacing: 0.1em;
       color: var(--gris);
     }
@@ -358,7 +368,7 @@
     .entrada-titulo {
       font-family: 'Cormorant Garamond', serif;
       font-weight: 600;
-      font-size: 1.8rem;
+      font-size: 1.9rem;
       line-height: 1.15;
       color: var(--crema);
       margin-bottom: 1.1rem;
@@ -369,10 +379,9 @@
 
     .entrada-cuerpo {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.15rem;
-      line-height: 1.8;
+      font-size: 1.18rem;
+      line-height: 1.85;
       color: #c8c0b0;
-      max-width: 68ch;
     }
 
     .entrada-cuerpo em { color: var(--crema); font-style: italic; }
@@ -386,13 +395,12 @@
       transition: max-height 0.55s ease, opacity 0.4s ease;
       opacity: 0;
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.15rem;
-      line-height: 1.8;
+      font-size: 1.18rem;
+      line-height: 1.85;
       color: #c8c0b0;
-      max-width: 68ch;
     }
 
-    .entrada-extra.abierto { max-height: 2400px; opacity: 1; }
+    .entrada-extra.abierto { max-height: 3000px; opacity: 1; }
     .entrada-extra em { color: var(--crema); font-style: italic; }
     .entrada-extra p  { margin-bottom: 1rem; }
     .entrada-extra p:first-child { margin-top: 1rem; }
@@ -402,11 +410,10 @@
       display: inline-block;
       margin-top: 1.2rem;
       font-family: 'Barlow Condensed', sans-serif;
-      font-size: 0.78rem;
+      font-size: 0.8rem;
       letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--oxido);
-      text-decoration: none;
       border-bottom: 1px solid transparent;
       transition: border-color 0.2s, color 0.2s;
       cursor: pointer;
@@ -415,11 +422,10 @@
       border-left: none;
       border-right: none;
       padding: 0;
-      font-family: 'Barlow Condensed', sans-serif;
     }
     .leer-mas:hover { color: var(--ambar); border-bottom-color: var(--ambar); }
 
-    /* ── SOBRE MÍ section ── */
+    /* ── SOBRE MÍ ── */
     .sobre-mi {
       border-top: 1px solid var(--linea);
       padding: 3rem 2.8rem;
@@ -444,7 +450,7 @@
     .sobre-mi h2 {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 700;
-      font-size: 0.7rem;
+      font-size: 0.75rem;
       letter-spacing: 0.3em;
       text-transform: uppercase;
       color: var(--oxido);
@@ -456,8 +462,8 @@
 
     .sobre-texto {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.05rem;
-      line-height: 1.8;
+      font-size: 1.1rem;
+      line-height: 1.85;
       color: #c8c0b0;
     }
 
@@ -488,14 +494,14 @@
     .lectura-titulo {
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
-      font-size: 0.9rem;
+      font-size: 1rem;
       color: var(--crema);
       margin-bottom: 0.15rem;
     }
 
     .lectura-autor {
       font-family: 'Barlow Condensed', sans-serif;
-      font-size: 0.7rem;
+      font-size: 0.75rem;
       letter-spacing: 0.1em;
       color: var(--gris);
     }
@@ -523,12 +529,11 @@
       font-size: 1.2rem;
       color: var(--crema);
       opacity: 0.8;
-      display: flex;
     }
 
     .video-desc {
       font-family: 'Barlow Condensed', sans-serif;
-      font-size: 0.73rem;
+      font-size: 0.76rem;
       color: var(--gris);
     }
 
@@ -553,7 +558,7 @@
 
     .footer-firma {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 0.92rem;
+      font-size: 0.95rem;
       color: var(--gris);
       line-height: 1.6;
     }
@@ -565,7 +570,7 @@
 
     .footer-links a {
       font-family: 'Barlow Condensed', sans-serif;
-      font-size: 0.75rem;
+      font-size: 0.78rem;
       letter-spacing: 0.15em;
       text-transform: uppercase;
       color: var(--gris);
@@ -594,15 +599,7 @@
       header { flex-direction: column; align-items: flex-start; }
       nav { flex-wrap: wrap; gap: 1rem; }
       footer { flex-direction: column; align-items: flex-start; }
-      .entrada-imagen { height: 160px; }
-}
-      .feed { padding: 2rem 1.5rem; }
-      .sobre-mi { padding: 2rem 1.5rem; }
-      .sobre-mi-grid { grid-template-columns: 1fr; gap: 1.5rem; }
-      header { flex-direction: column; align-items: flex-start; }
-      nav { flex-wrap: wrap; gap: 1rem; }
-      footer { flex-direction: column; align-items: flex-start; }
-      .entrada-imagen { height: 160px; }
+      .entrada-imagen { height: 170px; }
     }
   </style>
 </head>
@@ -632,13 +629,12 @@
       <h1 class="hero-nombre">Matias<br><em>J. Ortiz</em></h1>
       <p class="hero-bajada">
         Ciencia ficci&#243;n especulativa desde adentro de la f&#225;brica.
-        La voz obrera que la literatura argentina no ten&#237;a.
         El universo Egixi existe. Vive en Rosario.
       </p>
       <div class="hero-datos">
-        <div><strong>Publicado en:</strong> Custodio / Editorial Patas de Cabra &middot; La Granja / Distop&#237;a N&#233;bula / Editorial Rubin</div>
-        <div><strong>En competencia:</strong> Fundaci&#243;n El Libro 2026 &middot; Premio UPC 2026</div>
-        <div><strong>Soldador. Escritor. Rosarino.</strong></div>
+        <div><strong>Publicado en:</strong> Custodio&thinsp;/&thinsp;Editorial Patas de Cabra &middot; La Granja&thinsp;/&thinsp;Distop&#237;a N&#233;bula&thinsp;/&thinsp;Editorial Rubin</div>
+        <div><strong>En competencia:</strong> Promesa y Castigo&thinsp;/&thinsp;Fundaci&#243;n El Libro 2026 &middot; Metal que Crece&thinsp;/&thinsp;Premio UPC 2026</div>
+        <div><strong>Laburante. Escritor. Rosarino.</strong></div>
       </div>
 
       <svg class="raiz-deco" viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -655,7 +651,7 @@
   <!-- ══ LAYOUT ══ -->
   <div class="contenedor">
 
-    <!-- SIDEBAR IZQ -->
+    <!-- ══ SIDEBAR IZQ ══ -->
     <aside class="sidebar-izq">
       <div class="widget">
         <h3 class="widget-titulo">Publicaciones</h3>
@@ -674,8 +670,8 @@
 
         <div class="pub-item">
           <div class="pub-titulo">Egixi</div>
-          <div class="pub-donde">Fundaci&#243;n El Libro 2026</div>
-          <span class="estado-badge badge-concurso">En competencia</span>
+          <div class="pub-donde">Sigilo &middot; Caja Negra</div>
+          <span class="estado-badge badge-espera">Buscando editorial</span>
         </div>
 
         <div class="pub-item">
@@ -700,47 +696,56 @@
       </div>
     </aside>
 
-    <!-- ══ FEED ══ -->
+    <!-- ══════════════════════════════════════════════════════════════
+         FEED DE ARTÍCULOS
+         Para agregar un artículo nuevo: copiá cualquier bloque
+         <article class="entrada">...</article> completo,
+         pegalo acá arriba (al principio de este <main>)
+         y reemplazá el contenido. Solo eso.
+    ══════════════════════════════════════════════════════════════ -->
     <main class="feed" id="escritos">
 
-      <!-- GENIUS -->
+
+      <!-- ══ ARTÍCULO: GENIUS ══ -->
       <article class="entrada">
         <img class="entrada-imagen"
           src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80&fit=crop"
-          alt="Circuito electrónico - Genius"
+          alt="Circuito electrónico — Genius"
           loading="lazy">
         <div class="entrada-meta">
           <span class="entrada-tipo">Sobre un relato</span>
           <span class="entrada-fecha">Febrero 2026</span>
         </div>
-        <h2 class="entrada-titulo">Genius: tres capas y un cucurucho de dulce de leche</h2>
+        <h2 class="entrada-titulo">Genius: cuatro capas y un cucurucho de dulce de leche</h2>
         <div class="entrada-cuerpo">
           <p>
             Cuando estaba escribiendo Genius ten&#237;a hambre.
-            Hambre real, de las nueve horas en la f&#225;brica y el cuerpo que no alcanza a reponer.
+            Hambre real, de las nueve horas de jornada y el cuerpo que no alcanza a reponer.
             Me imagin&#233; a mi novia d&#225;ndome bochas de dulce de leche gratis, una detr&#225;s de otra,
             sin preguntar. Un cucurucho infinito.
             Eso no est&#225; en el cuento pero est&#225; en el cuento.
           </p>
           <p>
-            El protagonista se llama Timoteo Cucurucho.
+            El jefe se llama Timoteo Cucurucho.
             S&#237;, es una alusi&#243;n a Tim Cook.
-            El genio que dirige la corporaci&#243;n tecnol&#243;gica m&#225;s poderosa del mundo
+            El Noble Egixi que dirige la operaci&#243;n m&#225;s poderosa del subsuelo rosarino
             tiene el apellido de un vasito de helado. Me pareci&#243; justo.
+            El protagonista &mdash; el que trabaja, el que aprende, el que suda &mdash; no tiene nombre aristocr&#225;tico.
+            Tiene las manos.
           </p>
         </div>
         <div class="entrada-extra">
           <p>
-            El t&#237;tulo tiene tres capas y las tres son necesarias.
+            El t&#237;tulo tiene cuatro capas y las cuatro son necesarias.
           </p>
           <p>
             La primera: la que buscas cuando lo ves. Genio. Inteligencia artificial.
             Tecnolog&#237;a. Entr&#225;s esperando algo cerebral, algo fr&#237;o,
-            algo con pantallas y c&#243;digo. Y te encontr&#225;s a Timoteo Cucurucho
+            algo con pantallas y c&#243;digo. Y te encontr&#225;s al protagonista
             en el subsuelo de lo que era la terminal de &#243;mnibus de Rosario,
             con las manos cada vez m&#225;s violetas de trabajar con refrigerante,
-            reparando placas de tecnolog&#237;a extraterrestre para corporaciones
-            que lo tratan como si &#233;l fuera el esta&#241;o.
+            reparando placas de tecnolog&#237;a extraterrestre para un Noble Egixi
+            que lo trata como si &#233;l fuera el esta&#241;o.
           </p>
           <p>
             La segunda: los romanos ten&#237;an el concepto de <em>genius</em>.
@@ -748,17 +753,24 @@
             Cada persona ten&#237;a su genius. Cada lugar. Cada objeto.
             El genius del hogar. El genius de la ciudad.
             El genius era lo que hac&#237;a que una cosa fuera esa cosa y no otra.
-            Lo que pulsaba adentro, independientemente de qui&#233;n lo poseyer&#237;a.
+            Lo que pulsaba adentro, independientemente de qui&#233;n lo poseyera.
           </p>
           <p>
-            La tercera: Timoteo es un genio en el sentido liso y llano.
+            La tercera: el protagonista es un genio en el sentido liso y llano.
             Le ponen adelante un respirador Egixi &mdash; tecnolog&#237;a extraterrestre
             que ning&#250;n manual explica, que nadie le ense&#241;&#243; a reparar &mdash;
             y lo aprende solo. A prueba y error. A ma&#241;a y cuerpo.
             Como aprende todo el que trabaja sin que nadie le explique nada.
           </p>
           <p>
-            <em>Las tres capas son la misma: hay algo que crece solo adentro de todo
+            La cuarta: los Genius de Apple en Argentina.
+            Los que sueldan tecnolog&#237;a ajena en locales de una corporaci&#243;n extranjera
+            que los trata exactamente igual que Timoteo Cucurucho trata al protagonista.
+            Si molestan, se tiran. Se barren. Se olvidan dentro de un caj&#243;n.
+            El nombre del puesto de trabajo es una broma cruel que nadie se ri&#243;.
+          </p>
+          <p>
+            <em>Las cuatro capas son la misma: hay algo que crece solo adentro de todo
             y que no le pide permiso a nadie para existir.
             Todav&#237;a.</em>
           </p>
@@ -766,11 +778,12 @@
         <button class="leer-mas">Seguir leyendo &#8594;</button>
       </article>
 
-      <!-- LOS TÚNELES -->
+
+      <!-- ══ ARTÍCULO: LOS TÚNELES ══ -->
       <article class="entrada">
         <img class="entrada-imagen"
           src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=900&q=80&fit=crop"
-          alt="Túnel oscuro - Los Túneles"
+          alt="T&#250;nel oscuro — Los T&#250;neles"
           loading="lazy">
         <div class="entrada-meta">
           <span class="entrada-tipo">Final de libro</span>
@@ -787,26 +800,27 @@
             Los T&#250;neles es ese relato en el libro Egixi.
             Lo que pasa abajo &mdash; literalmente abajo, en la estructura subterr&#225;nea de la ciudad ocupada &mdash;
             es lo que pasa en todos los dem&#225;s relatos pero sin la capa de normalidad encima.
-            Sin los formularios. Sin las placas. Sin los respiradores.
+            Sin los caparazones. Sin los respiradores. Sin los escopetazos de muerte azul.
             Solo lo que queda cuando sac&#225;s todo lo que los Egixi pusieron arriba.
           </p>
         </div>
         <div class="entrada-extra">
           <p>
             El libro completo &mdash; Los Egixi, Rosa Carn&#237;vora, Rompe Piernas, Reina Madre, El Tajo, Los T&#250;neles &mdash;
-            est&#225; ahora en manos del jurado de Fundaci&#243;n El Libro 2026.
-            Puede que lo est&#233; leyendo Bazterrica ahora mismo.
+            est&#225; guardado en un caj&#243;n. Pudri&#233;ndose ah&#237;, como se pudren los libros
+            que nadie pidi&#243; pero que ya existen y no tienen adonde ir.
           </p>
           <p>
-            Si la fundaci&#243;n pasa, el libro va directo a dos editoriales:
-            <em>Sigilo</em>, que public&#243; Cometierra de Dolores Reyes y que es el perfil exacto de lo que hace este libro;
-            y <em>Caja Negra</em>, que tiene el cat&#225;logo h&#237;brido ensayo-ficci&#243;n donde el universo Egixi encajar&#237;a
-            como una pieza que estaba esperando su lugar.
+            Cuando est&#233; listo para salir, va directo a dos editoriales.
+            <em>Sigilo</em>, porque lo que hacen con la narrativa argentina de los m&#225;rgenes
+            es exactamente lo que este libro necesita que alguien haga con &#233;l.
+            Y <em>Caja Negra</em>, porque tiene el espacio para algo que no entra f&#225;cil en ninguna categor&#237;a,
+            y Egixi no entra f&#225;cil en ninguna categor&#237;a.
           </p>
           <p>
-            No es ambici&#243;n. Es lectura del mercado.
-            Esos son los lugares donde este libro deja de ser un manuscrito
-            y empieza a ser un objeto en las manos de alguien que lo necesitaba.
+            No le estoy pidiendo nada a nadie.
+            Estoy diciendo que el libro existe, que est&#225; terminado,
+            y que cuando llegue el momento va a poder pararse solo.
           </p>
           <p>
             <em>Mientras tanto, sigo excavando.</em>
@@ -815,11 +829,12 @@
         <button class="leer-mas">Seguir leyendo &#8594;</button>
       </article>
 
-      <!-- PROMESA Y CASTIGO - QUÉ ES -->
+
+      <!-- ══ ARTÍCULO: PROMESA Y CASTIGO ══ -->
       <article class="entrada">
         <img class="entrada-imagen"
           src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=900&q=80&fit=crop"
-          alt="Llanura santafesina - Promesa y Castigo"
+          alt="Llanura santafesina — Promesa y Castigo"
           loading="lazy">
         <div class="entrada-meta">
           <span class="entrada-tipo">El libro</span>
@@ -837,12 +852,22 @@
           <p>
             Diez relatos viven en el litoral. Uno &mdash; El Alambrador &mdash;
             sale de la orilla y se va a la Pampa.
-            Un alambrador que divide dos campos, dos familias, dos versiones del mismo rencor.
-            La cerca no separa tierras. Separa lo que se pod&#237;a decir
-            de lo que no se dijo nunca.
+            Un hombre contratado para levantar una cerca entre dos estancias.
+            Trabajo simple, trabajo de siempre.
+            Pero a cada postazo que hunde en la tierra, la pala abre algo que no deber&#237;a abrirse.
           </p>
         </div>
         <div class="entrada-extra">
+          <p>
+            La Pampa tiene memoria. Lo que pas&#243; en 1879 no se fue: qued&#243; abajo,
+            comprimido por el peso de todo lo que vino despu&#233;s.
+            El alambrador lo sabe. Lo siente en los huesos del suelo.
+            Y tiene que decidir: planta el poste o lo deja caer.
+            Marca el l&#237;mite o lo abandona. Sigue o para.
+            Lo que el relato le ofrece al lector es ese momento exacto:
+            cuando entend&#233;s que tu trabajo es el &#250;ltimo acto de algo
+            que empez&#243; mucho antes que vos.
+          </p>
           <p>
             No es realismo m&#225;gico en el sentido c&#243;modo de la palabra.
             Lo sobrenatural no llega como met&#225;fora ni como decoraci&#243;n.
@@ -855,20 +880,16 @@
             Belceb&#250; tiene una deuda que ning&#250;n dinero cancela.
             El &#218;ltimo Brillo tiene un fuego que elige a qui&#233;n quema.
           </p>
-          <p>
-            <em>Si Rulfo hubiera nacido sobre el Paran&#225; y Almada hubiera le&#237;do a Cort&#225;zar,
-            habr&#237;an escrito algo parecido a esto.
-            Parecido, no igual.</em>
-          </p>
         </div>
         <button class="leer-mas">Seguir leyendo &#8594;</button>
       </article>
 
-      <!-- PROCESO PROMESA Y CASTIGO -->
+
+      <!-- ══ ARTÍCULO: CÓMO SE ESCRIBE UN LIBRO QUE TE ASUSTA ══ -->
       <article class="entrada">
         <img class="entrada-imagen"
           src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=900&q=80&fit=crop"
-          alt="Escritura a mano - proceso"
+          alt="Escritura a mano — proceso"
           loading="lazy">
         <div class="entrada-meta">
           <span class="entrada-tipo">Proceso</span>
@@ -877,33 +898,112 @@
         <h2 class="entrada-titulo">C&#243;mo se escribe un libro que te asusta</h2>
         <div class="entrada-cuerpo">
           <p>
-            Promesa y Castigo empez&#243; como un solo cuento. Uno que no quer&#237;a terminar
-            porque terminar significaba mirar de frente lo que estaba diciendo.
+            Promesa y Castigo empez&#243; con un solo cuento: La Ortiga.
+            Lo llev&#233; a mis compa&#241;eros de Editorial Patas de Cabra
+            y me dijeron que les tra&#237;a recuerdos de &#171;El Sur&#187; de Borges.
+            Semanas antes yo hab&#237;a encontrado ese cuento por primera vez
+            y me hab&#237;a roto la cabeza &mdash;
+            nunca me hab&#237;a gustado Borges y de repente lo amaba.
+            Me dijeron que La Ortiga estaba para presentar en alg&#250;n concurso.
+          </p>
+          <p>
+            Despu&#233;s le agregu&#233; partes. Lo romp&#237;. Lo arm&#233; de nuevo.
+            Le pas&#233; la amoladora.
+            Lo volv&#237; a pulir, le puse voz matrera y textura al gaucho,
+            cerr&#233; los agujeros con soldadura.
+            Se lo mostr&#233; a mi familia.
+            Mi hermana se lo ley&#243; a mis viejos en voz alta.
+            As&#237; qued&#243; La Ortiga.
+          </p>
+        </div>
+        <div class="entrada-extra">
+          <p>
+            El libro fue creciendo alrededor de ese primer corte,
+            relato por relato, hasta llegar a once.
             Que hay cosas que recib&#237;s sin pedirlas.
             Que el cuerpo recuerda lo que la cabeza descarta.
             Que algunas familias se pasan el da&#241;o de generaci&#243;n en generaci&#243;n
             con la misma precisi&#243;n que una receta de cocina.
           </p>
           <p>
-            Cuando lo mand&#233; a Fundaci&#243;n El Libro, el libro ten&#237;a 130 p&#225;ginas y once relatos
-            que no se conocen entre s&#237; pero que respiran el mismo aire.
+            Cuando lo mand&#233; a Fundaci&#243;n El Libro ten&#237;a 130 p&#225;ginas en A4 &mdash;
+            unas 200 en formato libro real, con m&#225;rgenes y tipograf&#237;a de libro de verdad.
+            Once relatos que no se conocen entre s&#237; pero que respiran el mismo aire.
             Juro que nunca plane&#233; que fueran once.
             Juro que no sab&#237;a que era un libro hasta que lo fue.
           </p>
           <p>
-            <em>Ahora lo est&#225; leyendo el jurado.
-            Puede que lo est&#233; leyendo Bazterrica.
+            <em>Ahora est&#225; en manos del jurado.
             No s&#233; qu&#233; hacer con eso.</em>
           </p>
         </div>
         <button class="leer-mas">Seguir leyendo &#8594;</button>
       </article>
 
-      <!-- EGIXI NUEVOS RELATOS -->
+
+      <!-- ══ ARTÍCULO: BELCEBÚ Y GOYA (PINTURA + RELATO) ══ -->
+      <article class="entrada">
+        <img class="entrada-imagen"
+          src="https://images.unsplash.com/photo-1578926375605-eaf7559b1458?w=900&q=80&fit=crop"
+          alt="Oscuridad y figura — Pintura y relato"
+          loading="lazy">
+        <div class="entrada-meta">
+          <span class="entrada-tipo">Mirada</span>
+          <span class="entrada-fecha">Febrero 2026</span>
+        </div>
+        <h2 class="entrada-titulo">Belceb&#250; y el Aquelarre de Goya: lo que no se paga con plata</h2>
+        <div class="entrada-cuerpo">
+          <p>
+            Goya pint&#243; el Aquelarre en 1821, en la pared de su propia casa.
+            Una cabra enorme preside desde el centro, negra contra negro.
+            Abajo, un mont&#243;n de cuerpos apretados que la miran
+            con una mezcla de terror y devoci&#243;n que en el cuadro son exactamente la misma cosa.
+            Nadie est&#225; ah&#237; por voluntad propia. Nadie se va.
+          </p>
+          <p>
+            Belceb&#250;, el relato, tiene una deuda que ning&#250;n dinero cancela.
+            No porque el deudor no quiera pagar.
+            Sino porque lo que se debe no es plata.
+            Nunca fue plata.
+          </p>
+        </div>
+        <div class="entrada-extra">
+          <p>
+            La cabra de Goya no quiere nada material.
+            Quiere lo que todos los acreedores verdaderos terminan queriendo:
+            presencia. Pertenencia. Que estés ah&#237;, que no te vayas,
+            que le dediques lo que le dedicar&#237;as a cualquier cosa sagrada.
+          </p>
+          <p>
+            El protagonista de Belceb&#250; hereda una deuda que nadie le explic&#243;.
+            Aparece en su vida adulta como aparecen todas las herencias que nadie pide:
+            de golpe, sin manual, con toda la urgencia de lo que lleva a&#241;os esper&#225;ndote.
+            No puede pagarla con dinero porque quien la cobra
+            est&#225; tan muerto como el que la puso.
+            Pero sigue cobrando.
+          </p>
+          <p>
+            El Aquelarre est&#225; pintado en ocre y negro casi puro.
+            No hay perspectiva c&#243;moda. No hay salida del cuadro.
+            La congregaci&#243;n no tiene adonde mirar que no sea la cabra
+            o la oscuridad que rodea a la cabra, que es la misma cosa.
+          </p>
+          <p>
+            <em>Eso es Belceb&#250;.
+            No hay salida del cuadro.
+            Solo la decisi&#243;n de qu&#233; hacer con lo que te pusieron adentro
+            antes de que pudieras decir que no.</em>
+          </p>
+        </div>
+        <button class="leer-mas">Seguir leyendo &#8594;</button>
+      </article>
+
+
+      <!-- ══ ARTÍCULO: LO QUE SIGUE CRECIENDO EN EGIXI ══ -->
       <article class="entrada">
         <img class="entrada-imagen"
           src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=900&q=80&fit=crop"
-          alt="Ciudad vista desde afuera - Egixi"
+          alt="Ciudad vista desde afuera — Egixi"
           loading="lazy">
         <div class="entrada-meta">
           <span class="entrada-tipo">Universo</span>
@@ -913,15 +1013,31 @@
         <div class="entrada-cuerpo">
           <p>
             Egixi no es un libro. Es un universo.
-            El libro son seis relatos, 112 p&#225;ginas, el primer corte de algo
-            que sigue expandi&#233;ndose en el cuaderno mientras la soldadora descansa.
+            El libro son seis relatos &mdash; cerca de 175 p&#225;ginas en formato real &mdash;
+            el primer corte de algo que sigue expandi&#233;ndose en el cuaderno
+            mientras la soldadora descansa.
           </p>
           <p>
-            Hay nuevos relatos que a&#250;n no tienen nombre p&#250;blico.
-            Uno sobre un int&#233;rprete &mdash; alguien que traduce entre Egixi y humanos
-            y aprendi&#243; a no preguntarse de qu&#233; lado est&#225;.
-            Otro sobre los perros que quedan cuando los due&#241;os se van.
-            Otro sobre un uniforme que sigue funcionando aunque quien lo usaba ya no existe.
+            Cuatro relatos nuevos ya tienen cuerpo:
+            <em>Uniforme</em>, sobre un uniforme que sigue funcionando aunque quien lo usaba ya no existe.
+            <em>Genius</em>, sobre el que repara tecnolog&#237;a ajena en el subsuelo de la ciudad ocupada.
+            <em>La Muda</em>, narrado desde adentro del cuerpo de una capataz Egixi.
+            <em>Secreci&#243;n</em>, que no voy a explicar todav&#237;a porque no est&#225; terminado
+            y los relatos que se explican antes de estar listos se evaporan.
+          </p>
+        </div>
+        <div class="entrada-extra">
+          <p>
+            El universo Egixi funciona as&#237;: los aliens llegaron, tomaron la ciudad,
+            pusieron formularios. La resistencia no es armada.
+            Es la resistencia del que aprende solo, del que dobla sin quebrarse,
+            del que encuentra un resquicio en cada sistema de control
+            porque los sistemas de control siempre tienen resquicios.
+          </p>
+          <p>
+            Eso es lo que estos cuatro relatos nuevos le agregan al libro:
+            m&#225;s cuerpos. M&#225;s formas de estar adentro de una ocupaci&#243;n
+            sin que la ocupaci&#243;n te termine de comer.
           </p>
           <p>
             <em>No s&#233; cu&#225;ndo van a estar listos.
@@ -931,11 +1047,12 @@
         <button class="leer-mas">Seguir leyendo &#8594;</button>
       </article>
 
-      <!-- WINDUMANOTH -->
+
+      <!-- ══ ARTÍCULO: WINDUMANOTH ══ -->
       <article class="entrada">
         <img class="entrada-imagen"
           src="https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=900&q=80&fit=crop"
-          alt="Pantalla en blanco - espera"
+          alt="Pantalla en blanco — espera"
           loading="lazy">
         <div class="entrada-meta">
           <span class="entrada-tipo">Diario de trabajo</span>
@@ -946,60 +1063,141 @@
           <p>
             Windumanoth es una revista espa&#241;ola de ciencia ficci&#243;n que paga.
             Setenta y cinco euros por relato. Eso es plata real
-            cuando trabaj&#225;s nueve horas en una f&#225;brica y escrib&#237;s el resto.
+            cuando trabaj&#225;s nueve horas en una picadora de carne y escrib&#237;s el resto.
           </p>
           <p>
             Tengo dos cuentos preparados. Listos desde hace semanas.
             Pero la convocatoria no abri&#243; todav&#237;a
-            y ac&#225; estoy, mirando el sitio como si mirarlo lo fuera a hacer aparecer.
+            y ac&#225; estoy, mirando la p&#225;gina como si mirarla lo fuera a hacer aparecer.
+          </p>
+        </div>
+        <div class="entrada-extra">
+          <p>
+            Esta es la econom&#237;a del escritor argentino que no llega a fin de mes:
+            anotarse en concursos espa&#241;oles, calcular cu&#225;ndo abren las convocatorias,
+            tener los textos listos meses antes para no quedar afuera por un d&#237;a.
+            Arroz con sal y estrategia.
+            No es romanticismo. Es matem&#225;tica.
           </p>
           <p>
-            <em>Esta es la parte de ser escritor que nadie escribe.
-            Que pod&#233;s tener el mejor cuento del a&#241;o en un archivo de Word
-            y que te salve o no dependiendo de si una revista de Espa&#241;a
-            decide abrir antes o despu&#233;s de fin de mes.
-            Sigo mirando. Sigo escribiendo. Las dos cosas a la vez.</em>
+            Setenta y cinco euros son tres tanques de nafta. Son dos semanas de verdura.
+            Son el margen que te permite escribir el mes siguiente
+            sin que la cabeza est&#233; puesta en otra cosa.
+          </p>
+          <p>
+            <em>Sigo mirando la p&#225;gina.
+            Sigo escribiendo.
+            Las dos cosas a la vez, siempre.</em>
           </p>
         </div>
         <button class="leer-mas">Seguir leyendo &#8594;</button>
       </article>
 
-      <!-- SAMOVAR -->
+
+      <!-- ══ ARTÍCULO: ROMPE PIERNAS Y GOYA ══ -->
+      <article class="entrada">
+        <img class="entrada-imagen"
+          src="https://images.unsplash.com/photo-1580136579312-94651dfd596d?w=900&q=80&fit=crop"
+          alt="Violencia y tierra — pintura y relato"
+          loading="lazy">
+        <div class="entrada-meta">
+          <span class="entrada-tipo">Mirada</span>
+          <span class="entrada-fecha">Febrero 2026</span>
+        </div>
+        <h2 class="entrada-titulo">Duelo a garrotazos: Goya y Rompe Piernas</h2>
+        <div class="entrada-cuerpo">
+          <p>
+            Goya pint&#243; Duelo a garrotazos en la misma pared que el Aquelarre.
+            Dos hombres en la llanura, golpe&#225;ndose con garrotes.
+            Pero si mir&#225;s bien, los dos est&#225;n hundidos hasta las rodillas en el mismo barro.
+            Ninguno puede retroceder. Ninguno puede ganar.
+            El campo los est&#225; tragando mientras pelean.
+          </p>
+          <p>
+            Cuando escrib&#237; Rompe Piernas no estaba pensando en Goya.
+            Pero cuando lo termin&#233; y lo mir&#233; desde afuera,
+            la imagen que apareci&#243; fue esa: dos cuerpos destruy&#233;ndose en un suelo que los destruye a los dos.
+          </p>
+        </div>
+        <div class="entrada-extra">
+          <p>
+            El enforcer Egixi de Rompe Piernas cumple &#243;rdenes.
+            El humano que recibe el castigo no hizo nada que no hubiera hecho cualquiera.
+            La violencia no es personal. Eso es lo peor.
+            La violencia de ocupaci&#243;n nunca es personal:
+            es sistem&#225;tica, es eficiente, es burocrática como un formulario
+            y como un formulario no tiene cara.
+          </p>
+          <p>
+            Pero el relato no se queda ah&#237;.
+            Lo que Goya mete en el cuadro &mdash; y lo que me importa del cuadro &mdash;
+            es que el barro no distingue.
+            El que ejecuta la violencia tambi&#233;n se hunde.
+            El sistema consume a los dos.
+            El que cree que est&#225; del lado del garrote
+            sigue estando en el mismo campo, en el mismo barro.
+          </p>
+          <p>
+            <em>Rompe Piernas no es un relato de v&#237;ctimas y verdugos.
+            Es un relato de gente que se hunde
+            en el barro que ninguno de los dos eligi&#243;.</em>
+          </p>
+        </div>
+        <button class="leer-mas">Seguir leyendo &#8594;</button>
+      </article>
+
+
+      <!-- ══ ARTÍCULO: SAMOVAR ══ -->
       <article class="entrada">
         <img class="entrada-imagen"
           src="https://images.unsplash.com/photo-1519791883288-dc8bd696e667?w=900&q=80&fit=crop"
-          alt="M&#225;quina de escribir - narrativa"
+          alt="M&#225;quina de escribir — narrativa"
           loading="lazy">
         <div class="entrada-meta">
           <span class="entrada-tipo">En construcci&#243;n</span>
           <span class="entrada-fecha">Enero 2026</span>
         </div>
-        <h2 class="entrada-titulo">Puliendo algo caliente para Samovar y Strange Horizons</h2>
+        <h2 class="entrada-titulo">Puliendo algo para Samovar porque creo que les encanta</h2>
         <div class="entrada-cuerpo">
           <p>
-            Samovar paga ocho centavos de d&#243;lar por palabra al autor y ocho al traductor.
-            Son los mejores del nicho de CF latinoamericana en traducci&#243;n al ingl&#233;s.
+            Samovar publica ciencia ficci&#243;n latinoamericana en traducci&#243;n al ingl&#233;s.
+            Pagan bien &mdash; autor y traductor por separado &mdash; y tienen el cat&#225;logo
+            m&#225;s honesto del nicho.
+            No es que quiero publicar ah&#237; por lo que me da.
+            Es que creo que lo que escribo es exactamente lo que andan buscando
+            y que si lo leen no van a poder decir que no.
           </p>
           <p>
-            Estoy trabajando en relatos del universo Egixi que tienen lo que ese mercado necesita:
-            perspectiva no humana con cuerpo, tensi&#243;n que no se resuelve,
+            Estoy trabajando en relatos del universo Egixi para mandarles.
+            Perspectiva no humana con cuerpo,
+            tensi&#243;n que no se resuelve,
             im&#225;genes que funcionan en cualquier idioma.
             El tac-Tr&#193;c-trac de un respirador Egixi no necesita nota al pie.
           </p>
+        </div>
+        <div class="entrada-extra">
           <p>
-            <em>El problema es que Samovar requiere un traductor y yo no tengo uno todav&#237;a.
-            Pero no voy a esperar a tenerlo para terminar el texto.
-            La traducci&#243;n se consigue. La voz no.</em>
+            Lo de la traducci&#243;n lo estoy leyendo en sus gu&#237;as.
+            Samovar acepta env&#237;os con traducci&#243;n incluida o puede gestionar traductor propio.
+            Si me dejan hacer la m&#237;a, la hago.
+            Si necesitan un nombre profesional al lado, lo consigo.
+            Primero termino el texto porque el texto es lo que importa.
+          </p>
+          <p>
+            <em>Si me dan una chance, no los voy a defraudar.
+            Eso es lo &#250;nico que puedo prometer.
+            Lo dem&#225;s est&#225; en la p&#225;gina.</em>
           </p>
         </div>
         <button class="leer-mas">Seguir leyendo &#8594;</button>
       </article>
 
-      <!-- MANTEGNA -->
+
+      <!-- ══ ARTÍCULO: MANTEGNA ══ -->
       <article class="entrada">
         <img class="entrada-imagen"
           src="https://images.unsplash.com/photo-1577083552431-6e5fd01988ec?w=900&q=80&fit=crop"
-          alt="Pintura cl&#225;sica - perspectiva"
+          alt="Pintura cl&#225;sica — perspectiva"
           loading="lazy">
         <div class="entrada-meta">
           <span class="entrada-tipo">Mirada</span>
@@ -1028,11 +1226,12 @@
         <button class="leer-mas">Seguir leyendo &#8594;</button>
       </article>
 
-      <!-- FÁBRICA -->
+
+      <!-- ══ ARTÍCULO: FÁBRICA ══ -->
       <article class="entrada">
         <img class="entrada-imagen"
           src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=80&fit=crop"
-          alt="Trabajo industrial - f&#225;brica"
+          alt="Trabajo industrial — f&#225;brica"
           loading="lazy">
         <div class="entrada-meta">
           <span class="entrada-tipo">Proceso</span>
@@ -1058,9 +1257,11 @@
         <button class="leer-mas">Seguir leyendo &#8594;</button>
       </article>
 
-    </main>
 
-    <!-- SIDEBAR DER -->
+    </main><!-- fin feed -->
+
+
+    <!-- ══ SIDEBAR DER ══ -->
     <aside class="sidebar-der" id="lecturas">
 
       <div class="widget">
@@ -1104,7 +1305,8 @@
       </div>
 
     </aside>
-  </div>
+  </div><!-- fin contenedor -->
+
 
   <!-- ══ SOBRE MÍ ══ -->
   <section class="sobre-mi" id="sobre">
@@ -1114,14 +1316,14 @@
       <div class="sobre-texto">
         <p>
           Me llamo Matias Joel Ortiz. Nac&#237; y vivo en Rosario, Santa Fe.
-          Trabajo nueve horas por d&#237;a en una f&#225;brica soldando.
+          Laboro nueve horas por d&#237;a soldando.
           El resto del tiempo escribo ciencia ficci&#243;n especulativa.
         </p>
         <p>
-          Tengo dos libros completos compitiendo en Fundaci&#243;n El Libro 2026:
-          <em>Egixi</em>, seis relatos del universo de la ocupaci&#243;n extraterrestre;
-          y <em>Promesa y Castigo</em>, once herencias malditas del litoral santafesino.
-          Antes de eso publiqu&#233; en Editorial Patas de Cabra y en Distop&#237;a N&#233;bula.
+          Tengo un libro en competencia &mdash; <em>Promesa y Castigo</em>, once herencias malditas
+          del litoral santafesino &mdash; y otro buscando su lugar: <em>Egixi</em>,
+          seis relatos del universo de la ocupaci&#243;n extraterrestre.
+          Antes publiqu&#233; en Editorial Patas de Cabra y en Distop&#237;a N&#233;bula.
         </p>
         <p>
           Toco el piano. Leo casi todo lo que encuentro.
@@ -1133,11 +1335,10 @@
         <p>
           La literatura argentina tiene muchas voces portE&#241;as, muchas voces acad&#233;micas,
           muchas voces de taller.
-          No tiene, o ten&#237;a muy pocas, la voz de alguien que viene de la f&#225;brica
-          y que escribe ciencia ficci&#243;n desde ah&#237;.
+          Yo vengo de la f&#225;brica y escribo ciencia ficci&#243;n desde ah&#237;.
+          No es un discurso. Es lo que soy.
         </p>
         <p>
-          Eso no es un discurso. Es lo que soy.
           Y result&#243; ser exactamente lo que necesitaba para escribir
           lo que no pod&#237;a escribir nadie m&#225;s.
         </p>
@@ -1147,6 +1348,7 @@
       </div>
     </div>
   </section>
+
 
   <!-- ══ FOOTER ══ -->
   <footer>
@@ -1160,6 +1362,7 @@
       <a href="#" target="_blank">Twitter / X</a>
     </div>
   </footer>
+
 
   <script>
     document.querySelectorAll('.leer-mas').forEach(function(btn) {
