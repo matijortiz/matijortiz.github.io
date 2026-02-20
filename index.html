@@ -18,6 +18,7 @@
   <meta property="og:url" content="https://matijortiz.github.io">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://matijortiz.github.io">
+  <meta name="robots" content="index, follow">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%2308070a'/><path d='M16 2 C16 14 11 17 10 26 C9 31 13 31 16 32' stroke='%23b84a1a' stroke-width='1.5' fill='none'/><path d='M16 8 C13 11 8 12 5 17' stroke='%237fc47a' stroke-width='0.8' fill='none' opacity='0.7'/><path d='M16 16 C19 19 23 20 24 24' stroke='%237fc47a' stroke-width='0.8' fill='none' opacity='0.5'/></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Barlow+Condensed:wght@300;400;700&family=Barlow:wght@300;400&display=swap" rel="stylesheet">
@@ -384,6 +385,235 @@
     @media (max-width: 480px) {
       .libros-grid { grid-template-columns: 1fr; }
     }
+
+    /* ── HALO EN TEXTO NARANJA ─────────────────────────────────────────────
+       Separa las letras del fondo oscuro sin borde crudo.
+       No blanco puro — luz cálida muy sutil.
+    ──────────────────────────────────────────────────────────────────────── */
+    .widget-titulo,
+    .entrada-tipo,
+    .hero-etiqueta,
+    .libros-header,
+    .sobre-mi h2,
+    .leer-mas {
+      text-shadow:
+        0 0 22px rgba(184, 74, 26, 0.28),
+        0 1px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    /* ── SIDEBAR IZQ — fondo propio ─────────────────────────────────────── */
+    .sidebar-izq { background: var(--grafito); }
+
+    /* ── HOVER EN IMÁGENES DEL FEED ─────────────────────────────────────── */
+    .entrada { overflow: hidden; }
+    .entrada-imagen {
+      transition: transform 0.45s ease, opacity 0.35s ease, filter 0.35s ease;
+      transform-origin: center center;
+    }
+    .entrada:hover .entrada-imagen {
+      transform: scale(1.025);
+      opacity: 0.88;
+    }
+
+    /* ── FOOTER FRASE ───────────────────────────────────────────────────── */
+    .footer-frase {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: clamp(1.1rem, 2vw, 1.6rem);
+      color: var(--oxido);
+      line-height: 1.35;
+      text-shadow: 0 0 24px rgba(184, 74, 26, 0.22);
+      max-width: 500px;
+    }
+    .footer-firma-nombre {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gris);
+      margin-bottom: 0.6rem;
+    }
+
+    /* ── BADGE TIEMPO DE LECTURA ────────────────────────────────────────── */
+    .entrada-lectura {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      color: var(--gris);
+      opacity: 0.7;
+    }
+
+    /* ── MODO LECTURA INMERSIVO ─────────────────────────────────────────── */
+    #lector {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      background: #040308;
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.38s ease;
+    }
+    #lector.activo {
+      opacity: 1;
+      pointer-events: all;
+    }
+    /* Barra de progreso */
+    #lector-barra {
+      position: absolute;
+      top: 0; left: 0;
+      height: 2px;
+      width: 0%;
+      background: linear-gradient(90deg, var(--oxido), var(--ambar));
+      transition: width 0.12s linear;
+      z-index: 2;
+    }
+    /* Cabecera del lector */
+    #lector-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid var(--linea);
+      flex-shrink: 0;
+      background: rgba(4, 3, 8, 0.95);
+      backdrop-filter: blur(8px);
+    }
+    #lector-tipo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--oxido);
+      text-shadow: 0 0 14px rgba(184,74,26,0.3);
+    }
+    #lector-cerrar {
+      background: none;
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--gris);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      padding: 0.4rem 1rem;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: border-color 0.2s, color 0.2s, background 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    #lector-cerrar:hover {
+      border-color: var(--oxido);
+      color: var(--crema);
+      background: rgba(184,74,26,0.08);
+    }
+    #lector-cerrar:focus-visible {
+      outline: 1px solid var(--oxido);
+      outline-offset: 2px;
+    }
+    /* Área scrolleable */
+    #lector-scroll {
+      flex: 1;
+      overflow-y: auto;
+      padding: 5rem 2rem 8rem;
+      scroll-behavior: smooth;
+    }
+    #lector-scroll::-webkit-scrollbar { width: 2px; }
+    #lector-scroll::-webkit-scrollbar-thumb { background: rgba(184,74,26,0.4); border-radius: 2px; }
+    /* Contenido centrado */
+    #lector-contenido { max-width: 680px; margin: 0 auto; }
+    #lector-imagen {
+      width: 100%;
+      max-height: 360px;
+      object-fit: cover;
+      border-radius: 2px;
+      opacity: 0.65;
+      filter: contrast(1.12) sepia(0.18) brightness(0.8);
+      margin-bottom: 3.5rem;
+      display: block;
+      border-left: 2px solid var(--oxido);
+    }
+    #lector-meta {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    #lector-meta-tipo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--oxido);
+      text-shadow: 0 0 14px rgba(184,74,26,0.25);
+    }
+    #lector-meta-fecha {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      color: var(--gris);
+    }
+    #lector-titulo {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      line-height: 1.08;
+      color: var(--crema);
+      margin-bottom: 3rem;
+    }
+    #lector-titulo em { font-style: italic; color: var(--ambar); }
+    /* Separador tipográfico antes del texto */
+    #lector-titulo::after {
+      content: '';
+      display: block;
+      width: 3rem;
+      height: 2px;
+      background: var(--oxido);
+      margin-top: 1.8rem;
+      box-shadow: 0 0 8px rgba(184,74,26,0.4);
+    }
+    #lector-texto {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.32rem;
+      line-height: 2.05;
+      color: #ccc4b4;
+      letter-spacing: 0.01em;
+    }
+    #lector-texto p { margin-bottom: 1.6rem; }
+    #lector-texto p:last-child { margin-bottom: 0; }
+    #lector-texto em { color: var(--crema); font-style: italic; }
+    /* Primeras letras del primer párrafo — efecto capitular sutil */
+    #lector-texto p:first-child::first-letter {
+      font-size: 3.2em;
+      font-weight: 600;
+      float: left;
+      line-height: 0.78;
+      margin-right: 0.07em;
+      margin-top: 0.08em;
+      color: var(--oxido);
+      text-shadow: 0 0 20px rgba(184,74,26,0.3);
+    }
+
+    /* ── ACCESIBILIDAD — FOCUS VISIBLE ──────────────────────────────────── */
+    :focus-visible {
+      outline: 1px solid var(--oxido);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+    .leer-mas:focus-visible {
+      border-bottom-color: var(--ambar);
+      color: var(--ambar);
+    }
+
+    @media (max-width: 700px) {
+      #lector-scroll { padding: 3rem 1.4rem 6rem; }
+      #lector-header { padding: 0.8rem 1.4rem; }
+      #lector-texto { font-size: 1.15rem; line-height: 1.9; }
+      #lector-titulo { font-size: 1.8rem; }
+    }
   </style>
 </head>
 <body>
@@ -403,7 +633,7 @@
 
   <section class="hero">
     <div class="hero-foto">
-      <img src="foto.jpg" alt="Matias J. Ortiz">
+      <img src="foto.jpg" alt="Matias J. Ortiz" fetchpriority="high" loading="eager">
     </div>
     <div class="hero-texto">
       <p class="hero-etiqueta">Rosario · Santa Fe · Argentina</p>
@@ -493,7 +723,7 @@
           <p>La cuarta: los Genius de Apple en Argentina. Los que sueldan tecnología ajena en locales de una corporación que los trata exactamente igual que Timoteo Cucurucho trata al protagonista. Si molestan, se tiran. Se barren. Se olvidan dentro de un cajón.</p>
           <p><em>Las cuatro capas son la misma: hay algo que crece solo adentro de todo y que no le pide permiso a nadie para existir. Todavía.</em></p>
         </div>
-        <button class="leer-mas">Seguir leyendo →</button>
+        <button class="leer-mas" aria-label="Abrir artículo en modo lectura">Seguir leyendo →</button>
       </article>
 
       <!-- ARTÍCULO: LOS TÚNELES -->
@@ -517,7 +747,7 @@
           <p>No le estoy pidiendo nada a nadie. Estoy diciendo que el libro existe, que está terminado, y que cuando llegue el momento va a poder pararse solo.</p>
           <p><em>Mientras tanto, sigo excavando.</em></p>
         </div>
-        <button class="leer-mas">Seguir leyendo →</button>
+        <button class="leer-mas" aria-label="Abrir artículo en modo lectura">Seguir leyendo →</button>
       </article>
 
       <!-- ARTÍCULO: PROMESA Y CASTIGO -->
@@ -540,7 +770,7 @@
           <p>No es realismo mágico en el sentido cómodo de la palabra. Lo sobrenatural no llega como metáfora ni como decoración. Llega porque en algunos barrios de Rosario y en algunos campos del interior hay cosas que simplemente pasan y nadie las explica, y los que las ven aprenden a no contarlas.</p>
           <p>Cochambre arranca con un olor. Matungo termina con un animal que ya no existe. Belcebú tiene una deuda que ningún dinero cancela. El Último Brillo tiene un fuego que elige a quién quema.</p>
         </div>
-        <button class="leer-mas">Seguir leyendo →</button>
+        <button class="leer-mas" aria-label="Abrir artículo en modo lectura">Seguir leyendo →</button>
       </article>
 
       <!-- ARTÍCULO: CÓMO SE ESCRIBE UN LIBRO QUE TE ASUSTA -->
@@ -563,7 +793,7 @@
           <p>Cuando lo mandé a Fundación El Libro tenía 130 páginas en A4 — unas 200 en formato libro real, con márgenes y tipografía de libro de verdad. Once relatos que no se conocen entre sí pero que respiran el mismo aire. Juro que nunca planeé que fueran once. Juro que no sabía que era un libro hasta que lo fue.</p>
           <p><em>Ahora está en manos del jurado. No sé qué hacer con eso.</em></p>
         </div>
-        <button class="leer-mas">Seguir leyendo →</button>
+        <button class="leer-mas" aria-label="Abrir artículo en modo lectura">Seguir leyendo →</button>
       </article>
 
       <!-- ARTÍCULO: BELCEBÚ Y GOYA — pintura original del Prado (dominio público) -->
@@ -587,7 +817,7 @@
           <p>El Aquelarre está pintado en ocre y negro casi puro. No hay perspectiva cómoda. No hay salida del cuadro. La congregación no tiene adonde mirar que no sea la cabra o la oscuridad que rodea a la cabra, que es la misma cosa.</p>
           <p><em>Eso es Belcebú. No hay salida del cuadro. Solo la decisión de qué hacer con lo que te pusieron adentro antes de que pudieras decir que no.</em></p>
         </div>
-        <button class="leer-mas">Seguir leyendo →</button>
+        <button class="leer-mas" aria-label="Abrir artículo en modo lectura">Seguir leyendo →</button>
       </article>
 
       <!-- ARTÍCULO: LO QUE SIGUE CRECIENDO EN EGIXI -->
@@ -610,7 +840,7 @@
           <p>Eso es lo que estos cuatro relatos nuevos le agregan al libro: más cuerpos. Más formas de estar adentro de una ocupación sin que la ocupación te termine de comer.</p>
           <p><em>No sé cuándo van a estar listos. Sé que van a estar.</em></p>
         </div>
-        <button class="leer-mas">Seguir leyendo →</button>
+        <button class="leer-mas" aria-label="Abrir artículo en modo lectura">Seguir leyendo →</button>
       </article>
 
       <!-- ARTÍCULO: WINDUMANOTH -->
@@ -633,7 +863,7 @@
           <p>Setenta y cinco euros son tres tanques de nafta. Son dos semanas de verdura. Son el margen que te permite escribir el mes siguiente sin que la cabeza esté puesta en otra cosa.</p>
           <p><em>Sigo mirando la página. Sigo escribiendo. Las dos cosas a la vez, siempre.</em></p>
         </div>
-        <button class="leer-mas">Seguir leyendo →</button>
+        <button class="leer-mas" aria-label="Abrir artículo en modo lectura">Seguir leyendo →</button>
       </article>
 
       <!-- ARTÍCULO: ROMPE PIERNAS Y GOYA — pintura original (dominio público) -->
@@ -656,7 +886,7 @@
           <p>Pero el relato no se queda ahí. Lo que Goya mete en el cuadro — y lo que me importa del cuadro — es que el barro no distingue. El que ejecuta la violencia también se hunde. El sistema consume a los dos. El que cree que está del lado del garrote sigue estando en el mismo campo, en el mismo barro.</p>
           <p><em>Rompe Piernas no es un relato de víctimas y verdugos. Es un relato de gente que se hunde en el barro que ninguno de los dos eligió.</em></p>
         </div>
-        <button class="leer-mas">Seguir leyendo →</button>
+        <button class="leer-mas" aria-label="Abrir artículo en modo lectura">Seguir leyendo →</button>
       </article>
 
       <!-- ARTÍCULO: SAMOVAR -->
@@ -678,7 +908,7 @@
           <p>Lo de la traducción lo estoy leyendo en sus guías. Samovar acepta envíos con traducción incluida o puede gestionar traductor propio. Si me dejan hacer la mía, la hago. Si necesitan un nombre profesional al lado, lo consigo. Primero termino el texto porque el texto es lo que importa.</p>
           <p><em>Si me dan una chance, no los voy a defraudar. Eso es lo único que puedo prometer. Lo demás está en la página.</em></p>
         </div>
-        <button class="leer-mas">Seguir leyendo →</button>
+        <button class="leer-mas" aria-label="Abrir artículo en modo lectura">Seguir leyendo →</button>
       </article>
 
       <!-- ARTÍCULO: MANTEGNA — pintura original (dominio público) -->
@@ -697,7 +927,7 @@
           <p>Cuando escribo un relato del universo Egixi pienso en ese cuadro. Cómo la perspectiva que elegís no es neutra. Cómo arrancar desde los pies cambia todo lo que se puede decir sobre un cuerpo.</p>
           <p><em>En La Muda, la capataz Egixi narra desde adentro de su cuerpo, no desde su cabeza. Desde las membranas, los ciclos, el olor del Quitinoso. Desde los pies. La perspectiva que elegís no es una decisión técnica. Es una declaración.</em></p>
         </div>
-        <button class="leer-mas">Seguir leyendo →</button>
+        <button class="leer-mas" aria-label="Abrir artículo en modo lectura">Seguir leyendo →</button>
       </article>
 
       <!-- ARTÍCULO: FÁBRICA -->
@@ -716,7 +946,7 @@
           <p>Cuando volvés de la fábrica y abrís el documento, traés eso con vos. La precisión obligatoria. El ruido que todavía te zumba. Los dedos que todavía saben el peso de lo real.</p>
           <p><em>No escribo a pesar de trabajar en una fábrica. Escribo porque trabajo en una fábrica.</em></p>
         </div>
-        <button class="leer-mas">Seguir leyendo →</button>
+        <button class="leer-mas" aria-label="Abrir artículo en modo lectura">Seguir leyendo →</button>
       </article>
 
     </main>
@@ -819,7 +1049,7 @@
     <div class="sobre-mi-grid">
       <h2>Sobre mí</h2>
       <div class="sobre-foto">
-        <img src="foto.jpg" alt="Matias J. Ortiz">
+        <img src="foto.jpg" alt="Matias J. Ortiz" fetchpriority="high" loading="eager">
       </div>
       <div class="sobre-texto">
         <p>Me llamo Matias Joel Ortiz. Nací y vivo en Rosario, Santa Fe. Laboro nueve horas por día soldando. El resto del tiempo escribo ciencia ficción especulativa.</p>
@@ -833,16 +1063,39 @@
 
 
   <footer>
-    <p class="footer-firma">
-      <strong>Matias J. Ortiz</strong> — Rosario, Argentina.<br>
-      <em>La fábrica no enseña a escribir. Te enseña a no mentir.</em>
-    </p>
+    <div>
+      <p class="footer-firma-nombre">Matias J. Ortiz — Rosario, Argentina</p>
+      <p class="footer-frase">La fábrica no enseña a escribir.<br>Te enseña a no mentir.</p>
+    </div>
     <div class="footer-links">
       <a href="#" class="email-link" data-e="zngnfwbrybeghm11@tznvy.pbz">Email</a>
       <a href="https://instagram.com/matij.ortiz" target="_blank" rel="noopener noreferrer">Instagram</a>
       <a href="#" target="_blank" rel="noopener noreferrer">Twitter / X</a>
     </div>
   </footer>
+
+  <!-- MODO LECTURA INMERSIVO -->
+  <div id="lector" role="dialog" aria-modal="true" aria-labelledby="lector-titulo">
+    <div id="lector-barra" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+    <div id="lector-header">
+      <span id="lector-tipo"></span>
+      <button id="lector-cerrar" aria-label="Cerrar modo lectura (Escape)">
+        ESC — Cerrar
+      </button>
+    </div>
+    <div id="lector-scroll">
+      <div id="lector-contenido">
+        <img id="lector-imagen" src="" alt="">
+        <div id="lector-meta">
+          <span id="lector-meta-tipo"></span>
+          <span id="lector-meta-fecha"></span>
+        </div>
+        <h2 id="lector-titulo"></h2>
+        <div id="lector-texto"></div>
+      </div>
+    </div>
+  </div>
+
 
   <script src="script.js" defer></script>
 
