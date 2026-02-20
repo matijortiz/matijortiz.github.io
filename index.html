@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Security headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com https://upload.wikimedia.org https://cdna.artstation.com https://cdn.midjourney.com data:; script-src 'self' 'unsafe-inline'; connect-src 'none';">
   <title>Matias J. Ortiz — Escritor de Ciencia Ficción | Rosario Argentina</title>
   <meta name="description" content="Matias J. Ortiz. Escritor rosarino de ciencia ficción especulativa. Autor de Egixi, Promesa y Castigo, Custodio. Literatura cruda desde la fábrica.">
   <meta name="keywords" content="Matias Ortiz, Matias J. Ortiz, escritor, ciencia ficción, literatura argentina, Rosario, Egixi, Promesa y Castigo, Custodio">
@@ -392,7 +397,7 @@
       <a href="#libros">Libros</a>
       <a href="#lecturas">Lecturas</a>
       <a href="#sobre">Sobre mí</a>
-      <a href="mailto:matiasjoelortiz11@gmail.com">Contacto</a>
+      <a href="#" class="email-link" data-e="zngnfwbrybeghm11@tznvy.pbz">Contacto</a>
     </nav>
   </header>
 
@@ -801,7 +806,7 @@
             <span class="libro-badge">Patas de Cabra</span>
           </div>
           <div class="libro-links">
-            <a href="mailto:matiasjoelortiz11@gmail.com" class="libro-boton secondary">Contacto</a>
+            <a href="#" class="email-link" data-e="zngnfwbrybeghm11@tznvy.pbz" class="libro-boton secondary">Contacto</a>
           </div>
         </div>
       </div>
@@ -821,7 +826,7 @@
         <p>Tengo un libro en competencia — <em>Promesa y Castigo</em>, once herencias malditas del litoral santafesino — y otro buscando su lugar: <em>Egixi</em>, seis relatos del universo de la ocupación extraterrestre. Antes publiqué en Editorial Patas de Cabra y en Distopía Nébula.</p>
         <p>Toco el piano. Leo casi todo lo que encuentro. Tengo hambre de muchas cosas y la cabeza llena de universos.</p>
         <p>La literatura argentina tiene muchas voces porteñas, muchas voces académicas, muchas voces de taller. Yo vengo de la fábrica y escribo ciencia ficción desde ahí. No es un discurso. Es lo que soy. Y resultó ser exactamente lo que necesitaba para escribir lo que no podía escribir nadie más.</p>
-        <p><em>Contacto: <a href="mailto:matiasjoelortiz11@gmail.com" style="color:var(--oxido);text-decoration:none;">matiasjoelortiz11@gmail.com</a></em></p>
+        <p><em>Contacto: <a href="#" class="email-link" data-e="zngnfwbrybeghm11@tznvy.pbz" style="color:var(--oxido);text-decoration:none;"><span class="email-text">zngnfwbrybeghm11@tznvy.pbz</span></a></em></p>
       </div>
     </div>
   </section>
@@ -833,13 +838,14 @@
       <em>La fábrica no enseña a escribir. Te enseña a no mentir.</em>
     </p>
     <div class="footer-links">
-      <a href="mailto:matiasjoelortiz11@gmail.com">Email</a>
-      <a href="https://instagram.com/matij.ortiz" target="_blank">Instagram</a>
-      <a href="#" target="_blank">Twitter / X</a>
+      <a href="#" class="email-link" data-e="zngnfwbrybeghm11@tznvy.pbz">Email</a>
+      <a href="https://instagram.com/matij.ortiz" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="#" target="_blank" rel="noopener noreferrer">Twitter / X</a>
     </div>
   </footer>
 
   <script>
+    // Expand/collapse artículos
     document.querySelectorAll('.leer-mas').forEach(function(btn) {
       btn.addEventListener('click', function() {
         var extra = this.previousElementSibling;
