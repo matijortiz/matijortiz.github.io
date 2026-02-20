@@ -446,19 +446,23 @@
 
     /* ── MODO LECTURA INMERSIVO ─────────────────────────────────────────── */
     #lector {
+      display: none;           /* oculto por defecto — sin opacity tricks */
       position: fixed;
-      inset: 0;
-      z-index: 1000;
+      top: 0; left: 0; right: 0; bottom: 0;  /* fallback para inset */
+      z-index: 9999;           /* por encima de absolutamente todo */
       background: #040308;
-      display: flex;
       flex-direction: column;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.38s ease;
     }
     #lector.activo {
-      opacity: 1;
-      pointer-events: all;
+      display: flex;           /* visible — activado por JS */
+    }
+    /* Animación de entrada suave */
+    #lector.activo #lector-scroll {
+      animation: lector-fade 0.3s ease both;
+    }
+    @keyframes lector-fade {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
     }
     /* Barra de progreso */
     #lector-barra {
@@ -597,7 +601,125 @@
       text-shadow: 0 0 20px rgba(184,74,26,0.3);
     }
 
-    /* ── ACCESIBILIDAD — FOCUS VISIBLE ──────────────────────────────────── */
+    /* ── PORTADAS TIPOGRÁFICAS CSS ─────────────────────────────────────── */
+    /* Reemplazan imágenes de stock genéricas por portadas con identidad real.
+       Inspiradas en editoriales como Anagrama, Sigilo, Caja Negra.
+       Cuando tengas portadas reales: cambiá .libro-portada-css por una <img>. */
+    .libro-portada-css {
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.8rem 1.6rem;
+      position: relative;
+      overflow: hidden;
+      transition: filter 0.25s ease;
+    }
+    .libro-card:hover .libro-portada-css { filter: brightness(1.07); }
+
+    /* Textura de grano única por portada */
+    .libro-portada-css::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 1;
+    }
+    /* Línea decorativa superior */
+    .libro-portada-css::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      z-index: 2;
+    }
+    .libro-portada-css > * { position: relative; z-index: 3; }
+
+    /* ─ Portada 1: Promesa y Castigo — tierra, llanura, herencia */
+    .portada-pyc {
+      background:
+        linear-gradient(160deg, #1a0e08 0%, #2e1508 40%, #0e0a06 100%);
+    }
+    .portada-pyc::after { background: var(--oxido); }
+
+    /* ─ Portada 2: Egixi — subsuelo, tecnología alienígena, grafito */
+    .portada-egixi {
+      background:
+        linear-gradient(145deg, #060812 0%, #0d1020 45%, #080a14 100%);
+    }
+    .portada-egixi::after { background: var(--raiz); }
+
+    /* ─ Portada 3: Custodio — vigilia, umbral, oscuridad neutra */
+    .portada-custodio {
+      background:
+        linear-gradient(150deg, #0c0c10 0%, #181820 50%, #080809 100%);
+    }
+    .portada-custodio::after { background: var(--ambar); }
+
+    .portada-numero {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-style: italic;
+      font-size: 5rem;
+      line-height: 1;
+      color: rgba(255,255,255,0.04);
+      position: absolute;
+      top: 1.2rem;
+      right: 1.2rem;
+      user-select: none;
+      z-index: 2;
+    }
+    .portada-autor {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 300;
+      font-size: 0.65rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: rgba(232, 224, 208, 0.45);
+      margin-bottom: 1.2rem;
+    }
+    .portada-titulo-css {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 1.1;
+      color: var(--crema);
+      margin-bottom: 0.5rem;
+    }
+    .portada-subtitulo-css {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 300;
+      font-size: 0.7rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin-top: 0.6rem;
+    }
+    .portada-pyc      .portada-subtitulo-css { color: var(--oxido); }
+    .portada-egixi    .portada-subtitulo-css { color: var(--raiz); }
+    .portada-custodio .portada-subtitulo-css { color: var(--ambar); }
+
+    /* Línea separadora central decorativa */
+    .portada-sep {
+      width: 2rem;
+      height: 1px;
+      margin: 0.8rem 0;
+    }
+    .portada-pyc      .portada-sep { background: var(--oxido); }
+    .portada-egixi    .portada-sep { background: var(--raiz); }
+    .portada-custodio .portada-sep { background: var(--ambar); }
+
+    /* ── PINTURAS — proporciones correctas ──────────────────────────────── */
+    /* Las pinturas antiguas con object-fit:cover quedan decapitadas.
+       Con contain + fondo oscuro se ven completas y en proporción real. */
+    .entrada-imagen.pintura {
+      object-fit: contain;
+      background: #0a0810;
+      height: auto;
+      max-height: 340px;
+      padding: 1rem 0;
+    }
     :focus-visible {
       outline: 1px solid var(--oxido);
       outline-offset: 3px;
@@ -798,7 +920,7 @@
 
       <!-- ARTÍCULO: BELCEBÚ Y GOYA — pintura original del Prado (dominio público) -->
       <article class="entrada">
-        <img class="entrada-imagen"
+        <img class="entrada-imagen pintura"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Goya_Witch_Sabbath.jpg/900px-Goya_Witch_Sabbath.jpg"
           alt="El aquelarre — Francisco de Goya"
           loading="lazy">
@@ -868,7 +990,7 @@
 
       <!-- ARTÍCULO: ROMPE PIERNAS Y GOYA — pintura original (dominio público) -->
       <article class="entrada">
-        <img class="entrada-imagen"
+        <img class="entrada-imagen pintura"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Francisco_de_Goya%2C_Duelo_a_garrotazos%2C_1820-1823.jpg/900px-Francisco_de_Goya%2C_Duelo_a_garrotazos%2C_1820-1823.jpg"
           alt="Duelo a garrotazos — Francisco de Goya"
           loading="lazy">
@@ -913,7 +1035,7 @@
 
       <!-- ARTÍCULO: MANTEGNA — pintura original (dominio público) -->
       <article class="entrada">
-        <img class="entrada-imagen"
+        <img class="entrada-imagen pintura"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Andrea_Mantegna_-_Lamentation_over_the_Dead_Christ_-_Google_Art_Project.jpg/900px-Andrea_Mantegna_-_Lamentation_over_the_Dead_Christ_-_Google_Art_Project.jpg"
           alt="El Cristo muerto — Andrea Mantegna"
           loading="lazy">
@@ -982,11 +1104,15 @@
     <h2 class="libros-header">Publicaciones</h2>
     <div class="libros-grid">
 
-      <!-- LIBRO: Promesa y Castigo -->
+      <!-- LIBRO: Promesa y Castigo — portada tipográfica CSS -->
       <div class="libro-card">
-        <img class="libro-portada"
-          src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=600&h=900&q=85&fit=crop"
-          alt="Promesa y Castigo — portada">
+        <div class="libro-portada-css portada-pyc">
+          <span class="portada-numero">I</span>
+          <p class="portada-autor">Matias J. Ortiz</p>
+          <div class="portada-sep"></div>
+          <h3 class="portada-titulo-css">Promesa<br>y Castigo</h3>
+          <p class="portada-subtitulo-css">Once herencias malditas del litoral</p>
+        </div>
         <div class="libro-contenido">
           <h3 class="libro-titulo">Promesa y Castigo</h3>
           <div class="libro-subtitulo">Once herencias malditas del litoral</div>
@@ -1002,11 +1128,15 @@
         </div>
       </div>
 
-      <!-- LIBRO: Egixi -->
+      <!-- LIBRO: Egixi — portada tipográfica CSS -->
       <div class="libro-card">
-        <img class="libro-portada"
-          src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=600&h=900&q=85&fit=crop"
-          alt="Egixi — portada">
+        <div class="libro-portada-css portada-egixi">
+          <span class="portada-numero">II</span>
+          <p class="portada-autor">Matias J. Ortiz</p>
+          <div class="portada-sep"></div>
+          <h3 class="portada-titulo-css">Egixi</h3>
+          <p class="portada-subtitulo-css">Seis relatos de la ocupación</p>
+        </div>
         <div class="libro-contenido">
           <h3 class="libro-titulo">Egixi</h3>
           <div class="libro-subtitulo">Seis relatos de la ocupación</div>
@@ -1022,11 +1152,15 @@
         </div>
       </div>
 
-      <!-- LIBRO: Custodio -->
+      <!-- LIBRO: Custodio — portada tipográfica CSS -->
       <div class="libro-card">
-        <img class="libro-portada"
-          src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&h=900&q=85&fit=crop"
-          alt="Custodio — portada">
+        <div class="libro-portada-css portada-custodio">
+          <span class="portada-numero">III</span>
+          <p class="portada-autor">Matias J. Ortiz</p>
+          <div class="portada-sep"></div>
+          <h3 class="portada-titulo-css">Custodio</h3>
+          <p class="portada-subtitulo-css">Novela corta · Patas de Cabra</p>
+        </div>
         <div class="libro-contenido">
           <h3 class="libro-titulo">Custodio</h3>
           <div class="libro-subtitulo">Novela corta</div>
@@ -1085,7 +1219,7 @@
     </div>
     <div id="lector-scroll">
       <div id="lector-contenido">
-        <img id="lector-imagen" src="" alt="">
+        <img id="lector-imagen" alt="" style="display:none;">
         <div id="lector-meta">
           <span id="lector-meta-tipo"></span>
           <span id="lector-meta-fecha"></span>
