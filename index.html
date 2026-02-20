@@ -7,7 +7,7 @@
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com https://upload.wikimedia.org https://cdna.artstation.com https://cdn.midjourney.com data:; script-src 'self' 'unsafe-inline'; connect-src 'none';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com https://upload.wikimedia.org https://cdna.artstation.com https://cdn.midjourney.com data:; script-src 'self'; connect-src 'none';">
   <title>Matias J. Ortiz — Escritor de Ciencia Ficción | Rosario Argentina</title>
   <meta name="description" content="Matias J. Ortiz. Escritor rosarino de ciencia ficción especulativa. Autor de Egixi, Promesa y Castigo, Custodio. Literatura cruda desde la fábrica.">
   <meta name="keywords" content="Matias Ortiz, Matias J. Ortiz, escritor, ciencia ficción, literatura argentina, Rosario, Egixi, Promesa y Castigo, Custodio">
@@ -806,7 +806,7 @@
             <span class="libro-badge">Patas de Cabra</span>
           </div>
           <div class="libro-links">
-            <a href="#" class="email-link" data-e="zngnfwbrybeghm11@tznvy.pbz" class="libro-boton secondary">Contacto</a>
+            <a href="#" class="email-link libro-boton secondary" data-e="zngnfwbrybeghm11@tznvy.pbz">Contacto</a>
           </div>
         </div>
       </div>
@@ -844,17 +844,7 @@
     </div>
   </footer>
 
-  <script>
-    // Expand/collapse artículos
-    document.querySelectorAll('.leer-mas').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        var extra = this.previousElementSibling;
-        if (!extra || !extra.classList.contains('entrada-extra')) return;
-        var abierto = extra.classList.toggle('abierto');
-        this.textContent = abierto ? 'Cerrar ↑' : 'Seguir leyendo →';
-      });
-    });
-  </script>
+  <script src="script.js" defer></script>
 
 </body>
 </html>
