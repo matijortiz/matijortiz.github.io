@@ -3,12 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matias J. Ortiz — Escritor</title>
-  <meta name="description" content="Matias J. Ortiz. Ciencia ficción especulativa desde Rosario, Argentina. Universo Egixi. Promesa y Castigo.">
-  <!-- FAVICON SVG inline -->
+  <title>Matias J. Ortiz — Escritor de Ciencia Ficción | Rosario Argentina</title>
+  <meta name="description" content="Matias J. Ortiz. Escritor rosarino de ciencia ficción especulativa. Autor de Egixi, Promesa y Castigo, Custodio. Literatura cruda desde la fábrica. Universo Egixi.">
+  <meta name="keywords" content="Matias Ortiz, Matias J. Ortiz, escritor, ciencia ficción, literatura argentina, Rosario, Egixi, Promesa y Castigo, Custodio, ciencia ficción especulativa, literatura cruda, universo Egixi">
+  <meta name="author" content="Matias J. Ortiz">
+  <meta property="og:title" content="Matias J. Ortiz — Escritor de Ciencia Ficción | Rosario Argentina">
+  <meta property="og:description" content="Escritor rosarino de ciencia ficción especulativa. Autor de Egixi, Promesa y Castigo. Literatura cruda desde la fábrica.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://matijortiz.github.io">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Matias J. Ortiz — Escritor de Ciencia Ficción">
+  <meta name="twitter:description" content="Escritor rosarino de ciencia ficción especulativa. Literatura cruda desde la fábrica.">
+  <link rel="canonical" href="https://matijortiz.github.io">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%2308070a'/><path d='M16 2 C16 14 11 17 10 26 C9 31 13 31 16 32' stroke='%23b84a1a' stroke-width='1.5' fill='none'/><path d='M16 8 C13 11 8 12 5 17' stroke='%237fc47a' stroke-width='0.8' fill='none' opacity='0.7'/><path d='M16 16 C19 19 23 20 24 24' stroke='%237fc47a' stroke-width='0.8' fill='none' opacity='0.5'/></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Barlow+Condensed:wght@300;400;700&family=Barlow:wght@300;400&display=swap" rel="stylesheet">
+  
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Matias J. Ortiz",
+    "jobTitle": "Escritor",
+    "description": "Escritor de ciencia ficción especulativa desde Rosario, Argentina",
+    "url": "https://matijortiz.github.io",
+    "sameAs": [
+      "https://instagram.com/matij.ortiz"
+    ],
+    "knowsAbout": [
+      "Ciencia Ficción",
+      "Literatura Argentina",
+      "Escritura",
+      "Rosario"
+    ],
+    "works": [
+      {
+        "@type": "Book",
+        "name": "Egixi",
+        "description": "Seis relatos del universo de la ocupación extraterrestre"
+      },
+      {
+        "@type": "Book", 
+        "name": "Promesa y Castigo",
+        "description": "Once herencias malditas del litoral santafesino"
+      },
+      {
+        "@type": "Book",
+        "name": "Custodio",
+        "description": "Novela corta publicada por Editorial Patas de Cabra"
+      }
+    ]
+  }
+  </script>
   <style>
     :root {
       --negro:   #08070a;
@@ -87,12 +134,12 @@
     .hero-datos { display: flex; flex-direction: column; gap: 0.4rem; font-family: 'Barlow Condensed', sans-serif; font-size: 0.9rem; letter-spacing: 0.1em; color: var(--gris); }
     .hero-datos strong { color: var(--crema); font-weight: 400; }
     .raiz-deco { position: absolute; bottom: 0; right: 0; width: 180px; height: 260px; opacity: 0.055; pointer-events: none; }
-    .contenedor { display: grid; grid-template-columns: 280px 1fr 220px; min-height: 60vh; }
-    .sidebar-izq { border-right: 1px solid var(--linea); padding: 2.5rem 1.8rem; position: sticky; top: 0; height: 100vh; overflow-y: auto; }
+    .contenedor { display: grid; grid-template-columns: 320px 1fr 280px; min-height: 60vh; }
+    .sidebar-izq { border-right: 1px solid var(--linea); padding: 2.5rem 2.2rem; position: sticky; top: 0; height: 100vh; overflow-y: auto; }
     .sidebar-izq::-webkit-scrollbar { width: 3px; }
     .sidebar-izq::-webkit-scrollbar-thumb { background: var(--oxido); border-radius: 2px; }
     .widget { margin-bottom: 2.5rem; }
-    .widget-titulo { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--oxido); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--linea); }
+    .widget-titulo { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.95rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--oxido); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--linea); }
     .pub-item { margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--linea); }
     .pub-item:last-child { border-bottom: none; }
     .pub-titulo { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1rem; color: var(--crema); margin-bottom: 0.2rem; }
@@ -103,7 +150,7 @@
     .badge-espera    { background: rgba(100,100,120,0.2);   color: var(--gris); }
     .escribiendo-item { font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: var(--gris); margin-bottom: 0.6rem; position: relative; padding-left: 0.8rem; }
     .escribiendo-item::before { content: '\2937'; position: absolute; left: 0; color: var(--oxido); }
-    .feed { padding: 2.5rem 3rem; max-width: 780px; width: 100%; }
+    .feed { padding: 2.5rem 3.5rem; max-width: 820px; width: 100%; margin: 0 auto; }
     .entrada-imagen { width: 100%; height: 240px; object-fit: cover; display: block; margin-bottom: 1.5rem; opacity: 0.75; filter: contrast(1.1) sepia(0.1) brightness(0.85); border-radius: 2px; border-left: 2px solid var(--oxido); }
     .entrada { margin-bottom: 4.5rem; padding-bottom: 4rem; border-bottom: 1px solid var(--linea); animation: entrada-fade 0.6s ease both; }
     @keyframes entrada-fade { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
@@ -134,15 +181,39 @@
     .entrada-extra p:last-child  { margin-bottom: 0; }
     .leer-mas { display: inline-block; margin-top: 1.2rem; font-family: 'Barlow Condensed', sans-serif; font-size: 0.8rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--oxido); border-bottom: 1px solid transparent; transition: border-color 0.2s, color 0.2s; cursor: pointer; background: none; border-top: none; border-left: none; border-right: none; padding: 0; }
     .leer-mas:hover { color: var(--ambar); border-bottom-color: var(--ambar); }
-    .sobre-mi { border-top: 1px solid var(--linea); padding: 3rem 2.8rem; position: relative; }
+    /* SECCIÓN LIBROS */
+    .libros { border-top: 1px solid var(--linea); padding: 4rem 3rem; position: relative; background: linear-gradient(135deg, var(--negro) 0%, var(--grafito) 100%); }
+    .libros::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, var(--oxido), transparent 40%); }
+    .libros h2 { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.95rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--oxido); margin-bottom: 3rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--linea); text-align: center; }
+    .libros-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem; max-width: 1200px; margin: 0 auto; }
+    .libro-card { background: rgba(28,28,38,0.3); border: 1px solid var(--linea); border-radius: 8px; overflow: hidden; transition: transform 0.3s ease, border-color 0.3s ease; }
+    .libro-card:hover { transform: translateY(-4px); border-color: var(--oxido); }
+    .libro-imagen { width: 100%; height: 380px; object-fit: cover; display: block; }
+    .libro-contenido { padding: 2rem; }
+    .libro-titulo { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 1.4rem; color: var(--crema); margin-bottom: 0.8rem; line-height: 1.2; }
+    .libro-subtitulo { font-family: 'Barlow Condensed', sans-serif; font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gris); margin-bottom: 1.2rem; }
+    .libro-descripcion { font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.7; color: #c8c0b0; margin-bottom: 1.5rem; }
+    .libro-datos { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-bottom: 1.5rem; font-size: 0.85rem; color: var(--gris); }
+    .libro-dato { background: rgba(184,74,26,0.1); padding: 0.3rem 0.8rem; border-radius: 12px; color: var(--ambar); }
+    .libro-links { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .libro-boton { display: inline-block; padding: 0.6rem 1.2rem; font-family: 'Barlow Condensed', sans-serif; font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; border-radius: 4px; transition: all 0.2s ease; }
+    .libro-boton.primary { background: var(--oxido); color: var(--crema); }
+    .libro-boton.primary:hover { background: var(--ambar); }
+    .libro-boton.secondary { border: 1px solid var(--oxido); color: var(--oxido); }
+    .libro-boton.secondary:hover { background: var(--oxido); color: var(--crema); }
+    @media (max-width: 768px) {
+      .libros { padding: 3rem 1.5rem; }
+      .libros-grid { grid-template-columns: 1fr; gap: 2rem; }
+    }
+    .sobre-mi { border-top: 1px solid var(--linea); padding: 4rem 3rem; position: relative; background: var(--grafito); }
     .sobre-mi::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, var(--oxido), transparent 40%); }
-    .sobre-mi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; max-width: 900px; }
-    .sobre-mi h2 { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--oxido); margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--linea); grid-column: 1 / -1; }
+    .sobre-mi-grid { display: grid; grid-template-columns: 300px 1fr; gap: 4rem; max-width: 1000px; margin: 0 auto; align-items: center; }
+    .sobre-mi h2 { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.95rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--oxido); margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--linea); grid-column: 1 / -1; text-align: center; }
     .sobre-texto { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; line-height: 1.85; color: #c8c0b0; }
     .sobre-texto em { color: var(--crema); font-style: italic; }
     .sobre-texto p  { margin-bottom: 1rem; }
     .sobre-texto p:last-child { margin-bottom: 0; }
-    .sidebar-der { border-left: 1px solid var(--linea); padding: 2.5rem 1.5rem; position: sticky; top: 0; height: 100vh; overflow-y: auto; }
+    .sidebar-der { border-left: 1px solid var(--linea); padding: 2.5rem 2rem; position: sticky; top: 0; height: 100vh; overflow-y: auto; }
     .sidebar-der::-webkit-scrollbar { width: 3px; }
     .sidebar-der::-webkit-scrollbar-thumb { background: var(--acero); border-radius: 2px; }
     .lectura-item { margin-bottom: 1.3rem; padding-bottom: 1.3rem; border-bottom: 1px solid var(--linea); }
@@ -163,8 +234,12 @@
     .footer-links a { font-family: 'Barlow Condensed', sans-serif; font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gris); text-decoration: none; transition: color 0.2s; }
     .footer-links a:hover { color: var(--crema); }
     @media (max-width: 1100px) {
-      .contenedor { grid-template-columns: 250px 1fr; }
+      .contenedor { grid-template-columns: 280px 1fr; }
       .sidebar-der { display: none; }
+    }
+    @media (max-width: 900px) {
+      .sobre-mi-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .sobre-foto { max-width: 400px; margin: 0 auto; }
     }
     @media (max-width: 700px) {
       .hero { grid-template-columns: 1fr; height: auto; max-height: none; }
@@ -192,6 +267,7 @@
     </a>
     <nav>
       <a href="#escritos">Escritos</a>
+      <a href="#libros">Libros</a>
       <a href="#lecturas">Lecturas</a>
       <a href="#sobre">Sobre mí</a>
       <a href="mailto:matiasjoelortiz11@gmail.com">Contacto</a>
@@ -274,7 +350,7 @@
 
       <!-- ARTÍCULO: GENIUS -->
       <article class="entrada">
-        <img class="entrada-imagen" src="https://cdna.artstation.com/p/assets/images/images/015/019/928/large/kateryna-shpak-asset.jpg?1546737002"lazy">
+        <img class="entrada-imagen" src="https://cdna.artstation.com/p/assets/images/images/015/019/928/large/kateryna-shpak-asset.jpg?1546737002" alt="Ciencia ficción especulativa" loading="lazy">
         <div class="entrada-meta">
           <span class="entrada-tipo">Sobre un relato</span>
           <span class="entrada-fecha">Febrero 2026</span>
@@ -297,7 +373,7 @@
 
       <!-- ARTÍCULO: LOS TÚNELES -->
       <article class="entrada">
-        <img class="entrada-imagen" src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=900&q=80&fit=crop" alt="Túnel oscuro" loading="lazy">
+        <img class="entrada-imagen" src="https://www.artstation.com/artwork/XLEx3" alt="Túnel industrial distópico" loading="lazy">
         <div class="entrada-meta">
           <span class="entrada-tipo">Final de libro</span>
           <span class="entrada-fecha">Febrero 2026</span>
@@ -316,9 +392,78 @@
         <button class="leer-mas">Seguir leyendo →</button>
       </article>
 
+      <!-- SECCIÓN LIBROS -->
+      <section class="libros" id="libros">
+        <h2>Publicaciones</h2>
+        
+        <!-- INSTRUCCIONES: Para agregar un nuevo libro, copia y pega un bloque <div class="libro-card"> completo -->
+        <!-- INSTRUCCIONES: Reemplaza los datos en cada campo: imagen, título, subtítulo, descripción, datos y enlaces -->
+        
+        <div class="libros-grid">
+          
+          <!-- EJEMPLO DE LIBRO 1 - Promesa y Castigo -->
+          <div class="libro-card">
+            <img class="libro-imagen" src="https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=600&q=80&fit=crop" alt="Promesa y Castigo">
+            <div class="libro-contenido">
+              <h3 class="libro-titulo">Promesa y Castigo</h3>
+              <div class="libro-subtitulo">Once herencias malditas del litoral</div>
+              <p class="libro-descripcion">Once relatos que cruzan el litoral santafesino y la pampa. Herencias que no son plata ni tierra, sino manchas que se pasan de padre a hijo como si fueran amor.</p>
+              <div class="libro-datos">
+                <span class="libro-dato">2026</span>
+                <span class="libro-dato">Relatos</span>
+                <span class="libro-dato">Litoral</span>
+              </div>
+              <div class="libro-links">
+                <a href="#" class="libro-boton primary">Comprar</a>
+                <a href="#" class="libro-boton secondary">Leer reseña</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- EJEMPLO DE LIBRO 2 - Egixi -->
+          <div class="libro-card">
+            <img class="libro-imagen" src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=600&q=80&fit=crop" alt="Egixi">
+            <div class="libro-contenido">
+              <h3 class="libro-titulo">Egixi</h3>
+              <div class="libro-subtitulo">Seis relatos de la ocupación</div>
+              <p class="libro-descripcion">El universo Egixi existe. Vive en Rosario. Seis relatos del subsuelo de la ciudad ocupada, donde la resistencia no es armada sino la del que aprende solo.</p>
+              <div class="libro-datos">
+                <span class="libro-dato">Ciencia Ficción</span>
+                <span class="libro-dato">Rosario</span>
+                <span class="libro-dato">Próximamente</span>
+              </div>
+              <div class="libro-links">
+                <a href="#" class="libro-boton primary">Próximamente</a>
+                <a href="#" class="libro-boton secondary">Conocer más</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- EJEMPLO DE LIBRO 3 - Custodio -->
+          <div class="libro-card">
+            <img class="libro-imagen" src="https://images.unsplash.com/photo-1578926375605-eaf7559b1458?w=600&q=80&fit=crop" alt="Custodio">
+            <div class="libro-contenido">
+              <h3 class="libro-titulo">Custodio</h3>
+              <div class="libro-subtitulo">Novela corta</div>
+              <p class="libro-descripcion">Publicado por Editorial Patas de Cabra. Una historia sobre lo que queda cuando todo lo que conocés se vuelve ajeno y tenés que elegir entre custodiar o desaparecer.</p>
+              <div class="libro-datos">
+                <span class="libro-dato">Publicado</span>
+                <span class="libro-dato">Patas de Cabra</span>
+                <span class="libro-dato">Rosario</span>
+              </div>
+              <div class="libro-links">
+                <a href="#" class="libro-boton primary">Comprar</a>
+                <a href="#" class="libro-boton secondary">Leer reseña</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
       <!-- ARTÍCULO: PROMESA Y CASTIGO -->
       <article class="entrada">
-        <img class="entrada-imagen" src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=900&q=80&fit=crop" alt="Llanura santafesina" loading="lazy">
+        <img class="entrada-imagen" src="https://images.unsplash.com/photo-1519791883288-dc8bd696e667?w=900&q=80&fit=crop" alt="Llanura santafesina" loading="lazy">
         <div class="entrada-meta">
           <span class="entrada-tipo">El libro</span>
           <span class="entrada-fecha">Febrero 2026</span>
@@ -338,7 +483,7 @@
 
       <!-- ARTÍCULO: CÓMO SE ESCRIBE UN LIBRO QUE TE ASUSTA -->
       <article class="entrada">
-        <img class="entrada-imagen" src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=900&q=80&fit=crop" alt="Escritura a mano" loading="lazy">
+        <img class="entrada-imagen" src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=900&q=80&fit=crop" alt="Manuscrito oscuro" loading="lazy">
         <div class="entrada-meta">
           <span class="entrada-tipo">Proceso</span>
           <span class="entrada-fecha">Febrero 2026</span>
@@ -379,7 +524,7 @@
 
       <!-- ARTÍCULO: LO QUE SIGUE CRECIENDO EN EGIXI -->
       <article class="entrada">
-        <img class="entrada-imagen" src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=900&q=80&fit=crop" alt="Ciudad vista desde afuera" loading="lazy">
+        <img class="entrada-imagen" src="https://cdna.artstation.com/p/assets/images/images/015/019/928/large/kateryna-shpak-asset.jpg?1546737002" alt="Universo Egixi expansivo" loading="lazy">
         <div class="entrada-meta">
           <span class="entrada-tipo">Universo</span>
           <span class="entrada-fecha">Febrero 2026</span>
@@ -399,7 +544,7 @@
 
       <!-- ARTÍCULO: WINDUMANOTH -->
       <article class="entrada">
-        <img class="entrada-imagen" src="https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=900&q=80&fit=crop" alt="Pantalla en blanco" loading="lazy">
+        <img class="entrada-imagen" src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=900&q=80&fit=crop" alt="Escritura cyberpunk" loading="lazy">
         <div class="entrada-meta">
           <span class="entrada-tipo">Diario de trabajo</span>
           <span class="entrada-fecha">Febrero 2026</span>
@@ -419,7 +564,7 @@
 
       <!-- ARTÍCULO: ROMPE PIERNAS Y GOYA -->
       <article class="entrada">
-        <img class="entrada-imagen" src="https://images.unsplash.com/photo-1580136579312-94651dfd596d?w=900&q=80&fit=crop" alt="Violencia y tierra" loading="lazy">
+        <img class="entrada-imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Francisco_de_Goya%2C_Duelo_a_garrotazos%2C_1820-1823.jpg/1280px-Francisco_de_Goya%2C_Duelo_a_garrotazos%2C_1820-1823.jpg" alt="Duelo a garrotazos - Goya" loading="lazy">
         <div class="entrada-meta">
           <span class="entrada-tipo">Mirada</span>
           <span class="entrada-fecha">Febrero 2026</span>
@@ -439,7 +584,7 @@
 
       <!-- ARTÍCULO: SAMOVAR -->
       <article class="entrada">
-        <img class="entrada-imagen" src="https://images.unsplash.com/photo-1519791883288-dc8bd696e667?w=900&q=80&fit=crop" alt="Máquina de escribir" loading="lazy">
+        <img class="entrada-imagen" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900&q=80&fit=crop" alt="Máquina de escribir" loading="lazy">
         <div class="entrada-meta">
           <span class="entrada-tipo">En construcción</span>
           <span class="entrada-fecha">Enero 2026</span>
@@ -458,7 +603,7 @@
 
       <!-- ARTÍCULO: MANTEGNA -->
       <article class="entrada">
-        <img class="entrada-imagen" src="https://images.unsplash.com/photo-1577083552431-6e5fd01988ec?w=900&q=80&fit=crop" alt="Pintura clásica" loading="lazy">
+        <img class="entrada-imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Andrea_Mantegna_-_Lamentation_over_the_Dead_Christ_-_Google_Art_Project.jpg/1280px-Andrea_Mantegna_-_Lamentation_over_the_Dead_Christ_-_Google_Art_Project.jpg" alt="El Cristo muerto de Mantegna" loading="lazy">
         <div class="entrada-meta">
           <span class="entrada-tipo">Mirada</span>
           <span class="entrada-fecha">Enero 2026</span>
@@ -474,7 +619,7 @@
 
       <!-- ARTÍCULO: FÁBRICA -->
       <article class="entrada">
-        <img class="entrada-imagen" src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=80&fit=crop" alt="Trabajo industrial" loading="lazy">
+        <img class="entrada-imagen" src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=900&q=80&fit=crop" alt="Proceso creativo industrial" loading="lazy">
         <div class="entrada-meta">
           <span class="entrada-tipo">Proceso</span>
           <span class="entrada-fecha">Enero 2026</span>
@@ -512,12 +657,13 @@
   <section class="sobre-mi" id="sobre">
     <div class="sobre-mi-grid">
       <h2>Sobre mí</h2>
+      <div class="sobre-foto">
+        <img src="https://www.deviantart.com/mettalynk/art/Stylized-Cyberpunk-Android-930126872" alt="Androide cyberpunk escritor" style="width: 100%; height: 400px; object-fit: cover; object-position: center 40%; border-radius: 4px; opacity: 0.85;">
+      </div>
       <div class="sobre-texto">
         <p>Me llamo Matias Joel Ortiz. Nací y vivo en Rosario, Santa Fe. Laboro nueve horas por día soldando. El resto del tiempo escribo ciencia ficción especulativa.</p>
         <p>Tengo un libro en competencia — <em>Promesa y Castigo</em>, once herencias malditas del litoral santafesino — y otro buscando su lugar: <em>Egixi</em>, seis relatos del universo de la ocupación extraterrestre. Antes publiqué en Editorial Patas de Cabra y en Distopía Nébula.</p>
         <p>Toco el piano. Leo casi todo lo que encuentro. Tengo hambre de muchas cosas y la cabeza llena de universos.</p>
-      </div>
-      <div class="sobre-texto">
         <p>La literatura argentina tiene muchas voces porteñas, muchas voces académicas, muchas voces de taller. Yo vengo de la fábrica y escribo ciencia ficción desde ahí. No es un discurso. Es lo que soy.</p>
         <p>Y resultó ser exactamente lo que necesitaba para escribir lo que no podía escribir nadie más.</p>
         <p><em>Contacto: <a href="mailto:matiasjoelortiz11@gmail.com" style="color:var(--oxido);text-decoration:none;">matiasjoelortiz11@gmail.com</a></em></p>
@@ -532,7 +678,7 @@
     </p>
     <div class="footer-links">
       <a href="mailto:matiasjoelortiz11@gmail.com">Email</a>
-      <a href="#" target="_blank">Instagram</a>
+      <a href="https://instagram.com/matij.ortiz" target="_blank">Instagram</a>
       <a href="#" target="_blank">Twitter / X</a>
     </div>
   </footer>
