@@ -1,0 +1,208 @@
+---
+// src/pages/index.astro
+import Layout from '../layouts/Layout.astro';
+import ArticuloCard from '../components/ArticuloCard.astro';
+import { getCollection } from 'astro:content';
+import { parseArticulo } from '../utils/parseArticulo';
+
+// Cargar artículos publicados, ordenados por campo "orden" (menor = primero)
+const articulos = (await getCollection('articulos', ({ data }) => !data.draft))
+  .sort((a, b) => (a.data.orden ?? 99) - (b.data.orden ?? 99));
+
+// Parsear cada artículo en sus secciones
+const items = articulos.map((art) => ({
+  art,
+  secciones: parseArticulo(art.body),
+}));
+---
+
+<Layout>
+
+<!-- ── HERO ── -->
+<section class="hero" aria-label="Presentación">
+  <div class="hero-foto">
+    <img src="/foto.jpg" alt="Matias J. Ortiz" loading="eager">
+  </div>
+  <div class="hero-texto">
+    <span class="hero-etiqueta">Rosario · Santa Fe · Argentina</span>
+    <h1 class="hero-nombre">Matias <em>J. Ortiz</em></h1>
+    <p class="hero-bajada">
+      Ciencia ficción especulativa desde adentro de la fábrica.<br>
+      El universo Egixi existe. Vive en Rosario.
+    </p>
+    <div class="hero-datos">
+      <span><strong>Publicado en:</strong> Custodio / Editorial Patas de Cabra · La Granja / Distopía Nébula / Editorial Rubin</span>
+      <span><strong>En competencia:</strong> Promesa y Castigo / Fundación El Libro 2026 · Metal que Crece / Premio UPC 2026</span>
+      <span><strong>Laburante. Escritor. Rosarino.</strong></span>
+    </div>
+    <svg class="raiz-deco" viewBox="0 0 200 300" aria-hidden="true">
+      <path d="M100,0 C100,0 80,60 60,90 C40,120 20,130 30,160 C40,190 80,180 90,210 C100,240 85,280 100,300" stroke="rgba(127,196,122,0.8)" stroke-width="2" fill="none"/>
+      <path d="M100,80 C100,80 130,100 150,130 C160,150 155,180 140,190" stroke="rgba(127,196,122,0.5)" stroke-width="1.5" fill="none"/>
+      <path d="M90,140 C90,140 60,155 50,175 C45,190 55,205 65,200" stroke="rgba(127,196,122,0.4)" stroke-width="1" fill="none"/>
+      <circle cx="100" cy="0" r="3" fill="rgba(127,196,122,0.6)"/>
+      <circle cx="140" cy="190" r="2" fill="rgba(127,196,122,0.4)"/>
+      <circle cx="65" cy="200" r="2" fill="rgba(127,196,122,0.4)"/>
+    </svg>
+  </div>
+</section>
+
+<div class="contenedor">
+
+  <!-- SIDEBAR IZQ -->
+  <aside class="sidebar-izq" aria-label="Publicaciones y proyectos">
+    <div class="widget">
+      <h2 class="widget-titulo">Publicaciones</h2>
+      <div class="pub-item">
+        <div class="pub-titulo">Custodio</div>
+        <div class="pub-donde">Editorial Patas de Cabra · Rosario</div>
+        <span class="estado-badge badge-publicado">Publicado</span>
+      </div>
+      <div class="pub-item">
+        <div class="pub-titulo">La Granja</div>
+        <div class="pub-donde">Distopía Nébula / Editorial Rubin</div>
+        <span class="estado-badge badge-publicado">Publicado</span>
+      </div>
+      <div class="pub-item">
+        <div class="pub-titulo">Egixi</div>
+        <div class="pub-donde">Sigilo · Caja Negra</div>
+        <span class="estado-badge badge-espera">Buscando editorial</span>
+      </div>
+      <div class="pub-item">
+        <div class="pub-titulo">Promesa y Castigo</div>
+        <div class="pub-donde">Fundación El Libro 2026</div>
+        <span class="estado-badge badge-concurso">En competencia</span>
+      </div>
+      <div class="pub-item">
+        <div class="pub-titulo">Narrativa corta</div>
+        <div class="pub-donde">Windumanoth (ESP)</div>
+        <span class="estado-badge badge-espera">Esperando convocatoria</span>
+      </div>
+    </div>
+    <div class="widget">
+      <h2 class="widget-titulo">Escribiendo ahora</h2>
+      <div class="escribiendo-item">Metal que Crece (díptico UPC)</div>
+      <div class="escribiendo-item">Nuevos relatos Egixi</div>
+      <div class="escribiendo-item">Narrativa para Samovar</div>
+      <div class="escribiendo-item">Reina Madre (novela corta)</div>
+    </div>
+  </aside>
+
+  <!-- FEED PRINCIPAL -->
+  <main class="feed" id="escritos" aria-label="Artículos">
+    {items.map(({ art, secciones }) => (
+      <ArticuloCard
+        id={`entrada-${art.slug}`}
+        titulo={art.data.titulo}
+        tipo={art.data.tipo}
+        fecha={art.data.fecha}
+        imagen={art.data.imagen}
+        imagenAlt={art.data.imagenAlt}
+        pintura={art.data.pintura}
+        fragmento={art.data.fragmento}
+        coleccion={art.data.coleccion}
+        cuerpoHtml={secciones.cuerpoHtml}
+        fragmentoHtml={secciones.fragmentoHtml}
+        analisisHtml={secciones.analisisHtml}
+        extraHtml={secciones.extraHtml}
+      />
+    ))}
+  </main>
+
+  <!-- SIDEBAR DER -->
+  <aside class="sidebar-der" id="lecturas" aria-label="Lecturas">
+    <div class="widget">
+      <h2 class="widget-titulo">Leyendo ahora</h2>
+      <div class="lectura-item"><div class="lectura-titulo">Trafalgar</div><div class="lectura-autor">Angélica Gorodischer</div></div>
+      <div class="lectura-item"><div class="lectura-titulo">Annihilation</div><div class="lectura-autor">Jeff VanderMeer</div></div>
+      <div class="lectura-item"><div class="lectura-titulo">Zama</div><div class="lectura-autor">Antonio Di Benedetto</div></div>
+      <div class="lectura-item"><div class="lectura-titulo">Los pichiciegos</div><div class="lectura-autor">Rodolfo Fogwill</div></div>
+      <div class="lectura-item"><div class="lectura-titulo">Operación Masacre</div><div class="lectura-autor">Rodolfo Walsh</div></div>
+      <div class="lectura-item"><div class="lectura-titulo">Distancia de rescate</div><div class="lectura-autor">Samanta Schweblin</div></div>
+    </div>
+  </aside>
+
+</div>
+
+<!-- ── PUBLICACIONES ── -->
+<section class="libros" id="libros" aria-label="Publicaciones">
+  <h2 class="libros-header">Publicaciones</h2>
+  <div class="libros-grid">
+
+    <div class="libro-card">
+      <div class="libro-portada-css portada-pyc">
+        <span class="portada-numero" aria-hidden="true">I</span>
+        <div class="portada-autor">Matias J. Ortiz</div>
+        <div class="portada-titulo-css">Promesa y Castigo</div>
+        <div class="portada-sep"></div>
+        <div class="portada-subtitulo-css">Once herencias malditas del litoral</div>
+      </div>
+      <div class="libro-contenido">
+        <div class="libro-titulo">Promesa y Castigo</div>
+        <div class="libro-subtitulo">Once herencias malditas del litoral</div>
+        <p class="libro-descripcion">Once relatos que cruzan el litoral santafesino y la pampa. Herencias que no son plata ni tierra, sino manchas que se pasan de padre a hijo como si fueran amor.</p>
+        <div class="libro-badges"><span class="libro-badge">2026</span><span class="libro-badge">Relatos</span><span class="libro-badge">En competencia</span></div>
+        <div class="libro-links">
+          <button class="libro-boton primary" data-abrir-entrada="entrada-promesa-y-castigo">Leer sobre el libro</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="libro-card">
+      <div class="libro-portada-css portada-egixi">
+        <span class="portada-numero" aria-hidden="true">II</span>
+        <div class="portada-autor">Matias J. Ortiz</div>
+        <div class="portada-titulo-css">Egixi</div>
+        <div class="portada-sep"></div>
+        <div class="portada-subtitulo-css">Seis relatos de la ocupación</div>
+      </div>
+      <div class="libro-contenido">
+        <div class="libro-titulo">Egixi</div>
+        <div class="libro-subtitulo">Seis relatos de la ocupación</div>
+        <p class="libro-descripcion">El universo Egixi existe. Vive en Rosario. Seis relatos del subsuelo de la ciudad ocupada, donde la resistencia no es armada sino la del que aprende solo.</p>
+        <div class="libro-badges"><span class="libro-badge">Ciencia ficción</span><span class="libro-badge">Rosario</span><span class="libro-badge">Buscando editorial</span></div>
+        <div class="libro-links">
+          <button class="libro-boton primary" data-abrir-entrada="entrada-genius">Leer sobre el libro</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="libro-card">
+      <div class="libro-portada-css portada-custodio">
+        <span class="portada-numero" aria-hidden="true">III</span>
+        <div class="portada-autor">Matias J. Ortiz</div>
+        <div class="portada-titulo-css">Custodio</div>
+        <div class="portada-sep"></div>
+        <div class="portada-subtitulo-css">Relato Corto · Patas de Cabra</div>
+      </div>
+      <div class="libro-contenido">
+        <div class="libro-titulo">Custodio</div>
+        <div class="libro-subtitulo">Relato</div>
+        <p class="libro-descripcion">Publicado por Editorial Patas de Cabra. Una historia sobre lo que queda cuando todo lo que conocés se vuelve ajeno y tenés que elegir entre custodiar, reprimir o perder el control.</p>
+        <div class="libro-badges"><span class="libro-badge">Publicado</span><span class="libro-badge">Patas de Cabra</span></div>
+        <div class="libro-links">
+          <a href="#" class="libro-boton secondary email-link" data-e="zngnfwbrybeghm11@tznvy.pbz">Contacto</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── SOBRE MÍ ── -->
+<section class="sobre-mi" id="sobre" aria-label="Sobre el autor">
+  <div class="sobre-mi-grid">
+    <h2>Sobre mí</h2>
+    <div class="sobre-foto">
+      <img src="/foto2.JPG" alt="Matias J. Ortiz" loading="lazy">
+      <span class="sobre-foto-nombre">Matias J. Ortiz · Rosario</span>
+    </div>
+    <div class="sobre-texto">
+      <p>Me llamo Matias Joel Ortiz. Nací y vivo en Rosario, Santa Fe. Laboro nueve horas por día. El resto del tiempo le pego a las teclas hasta que las articulaciones duelan.</p>
+      <p>Tengo un libro en competencia — <em>Promesa y Castigo</em>, once herencias malditas del litoral santafesino — y otro buscando su lugar: <em>Egixi</em>, seis relatos del universo de la ocupación extraterrestre. Antes publiqué en Editorial Patas de Cabra y en Distopía Nébula.</p>
+      <p>Toco el piano. Leo casi todo lo que encuentro. Tengo hambre de muchas cosas y la cabeza llena de libros para escribir.</p>
+      <p>La literatura argentina tiene muchas voces porteñas, muchas voces académicas. Yo no vengo de ahí. Escribo ciencia ficción desde mi cuerpo, las herencias malditas las escribo desde mi árbol genealógico. No es un discurso. Es lo que soy.</p>
+    </div>
+  </div>
+</section>
+
+</Layout>

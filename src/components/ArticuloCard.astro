@@ -1,0 +1,83 @@
+---
+// src/components/ArticuloCard.astro
+// Renderiza un artículo en el feed principal.
+// Acepta tanto artículos de la colección (slug) como props directas.
+
+export interface Props {
+  id?: string;
+  slug?: string;
+  titulo: string;
+  tipo: string;
+  fecha: string;
+  imagen?: string;
+  imagenAlt?: string;
+  pintura?: boolean;
+  fragmento?: string;       // nombre del relato para el libro-lector
+  coleccion?: string;       // "Egixi · Matias J. Ortiz · Rosario"
+  cuerpoHtml: string;       // HTML del texto visible
+  extraHtml?: string;       // HTML del texto expandido (entrada-extra)
+  analisisHtml?: string;    // HTML del análisis (entre fragmento y extra)
+  fragmentoHtml?: string;   // HTML del fragmento para el libro-lector
+}
+
+const {
+  id,
+  slug,
+  titulo,
+  tipo,
+  fecha,
+  imagen,
+  imagenAlt,
+  pintura = false,
+  fragmento,
+  coleccion,
+  cuerpoHtml,
+  extraHtml,
+  analisisHtml,
+  fragmentoHtml,
+} = Astro.props;
+
+const imgClass = `entrada-imagen${pintura ? ' pintura' : ''}`;
+const artId = id || (slug ? `entrada-${slug}` : undefined);
+---
+
+<article class="entrada" id={artId}>
+  {imagen && (
+    <img
+      class={imgClass}
+      src={imagen}
+      alt={imagenAlt || titulo}
+      loading="lazy"
+    />
+  )}
+
+  <div class="entrada-meta">
+    <span class="entrada-tipo">{tipo}</span>
+    <span class="entrada-fecha">{fecha}</span>
+  </div>
+
+  <h2 class="entrada-titulo" set:html={titulo} />
+
+  <div class="entrada-cuerpo" set:html={cuerpoHtml} />
+
+  {fragmentoHtml && fragmento && (
+    <div
+      class="fragmento-contenido"
+      data-titulo={fragmento}
+      data-coleccion={coleccion || `Matias J. Ortiz · Rosario`}
+      set:html={fragmentoHtml}
+    />
+  )}
+
+  {analisisHtml && (
+    <div class="entrada-analisis" set:html={analisisHtml} />
+  )}
+
+  {extraHtml && (
+    <div class="entrada-extra" set:html={extraHtml} />
+  )}
+
+  <button class="leer-mas" aria-label={`Abrir artículo: ${titulo}`}>
+    Seguir leyendo →
+  </button>
+</article>

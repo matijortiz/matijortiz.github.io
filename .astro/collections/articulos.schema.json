@@ -1,0 +1,52 @@
+{
+  "$ref": "#/definitions/articulos",
+  "definitions": {
+    "articulos": {
+      "type": "object",
+      "properties": {
+        "titulo": {
+          "type": "string"
+        },
+        "tipo": {
+          "type": "string"
+        },
+        "fecha": {
+          "type": "string"
+        },
+        "imagen": {
+          "type": "string"
+        },
+        "imagenAlt": {
+          "type": "string"
+        },
+        "pintura": {
+          "type": "boolean",
+          "default": false
+        },
+        "fragmento": {
+          "type": "string"
+        },
+        "coleccion": {
+          "type": "string"
+        },
+        "draft": {
+          "type": "boolean",
+          "default": false
+        },
+        "orden": {
+          "type": "number"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "titulo",
+        "tipo",
+        "fecha"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
