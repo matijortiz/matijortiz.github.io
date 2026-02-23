@@ -156,7 +156,17 @@ collections:
   # Lecturas del sidebar derecho
   - name: "lecturas"
     label: "Leyendo ahora"
-    file: "src/content/sidebar/lecturas.json"
+    files:
+      - label: "Leyendo ahora"
+        name: "lecturas"
+        file: "src/content/sidebar/lecturas.json"
+        fields:
+          - label: "Libros"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Título", name: "titulo", widget: "string" }
+              - { label: "Autor", name: "autor", widget: "string" }
     fields:
       - label: "Libros"
         name: "items"
