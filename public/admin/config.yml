@@ -1,48 +1,33 @@
 # ══════════════════════════════════════════════
-# Decap CMS — Matias J. Ortiz
+# Sveltia CMS — Matias J. Ortiz
 # Panel: https://matijortiz.github.io/admin
 # ══════════════════════════════════════════════
 
-# Para desarrollo local (sin OAuth): ejecutá npx decap-server en otra terminal
-# y descomentá la línea de abajo:
-# local_backend: true
-
-
 backend:
-  name: github
-  repo: matijortiz/matijortiz.github.io   # ← tu usuario/repo en GitHub
-  branch: main
-  backend:
   name: github
   repo: matijortiz/matijortiz.github.io
   branch: main
   base_url: https://sveltia-cms-auth.pages.dev
-  
-# Donde viven los archivos de medios (imágenes subidas desde el CMS)
+
 media_folder: "public/uploads"
 public_folder: "/uploads"
 
-# ── COLECCIONES ────────────────────────────────
 collections:
 
-  # Artículos del feed principal
   - name: "articulos"
     label: "Artículos"
     label_singular: "Artículo"
     folder: "src/content/articulos"
     create: true
-    slug: "{{slug}}"           # nombre del archivo = slug del título
+    slug: "{{slug}}"
     format: "frontmatter"
     extension: "md"
     preview_path: "/#entrada-{{slug}}"
-
     fields:
-
       - label: "Título"
         name: "titulo"
         widget: "string"
         hint: "Podés usar <em>cursiva</em> con etiquetas HTML"
-
       - label: "Tipo"
         name: "tipo"
         widget: "select"
@@ -58,78 +43,61 @@ collections:
           - "En construcción"
           - "Sobre el libro"
         default: "Sobre un relato"
-
       - label: "Fecha"
         name: "fecha"
         widget: "string"
         default: "Febrero 2026"
         hint: "Ej: Febrero 2026 (se muestra tal cual)"
-
       - label: "Imagen"
         name: "imagen"
         widget: "string"
         required: false
-        hint: "URL de la imagen de cabecera (Artstation, Wikimedia, Unsplash, etc.)"
-
+        hint: "URL de la imagen de cabecera"
       - label: "Alt de la imagen"
         name: "imagenAlt"
         widget: "string"
         required: false
-
       - label: "¿Es una pintura?"
         name: "pintura"
         widget: "boolean"
         default: false
-        hint: "Activá para pinturas (Goya, Mantegna, etc.) — usa object-fit:contain"
-
+        hint: "Activá para pinturas — usa object-fit:contain"
       - label: "Nombre del relato (para libro-lector)"
         name: "fragmento"
         widget: "string"
         required: false
-        hint: "Ej: GENIUS — aparece como título en el modo libro"
-
+        hint: "Ej: GENIUS"
       - label: "Colección (para libro-lector)"
         name: "coleccion"
         widget: "string"
         required: false
         default: "Egixi · Matias J. Ortiz · Rosario"
-        hint: "Ej: Egixi · Matias J. Ortiz · Rosario"
-
       - label: "Borrador"
         name: "draft"
         widget: "boolean"
         default: false
         hint: "Los borradores no se publican en el sitio"
-
       - label: "Orden"
         name: "orden"
         widget: "number"
         required: false
         hint: "Número para ordenar manualmente (menor = primero)"
-
       - label: "Contenido"
         name: "body"
         widget: "markdown"
         hint: |
-          Estructura del artículo con separadores:
-
-          El texto acá es el CUERPO visible (entrada-cuerpo).
-
+          Estructura con separadores:
+          Cuerpo visible del artículo.
           <!-- FRAGMENTO -->
-          Acá va el texto del relato para el libro-lector (oculto, tipografiado como libro).
-
+          Texto del relato para el libro-lector.
           <!-- ANALISIS -->
-          Acá va el análisis del cuento (visible en modo lectura, entre el fragmento y el extra).
-
+          Análisis literario.
           <!-- EXTRA -->
-          Acá va el texto expandido (se revela al hacer Seguir leyendo).
+          Texto expandido al hacer "Seguir leyendo".
 
-
-  # Datos del sidebar izquierdo (publicaciones, escribiendo ahora)
   - name: "sidebar"
     label: "Sidebar"
     files:
-
       - label: "Publicaciones"
         name: "publicaciones"
         file: "src/content/sidebar/publicaciones.json"
@@ -147,7 +115,6 @@ collections:
                   - { label: "Publicado", value: "publicado" }
                   - { label: "En competencia", value: "concurso" }
                   - { label: "Esperando", value: "espera" }
-
       - label: "Escribiendo ahora"
         name: "escribiendo"
         file: "src/content/sidebar/escribiendo.json"
@@ -158,8 +125,6 @@ collections:
             fields:
               - { label: "Título", name: "titulo", widget: "string" }
 
-
-  # Lecturas del sidebar derecho
   - name: "lecturas"
     label: "Leyendo ahora"
     files:
@@ -173,10 +138,3 @@ collections:
             fields:
               - { label: "Título", name: "titulo", widget: "string" }
               - { label: "Autor", name: "autor", widget: "string" }
-    fields:
-      - label: "Libros"
-        name: "items"
-        widget: "list"
-        fields:
-          - { label: "Título", name: "titulo", widget: "string" }
-          - { label: "Autor", name: "autor", widget: "string" }
