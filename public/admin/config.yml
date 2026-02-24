@@ -12,8 +12,7 @@ backend:
   name: github
   repo: matijortiz/matijortiz.github.io   # ← tu usuario/repo en GitHub
   branch: main
-
-yamlbackend:
+  backend:
   name: github
   repo: matijortiz/matijortiz.github.io
   branch: main
