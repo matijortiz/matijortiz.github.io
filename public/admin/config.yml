@@ -175,8 +175,8 @@ collections:
           - { label: "Título", name: "titulo", widget: "string" }
           - { label: "Autor", name: "autor", widget: "string" }
 
-    yamlbackend:
-    name: github
-    repo: matijortiz/matijortiz.github.io
-    branch: main
-    base_url: https://sveltia-cms-auth.pages.dev
+  yamlbackend:
+  name: github
+  repo: matijortiz/matijortiz.github.io
+  branch: main
+  base_url: https://sveltia-cms-auth.pages.dev
