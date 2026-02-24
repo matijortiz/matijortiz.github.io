@@ -8,12 +8,17 @@
 # local_backend: true
 
 
-  backend:
-    name: github
-    repo: matijortiz/matijortiz.github.io
-    branch: main
-    base_url: https://sveltia-cms-auth.pages.dev
+backend:
+  name: github
+  repo: matijortiz/matijortiz.github.io   # ← tu usuario/repo en GitHub
+  branch: main
 
+yamlbackend:
+  name: github
+  repo: matijortiz/matijortiz.github.io
+  branch: main
+  base_url: https://sveltia-cms-auth.pages.dev
+  
 # Donde viven los archivos de medios (imágenes subidas desde el CMS)
 media_folder: "public/uploads"
 public_folder: "/uploads"
