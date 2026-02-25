@@ -28,7 +28,7 @@ No vaya nunca la sangre mía a pelearse entre sí por ese pedazo de tierra. Más
 Porque el campo de La Ortiga no es solo campo.
 Es promesa y castigo.
 
-***
+<p>***</p>
 
 Yo nací en una de esas casas con frente a medio construir: patio de barro, chapas mediante con los vecinos. Papá solía azotarme con la hebilla del cinturón cuando me ponía a cazar palomas con la gomera. No quería que yo ande por ahí haciéndome el indio. Decía que toda vida es sagrada. 
 Con mis hermanas íbamos a la escuela, cruzando los rieles con el mate cocido en la panza. Ni pateábamos piedras para cuidar las zapatillas. Mi vieja amasaba los guardapolvos en un agua espesa y cuando te lo calzaba pesaban como armadura. A la tardecita, especialmente en días de lluvia, salíamos con una bicicleta a vender torta frita por el barrio.
@@ -53,7 +53,7 @@ Grité.
 El viejo apagó la máquina. Me miró con los ojos grandes. Tenía la cara blanca. El líquido refrigerante se mezclaba con la sangre en el piso.
 Después el mundo se apagó.
 
-***
+<p>***</p>
 
 Compramos un pedazo de tierra en las afueras de Entre Ríos, a unos treinta kilómetros de Paraná. Contraté dos peones que me ayudaban con la carretilla, las piedras y la arena. Yo mezclar podía, llevar cosas y martillar podía. Y mientras tanto, La Magdalena se hacía en el fondo un jardín lleno de helechos y flores.
 Terminé los cimientos. Hice la tranquera. Los ojos celestes de mi mujer sacaron lustre al ver terminado el cartel: le pintamos el nombre con letra linda, grandote y en color blanco. La Ortiga. Esa planta que si por descuido te la llevás por delante te pica hasta donde el sol no llega.
@@ -107,7 +107,7 @@ Se fue caminando hacia el monte. Despacio. Sin mirar atrás.
 Quedé temblando.
 Después de eso, las cosas se pusieron feas.
 
-***
+<p>***</p>
 
 La lluvia seguía. El barro me frenaba. El caballo iba despacio. Yo lo espoleaba. Pensaba en el changuito. En La Magdalena. En la fiebre.
 Y entonces lo vi.
