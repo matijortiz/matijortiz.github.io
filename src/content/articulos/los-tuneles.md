@@ -12,6 +12,7 @@ Un libro de relatos necesita un final que justifique todo lo que vino antes. No 
 
 Los Túneles es ese relato. Lo que pasa abajo — literalmente abajo, en la estructura subterránea de la ciudad ocupada — es lo que pasa en todos los demás relatos pero sin la capa de normalidad encima. Sin los caparazones. Sin los respiradores. Sin los escopetazos de muerte azul. Solo lo que queda cuando sacás todo lo que los Egixi pusieron arriba.
 
+<!-- FRAGMENTO -->
 La luz era un privilegio para otros.
 Fuego, a veces. Cuando conseguían quemar algo que no fuera necesario para otra cosa. Casi nunca. La mayor parte del tiempo los cuerpos se arrastraban en una oscuridad grasa, reconociéndose mejor por el olor y el ruido.
 Estaba en la esquina donde siempre estaba.
