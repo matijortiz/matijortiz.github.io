@@ -5,7 +5,7 @@ fecha: "Febrero 2026"
 imagen: "https://cdna.artstation.com/p/assets/images/images/043/543/634/large/oha-04.jpg?1637589441"
 imagenAlt: "Tunel oscuro — Los Tuneles"
 pintura: true
-fragmento: "Los Tuneles"
+fragmento: "LOS TÚNELES"
 coleccion: "Egixi · Matias J. Ortiz · Rosario"
 orden: 3
 ---
