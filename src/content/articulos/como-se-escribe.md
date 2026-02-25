@@ -16,8 +16,6 @@ Promesa y Castigo empezó con un solo cuento: La Ortiga. Lo llevé a mis compañ
 Después le agregué partes. Lo rompí. Lo armé de nuevo. Le pasé la amoladora. Lo volví a pulir, le puse voz matrera y textura al gaucho, cerré los agujeros con soldadura. Se lo mostré a mi familia. Mi hermana se lo leyó a mis viejos en voz alta. Así quedó La Ortiga. Y como la mano amputada de nuestro protagonista que hereda tierra, les comparto pedazos de La Ortiga.
 
 <!-- FRAGMENTO -->
-LA ORTIGA
-
 Les dejo esto como testamento.
 Cuando el más viejo de la familia habla, hasta los gurises se callan y escuchan. Escúchenme.
 Lo que les voy a contar no es cuento ni disparate de viejo. Es advertencia. Es verdad. Es lo que pasó en la tierra que les heredo. La tierra que bauticé como La Ortiga.
