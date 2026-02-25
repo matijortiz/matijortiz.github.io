@@ -10,15 +10,23 @@ coleccion: "Egixi · Matias J. Ortiz · Rosario"
 orden: 2
 ---
 
-Rompe Piernas lo escribí tercero, cuando todavía no sabía bien de qué iba el libro. La Muda la escribí última, cuando ya lo sabía demasiado. Entre las dos hay meses de distancia y horas silla-culo. La pregunta sigue ahí: la misma pregunta hecha desde orillas opuestas del río.
+Rompe Piernas lo escribí tercero, cuando todavía no sabía bien de qué iba el libro Egixi. La Muda la escribí casi en estos días, cuando ya lo sabía demasiado. Entre los dos escritos hay meses de distancia. Las horas silla-culo y la cabeza fundida me están pasando factura. Pero eso no importa porque la pregunta sigue ahí: la misma pregunta hecha desde orillas opuestas del río.
 
-Goya pintó Duelo a garrotazos en 1820, en la pared de su propia casa. Dos hombres en la llanura, golpeándose con garrotes. Pero si mirás bien, los dos están hundidos hasta las rodillas en el mismo barro. Ninguno puede ganar. El campo los está tragando mientras pelean. Eso es Rompe Piernas: Julián en silla de ruedas y el enforcer Egixi que cumple órdenes. Ninguno eligió el barro. Los dos se hunden en él.
+Goya pintó Duelo a garrotazos en 1820, en la pared de su propia casa. Dos hombres en la llanura, golpeándose con garrotes. Pero si mirás bien, los dos están hundidos hasta las rodillas en el mismo barro. Ninguno puede ganar. El campo los está tragando mientras pelean. Eso es Rompe Piernas: El Narrador en silla de ruedas y el enforcer Egixi que cumple órdenes. Ninguno eligió el barro. Los dos se hunden en él.
 
-Julián construye resistencia de la única manera que puede: rompe piernas. No como crueldad — como táctica. Los pibes que no pueden caminar no pueden trabajar en las canteras. Tienen que quedarse adentro y aprender a leer. La violencia de Julián es la única que le devuelve algo al sistema. Cuando mata al Quitinoso de un picazo, es un antes y un después. Ellos descubren lo que está al margen del límite. Julián devuelve el golpe por todos.
+El Narrador en Rompe Piernas construye resistencia de la única manera que puede: rompe piernas. No como crueldad — como táctica. Los pibes que no pueden caminar no pueden trabajar en las canteras. Tienen que quedarse adentro y aprender a leer. Su violencia es la única que le devuelve la piña al sistema. Cuando Julián mata al Quitinoso de un picazo, es un antes y un después. Devuelve el golpe por todos. Ellos descubren que lo que está al margen del límite, es pintura despegándose de las paredes.
 
 <!-- FRAGMENTO -->
 
-[Insertar primeras páginas de La Muda aquí]
+Dibujo animales en los márgenes de la tablet.
+No debería. Los datos van en el centro, las cantidades a la derecha, los dibujitos de las unidades a la izquierda. Los márgenes son para las correcciones. Pero yo los uso para otra cosa.
+El Chancho tiene veintitrés marcas en rojo. Empecé a dibujarlo el día que levantó al de la silla con una sola mano y lo cargó por el barro sin que el otro se lo pidiera. Lo cargó como se carga a una cría: desde abajo, sin apretar. No sé por qué lo dibujé. Hay cosas que no tienen casillero en la tablet.
+Al Monito le llevo diecisiete. Es el que más trabajo me da. Se mueve distinto cada vez que lo miro, las proporciones le cambian, como si creciera entre una pincelada y la siguiente. Tiene una pata mala —la izquierda, abajo de la articulación— y sin embargo corre. Eso no debería ser posible. Una unidad con daño estructural debería arrastrarse, no correr. Pero el Monito corre, y lo peor es que mira. Me mira. Con esos sensores húmedos que tienen, dos esferas que les llenan la mitad de la cara, abiertas siempre, captando todo. La mayoría baja los sensores cuando paso. El Monito no. El Monito me estudia como yo lo estudio a él.
+Eso me molesta. Me molesta y me interesa. Que son dos versiones del mismo problema.
+A la Tortuga Sentada le dediqué nueve dibujitos, no más. Es difícil de dibujar porque casi no se mueve. Está siempre en la misma posición, sobre esa estructura con ruedas que rechinan, las extremidades superiores caídas, la cabeza ladeada, un hilo de baba colgando. Categoría: inválido, prescindible. Eso dice mi informe. Mis trazos dicen otra cosa. 
+Los nueve dibujitos muestran algo que no tiene que ver con la posición del cuerpo: muestran los sensores. Ellos les dicen: ojos.
+Los de la Tortuga Sentada son los más rápidos de toda la cantera. Se mueven cuando cree que no lo miro. Calculan distancias, cuentan pasos, registran intenciones y ángulos. Hace exactamente lo mismo que yo.
+Eso no me molesta. Eso me aterra.
 
 <!-- ANALISIS -->
 
@@ -30,6 +38,6 @@ La muda es el momento en que la coraza cae. La carne nueva queda expuesta al fr�
 
 <!-- EXTRA -->
 
-Eso es lo que une a los dos relatos. No la violencia — la violencia está en los dos, pero no es el centro. El centro es el gesto que la violencia no puede producir ni explicar. Lo que cruza la línea de la especie sin pedir permiso. Julián enseña a leer desde la silla. El Monito abriga a la que lo vigila.
+Eso es lo que une a los dos relatos. No la violencia — la violencia está en los dos, pero no es el centro. El centro es el gesto que la violencia no puede producir ni explicar. Lo que cruza la línea de la especie sin pedir permiso. El garrotazo que llega desde el barro de la Cantera. El narrador enseña a leer desde la silla de ruedas. El Monito abriga a la que lo vigila.
 
 *Rompe Piernas termina cuando el primer pibe dice en silencio la primera palabra que aprendió. La Muda termina cuando la Capataz no devuelve la campera. Lo que pasó en el medio no tiene nombre todavía en ningún idioma.*
