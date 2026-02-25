@@ -8,6 +8,7 @@ pintura: false
 orden: 3
 ---
 
+<!-- CUERPO -->
 Un libro de relatos necesita un final que justifique todo lo que vino antes. No un resumen. No un cierre prolijo. Algo que deje al lector en un lugar distinto al que estaba cuando empezó.
 
 Los Túneles es ese relato. Lo que pasa abajo — literalmente abajo, en la estructura subterránea de la ciudad ocupada — es lo que pasa en todos los demás relatos pero sin la capa de normalidad encima. Sin los caparazones. Sin los respiradores. Sin los escopetazos de muerte azul. Solo lo que queda cuando sacás todo lo que los Egixi pusieron arriba.
@@ -44,6 +45,7 @@ Ella levantó la cabeza. Ojos antiguos. Reptil que vio el sol. Y él sentía eso
 Le hablaba. No con palabras, porque las palabras se le enredaban en la lengua y le salían rotas. Lo hizo con sonidos. Sonidos suaves, guturales.
 —Arriba, hay luz —dijo la abuela.
 
+<!-- ANALISIS -->
 El libro completo — Los Egixi, Rosa Carnívora, Rompe Piernas, Reina Madre, El Tajo, Los Túneles — está guardado en un cajón. Pudriéndose ahí, como se pudren los libros que nadie pidió pero que ya existen y no tienen adonde ir.
 
 Cuando esté listo para salir, va directo a dos editoriales. *Sigilo*, porque lo que hacen con la narrativa argentina de los márgenes es exactamente lo que este libro necesita que alguien haga con él. Y *Caja Negra*, porque tiene el espacio para algo que no entra fácil en ninguna categoría, y Egixi no entra fácil en ninguna categoría.
