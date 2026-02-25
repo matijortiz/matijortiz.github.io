@@ -2,7 +2,7 @@
 titulo: "Mediomundo: <em>lo que no se puede tirar</em>"
 tipo: "Sobre un relato"
 fecha: "Febrero 2026"
-imagen: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=80&fit=crop"
+imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Csontv%C3%A1ry_Kosztka%2C_Tivadar_-_Old_Fisherman_%281902%29.jpg/960px-Csontv%C3%A1ry_Kosztka%2C_Tivadar_-_Old_Fisherman_%281902%29.jpg"
 imagenAlt: "Río Paraná — Mediomundo"
 pintura: false
 fragmento: "MEDIOMUNDO"
