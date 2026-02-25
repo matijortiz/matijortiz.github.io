@@ -19,13 +19,21 @@ El Narrador en Rompe Piernas construye resistencia de la única manera que puede
 <!-- FRAGMENTO -->
 
 Dibujo animales en los márgenes de la tablet.
+
 No debería. Los datos van en el centro, las cantidades a la derecha, los dibujitos de las unidades a la izquierda. Los márgenes son para las correcciones. Pero yo los uso para otra cosa.
+
 El Chancho tiene veintitrés marcas en rojo. Empecé a dibujarlo el día que levantó al de la silla con una sola mano y lo cargó por el barro sin que el otro se lo pidiera. Lo cargó como se carga a una cría: desde abajo, sin apretar. No sé por qué lo dibujé. Hay cosas que no tienen casillero en la tablet.
+
 Al Monito le llevo diecisiete. Es el que más trabajo me da. Se mueve distinto cada vez que lo miro, las proporciones le cambian, como si creciera entre una pincelada y la siguiente. Tiene una pata mala —la izquierda, abajo de la articulación— y sin embargo corre. Eso no debería ser posible. Una unidad con daño estructural debería arrastrarse, no correr. Pero el Monito corre, y lo peor es que mira. Me mira. Con esos sensores húmedos que tienen, dos esferas que les llenan la mitad de la cara, abiertas siempre, captando todo. La mayoría baja los sensores cuando paso. El Monito no. El Monito me estudia como yo lo estudio a él.
+
 Eso me molesta. Me molesta y me interesa. Que son dos versiones del mismo problema.
-A la Tortuga Sentada le dediqué nueve dibujitos, no más. Es difícil de dibujar porque casi no se mueve. Está siempre en la misma posición, sobre esa estructura con ruedas que rechinan, las extremidades superiores caídas, la cabeza ladeada, un hilo de baba colgando. Categoría: inválido, prescindible. Eso dice mi informe. Mis trazos dicen otra cosa. 
+
+A la Tortuga Sentada le dediqué nueve dibujitos, no más. Es difícil de dibujar porque casi no se mueve. Está siempre en la misma posición, sobre esa estructura con ruedas que rechinan, las extremidades superiores caídas, la cabeza ladeada, un hilo de baba colgando. Categoría: inválido, prescindible. Eso dice mi informe. Mis trazos dicen otra cosa.
+
 Los nueve dibujitos muestran algo que no tiene que ver con la posición del cuerpo: muestran los sensores. Ellos les dicen: ojos.
+
 Los de la Tortuga Sentada son los más rápidos de toda la cantera. Se mueven cuando cree que no lo miro. Calculan distancias, cuentan pasos, registran intenciones y ángulos. Hace exactamente lo mismo que yo.
+
 Eso no me molesta. Eso me aterra.
 
 <!-- ANALISIS -->
