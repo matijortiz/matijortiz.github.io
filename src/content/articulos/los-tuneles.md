@@ -3,10 +3,10 @@ titulo: "Los Túneles: <em>el último relato del libro Egixi</em>"
 tipo: "Final de libro"
 fecha: "Febrero 2026"
 imagen: "https://cdna.artstation.com/p/assets/images/images/043/543/634/large/oha-04.jpg?1637589441"
-imagenAlt: "Túnel oscuro — Los Túneles"
+imagenAlt: "Tunel oscuro — Los Tuneles"
 pintura: true
-fragmento: "Los Túneles"
-coleccion: "Egixi · Matias J. Ortiz · Rosario
+fragmento: "Los Tuneles"
+coleccion: "Egixi · Matias J. Ortiz · Rosario"
 orden: 3
 ---
 
