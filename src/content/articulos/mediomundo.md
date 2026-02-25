@@ -94,10 +94,10 @@ Se quedó mirándome. Se calló. Después se dio vuelta y me miró otra vez.
 
 No se puede tirar. No se puede escapar. Matungo lo intentó con Lucas. No pudo. Yo lo intenté con Tomás. Tampoco voy a poder.
 
-La maldición sobrenatural es el vehículo. El tema real es si la violencia heredada puede cortarse, o si solo puede pasarse. Chiri le pega a Carmina. El abuelo Negro dice que a las mujeres hay que tenerlas cortitas. El narrador en *Cochambre* no sabe si quiere proteger al pibe o ser el tipo que lo marca. Esa cadena es más poderosa que cualquier objeto maldito.
+La maldición sobrenatural es el vehículo del libro. El tema real es si la violencia heredada puede cortarse, o si solo puede pasarse. Chiri le pega a Carmina. El abuelo Negro dice que a las mujeres hay que tenerlas cortitas. El narrador en *Cochambre* no sabe si quiere proteger al pibe o ser el tipo que lo marca. Esa cadena es más poderosa que cualquier objeto maldito.
 
 El final no cierra. Clausura, sí: el narrador toma una decisión. Pero no resuelve la pregunta. *Los dedos chiquitos se cerraron alrededor del metal.* Tomás tiene días de nacido y ya está sosteniendo lo que lo va a perseguir. ¿Es eso condena o transmisión? El cuento no lo dice. Lo vas a tener que responder vos.
 
-El hallazgo mayor del relato es la cicatriz del labio: aparece en el narrador, reaparece en Tomás en la última escena. Herencia física, inscrita en el cuerpo, sin explicación. Eso no lo escribe alguien que planea. Lo encuentra quien sabe mirar lo que escribió.
+El hallazgo mayor del relato es... lo vas a tener que leer.
 
 Dentro de *Promesa y Castigo*, este relato tiene una función precisa: es el puente entre el mundo histórico y el presente. La herencia llegó al siglo XXI. Llegó a Rosario. Llegó a la fábrica. Se adaptó. Y sigue.
