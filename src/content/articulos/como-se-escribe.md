@@ -39,11 +39,11 @@ Yo tenía miedo de que en uno de esos tiros se le resbalase la máquina y me cor
 <p>Un día, el viejo y yo estábamos haciendo herrería. Él cortaba. Yo sostenía. Me dijo que sostenga el fierro. Yo lo agarré con las dos manos. El hierro pesaba. Estaba muy frío.<br>
 Encendió la amoladora y el ruido llenó el taller. Las chispas saltaron.<br>
 —Sostenelo firme —me gritó.<br>
-Sostuve.<br>
+Sostuve.
 Y el viejo cortó.</p>
 <p>Las manos del viejo siempre temblaban. Yo lo sabía. Todos lo sabían.<br>
-Y la máquina se resbaló.<br>
-Vi la cuchilla ir hacia los dedos. Intenté soltar. No llegué.<br>
+Y la máquina se resbaló.
+Vi la cuchilla ir hacia los dedos. Intenté soltar. No llegué.
 No sentí dolor de inmediato. Vi los dedos en el piso. Cuatro. Separados de mí. Todavía se movían. Separados de la mano. Me bajó la presión. El olor de mano chamuscada parecía de otro.<br>
 Índice. Mayor. Anular. Meñique.</p>
 <p>Después llegó el dolor. Fuego en la mano, como metida en brasas.<br>
