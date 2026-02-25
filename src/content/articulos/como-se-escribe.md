@@ -5,7 +5,7 @@ fecha: "Febrero 2026"
 imagen: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=900&q=80&fit=crop"
 imagenAlt: "Escritura a mano — proceso"
 pintura: false
-orden: 5
+orden: 2
 ---
 
 Promesa y Castigo empezó con un solo cuento: La Ortiga. Lo llevé a mis compañeros de Editorial Patas de Cabra y me dijeron que les traía recuerdos de "El Sur" de Borges. Semanas antes yo había encontrado ese cuento por primera vez y me había roto la cabeza — nunca me había gustado Borges y de repente lo amaba. Me dijeron que La Ortiga estaba para presentar en algún concurso.
