@@ -8,6 +8,8 @@ pintura: true
 fragmento: "LA MUDA"
 coleccion: "Egixi · Matias J. Ortiz · Rosario"
 orden: 2
+seoTitulo: "Rompe Piernas y La Muda — Matias J. Ortiz | Egixi"
+seoDescripcion: "Dos relatos del universo Egixi narrados desde orillas opuestas: el narrador humano en silla de ruedas y la capataz alienígena que empieza a sentir lo que no tiene casillero."
 ---
 
 Rompe Piernas lo escribí tercero, cuando todavía no sabía bien de qué iba el libro Egixi. La Muda la escribí casi en estos días, cuando ya lo sabía demasiado. Entre los dos escritos hay meses de distancia. Las horas silla-culo y la cabeza fundida me están pasando factura. Pero eso no importa porque la pregunta sigue ahí: hecha desde orillas opuestas del río.
