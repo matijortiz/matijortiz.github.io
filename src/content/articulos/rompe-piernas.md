@@ -10,7 +10,7 @@ coleccion: "Egixi · Matias J. Ortiz · Rosario"
 orden: 2
 ---
 
-Rompe Piernas lo escribí tercero, cuando todavía no sabía bien de qué iba el libro Egixi. La Muda la escribí casi en estos días, cuando ya lo sabía demasiado. Entre los dos escritos hay meses de distancia. Las horas silla-culo y la cabeza fundida me están pasando factura. Pero eso no importa porque la pregunta sigue ahí: la misma pregunta hecha desde orillas opuestas del río.
+Rompe Piernas lo escribí tercero, cuando todavía no sabía bien de qué iba el libro Egixi. La Muda la escribí casi en estos días, cuando ya lo sabía demasiado. Entre los dos escritos hay meses de distancia. Las horas silla-culo y la cabeza fundida me están pasando factura. Pero eso no importa porque la pregunta sigue ahí: hecha desde orillas opuestas del río.
 
 Goya pintó Duelo a garrotazos en 1820, en la pared de su propia casa. Dos hombres en la llanura, golpeándose con garrotes. Pero si mirás bien, los dos están hundidos hasta las rodillas en el mismo barro. Ninguno puede ganar. El campo los está tragando mientras pelean. Eso es Rompe Piernas: El Narrador en silla de ruedas y el enforcer Egixi que cumple órdenes. Ninguno eligió el barro. Los dos se hunden en él.
 
