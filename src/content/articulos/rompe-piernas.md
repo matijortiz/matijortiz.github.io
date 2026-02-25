@@ -14,7 +14,7 @@ Rompe Piernas lo escribí tercero, cuando todavía no sabía bien de qué iba el
 
 Goya pintó Duelo a garrotazos en 1820, en la pared de su propia casa. Dos hombres en la llanura, golpeándose con garrotes. Pero si mirás bien, los dos están hundidos hasta las rodillas en el mismo barro. Ninguno puede ganar. El campo los está tragando mientras pelean. Eso es Rompe Piernas: El Narrador en silla de ruedas y el enforcer Egixi que cumple órdenes. Ninguno eligió el barro. Los dos se hunden en él.
 
-El Narrador en Rompe Piernas construye resistencia de la única manera que puede: rompe piernas. No como crueldad — como táctica. Los pibes que no pueden caminar no pueden trabajar en las canteras. Tienen que quedarse adentro y aprender a leer. Su violencia es la única que le devuelve la piña al sistema. Cuando Julián mata al Quitinoso de un picazo, es un antes y un después. Devuelve el golpe por todos. Ellos descubren que lo que está al margen del límite, es pintura despegándose de las paredes.
+El Narrador en Rompe Piernas construye resistencia de la única manera que puede: rompe piernas. No como crueldad — como táctica. Los pibes que no pueden caminar no pueden trabajar en las canteras. Tienen que quedarse adentro y aprender a leer. Su violencia es la única que le devuelve la piña al sistema. Cuando Julián mata al Quitinoso de un picazo, es un antes y un después. Devuelve el golpe por todos. Ellos descubren que lo que está al margen del límite, es pintura despegándose de las paredes, como la protagonista de La Muda poniéndoles nombres de animales a los protagonistas del otro relato: Rompe Piernas; humanos de la cantera que le resultan incognoscibles.
 
 <!-- FRAGMENTO -->
 
