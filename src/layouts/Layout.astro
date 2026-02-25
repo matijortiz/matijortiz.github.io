@@ -1,0 +1,150 @@
+---
+// src/layouts/Layout.astro
+// Layout base del sitio. Header, footer, overlays y scripts.
+
+export interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+}
+
+const {
+  title = 'Matias J. Ortiz — Escritor de Ciencia Ficción | Rosario Argentina',
+  description = 'Ciencia ficción especulativa desde adentro de la fábrica. Rosario, Santa Fe, Argentina.',
+  ogImage = '/promesaycastigo.png'
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:image" content={`https://matijortiz.github.io${ogImage}`}>
+  <meta property="og:url" content="https://matijortiz.github.io">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content={`https://matijortiz.github.io${ogImage}`}>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%2308070a'/><text y='.9em' font-size='80' x='10'>✦</text></svg>">
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Barlow+Condensed:wght@300;400;700&family=Barlow:wght@300;400&display=swap">
+
+  <!-- Estilos globales -->
+  <link rel="stylesheet" href="/styles/global.css">
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header>
+  <a href="/" class="site-logo" aria-label="Inicio">
+    <span class="l-nombre">Matias </span>
+    <span class="l-inicial">J.</span>
+    <span class="l-apellido"> Ortiz</span>
+  </a>
+  <nav aria-label="Navegación principal" id="nav-principal">
+    <a href="/#escritos">Blog</a>
+    <a href="/#libros">Libros</a>
+    <a href="/#lecturas">Lecturas</a>
+    <a href="/#sobre">Sobre mí</a>
+    <a href="#" class="email-link" data-e="zngnfwbrybeghm11@tznvy.pbz">Contacto</a>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-principal">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- Strip móvil -->
+<div class="mobile-strip" aria-label="Estado actual">
+  <div class="mobile-strip-item">
+    <span class="mobile-strip-label">En competencia</span>
+    <span class="mobile-strip-valor">Fundación El Libro 2026</span>
+  </div>
+  <div class="mobile-strip-sep"></div>
+  <div class="mobile-strip-item">
+    <span class="mobile-strip-label">Escribiendo</span>
+    <span class="mobile-strip-valor">Metal que Crece · Reina Madre</span>
+  </div>
+</div>
+
+<!-- Contenido de la página -->
+<slot />
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-izq">
+    <div class="footer-firma-nombre">Matias J. Ortiz · Rosario, Argentina</div>
+    <p class="footer-frase">La fábrica no enseña a escribir.<br>Te enseña a no mentir.</p>
+  </div>
+  <nav class="footer-links" aria-label="Redes">
+    <a href="#" class="email-link" data-e="zngnfwbrybeghm11@tznvy.pbz">Email</a>
+    <a href="https://instagram.com/matij.ortiz" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+</footer>
+
+<!-- ══ OVERLAY: MODO LECTURA ══ -->
+<div id="lector" role="dialog" aria-modal="true" aria-label="Modo lectura">
+  <div id="lector-barra" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+  <div id="lector-header">
+    <span id="lector-tipo"></span>
+    <button id="lector-cerrar" class="overlay-cerrar-btn" aria-label="Cerrar modo lectura (Escape)">ESC — Cerrar</button>
+  </div>
+  <div id="lector-scroll">
+    <div id="lector-contenido">
+      <img id="lector-imagen" alt="" style="display:none">
+      <div id="lector-meta">
+        <span id="lector-meta-tipo"></span>
+        <span id="lector-meta-fecha"></span>
+      </div>
+      <h2 id="lector-titulo"></h2>
+      <div id="lector-texto"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ OVERLAY: LIBRO LECTOR ══ -->
+<div id="libro-lector" role="dialog" aria-modal="true" aria-label="Fragmento — modo libro">
+  <div id="libro-barra" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+  <div class="libro-overlay-header">
+    <span id="libro-coleccion"></span>
+    <div class="libro-header-acciones">
+      <button id="libro-volver" aria-label="Volver al artículo">← Volver</button>
+      <button id="libro-cerrar" aria-label="Cerrar (Escape)">ESC — Cerrar</button>
+    </div>
+  </div>
+  <div class="libro-pagina-wrap">
+    <div id="libro-scroll">
+      <div class="libro-pagina-interior">
+        <div class="libro-running">
+          <span>Matias J. Ortiz</span>
+          <span id="libro-running-titulo"></span>
+        </div>
+        <h2 id="libro-titulo-relato"></h2>
+        <div class="libro-deco-sep"><span>✦</span></div>
+        <div id="libro-texto"></div>
+        <div class="libro-fin">
+          <p class="libro-fin-texto">El relato continúa.<br>Para leer el texto completo o hablar sobre el proyecto:</p>
+          <a href="#" class="libro-fin-contacto email-link" data-e="zngnfwbrybeghm11@tznvy.pbz">Escribirme</a>
+        </div>
+        <div class="libro-folio">Matias J. Ortiz — Rosario, Argentina</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Script principal -->
+<script src="/scripts/main.js" is:inline>
+
+</body>
+</html>
