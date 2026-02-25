@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://matijortiz.github.io/sitemap-index.xml

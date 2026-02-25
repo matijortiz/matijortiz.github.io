@@ -1,18 +1,80 @@
 ---
 // src/layouts/Layout.astro
-// Layout base del sitio. Header, footer, overlays y scripts.
 
 export interface Props {
   title?: string;
   description?: string;
   ogImage?: string;
+  // SEO extra — se pasan desde artículos individuales si existen
+  seoTitulo?: string;       // título para <title> y OG, distinto al título literario
+  seoDescripcion?: string;  // descripción para meta description
+  tipoSchema?: 'website' | 'article';
+  fechaPublicacion?: string;
 }
 
 const {
   title = 'Matias J. Ortiz — Escritor de Ciencia Ficción | Rosario Argentina',
   description = 'Ciencia ficción especulativa desde adentro de la fábrica. Rosario, Santa Fe, Argentina.',
-  ogImage = '/promesaycastigo.png'
+  ogImage = '/promesaycastigo.png',
+  seoTitulo,
+  seoDescripcion,
+  tipoSchema = 'website',
+  fechaPublicacion,
 } = Astro.props;
+
+// El <title> usa seoTitulo si existe, si no el title genérico
+const metaTitle = seoTitulo ?? title;
+const metaDescription = seoDescripcion ?? description;
+
+// Schema.org — Person (aparece en todos los pages)
+const schemaPerson = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Matias J. Ortiz",
+  "alternateName": "Matias Joel Ortiz",
+  "url": "https://matijortiz.github.io",
+  "image": "https://matijortiz.github.io/foto.jpg",
+  "jobTitle": "Escritor",
+  "description": "Escritor de ciencia ficción especulativa. Nacido y radicado en Rosario, Santa Fe, Argentina. Autor de los libros Egixi y Promesa y Castigo.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Rosario",
+    "addressRegion": "Santa Fe",
+    "addressCountry": "AR"
+  },
+  "sameAs": [
+    "https://www.instagram.com/matij.ortiz",
+    "https://matijortiz.github.io"
+  ],
+  "knowsAbout": [
+    "Ciencia ficción especulativa",
+    "Literatura argentina",
+    "Narrativa rioplatense",
+    "Body horror literario"
+  ]
+};
+
+// Schema.org — Article (solo en entradas del blog)
+const schemaArticle = tipoSchema === 'article' ? {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": metaTitle,
+  "description": metaDescription,
+  "image": `https://matijortiz.github.io${ogImage}`,
+  "author": {
+    "@type": "Person",
+    "name": "Matias J. Ortiz",
+    "url": "https://matijortiz.github.io"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Matias J. Ortiz",
+    "url": "https://matijortiz.github.io"
+  },
+  "datePublished": fechaPublicacion ?? "2026-02",
+  "inLanguage": "es-AR",
+  "url": Astro.url.href
+} : null;
 ---
 
 <!DOCTYPE html>
@@ -20,18 +82,39 @@ const {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{title}</title>
-  <meta name="description" content={description}>
+
+  <!-- SEO primario -->
+  <title>{metaTitle}</title>
+  <meta name="description" content={metaDescription}>
   <meta name="robots" content="index, follow">
+  <meta name="author" content="Matias J. Ortiz">
+  <link rel="canonical" href={Astro.url.href}>
+
+  <!-- Keywords temáticas — ayudan a categorizar el sitio -->
+  <meta name="keywords" content="Matias J. Ortiz, escritor ciencia ficción Rosario, literatura argentina, Egixi, Promesa y Castigo, narrativa especulativa, ciencia ficción latinoamericana">
 
   <!-- Open Graph -->
-  <meta property="og:title" content={title}>
-  <meta property="og:description" content={description}>
+  <meta property="og:title" content={metaTitle}>
+  <meta property="og:description" content={metaDescription}>
   <meta property="og:image" content={`https://matijortiz.github.io${ogImage}`}>
-  <meta property="og:url" content="https://matijortiz.github.io">
-  <meta property="og:type" content="website">
+  <meta property="og:url" content={Astro.url.href}>
+  <meta property="og:type" content={tipoSchema === 'article' ? 'article' : 'website'}>
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="Matias J. Ortiz">
+
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={metaTitle}>
+  <meta name="twitter:description" content={metaDescription}>
   <meta name="twitter:image" content={`https://matijortiz.github.io${ogImage}`}>
+
+  <!-- Schema.org — Person (siempre presente) -->
+  <script type="application/ld+json" set:html={JSON.stringify(schemaPerson)} />
+
+  <!-- Schema.org — Article (solo en artículos) -->
+  {schemaArticle && (
+    <script type="application/ld+json" set:html={JSON.stringify(schemaArticle)} />
+  )}
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%2308070a'/><text y='.9em' font-size='80' x='10'>✦</text></svg>">
