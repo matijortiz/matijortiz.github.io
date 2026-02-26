@@ -12,9 +12,9 @@ seoTitulo: "Mediomundo — Matias J. Ortiz | Promesa y Castigo"
 seoDescripcion: "Análisis del relato Mediomundo: una herramienta de pesca que muestra el futuro, un pescador trasplantado a la fábrica rosarina, y una herencia que no se puede tirar."
 ---
 
-La red salió pesada. Cuatro palabras. Sujeto, verbo, adjetivo. Sin ornamento. El narrador de "Mediomundo" no anuncia, no prepara, no pide permiso: tira la red y arranca. Ese es el tono. Ese es el pacto.
+*La red salió pesada.* Cuatro palabras. Sujeto, verbo, adjetivo. Sin ornamento. El narrador de "Mediomundo" no anuncia, no prepara, no pide permiso: tira la red y arranca. Ese es el tono. Ese es el pacto.
 
-Lo que sigue es una historia de trasplante —de isla a ciudad, de río a fábrica— narrada desde adentro de un cuerpo que todavía no aprendió a vivir en cemento. El narrador no tiene nombre: es pescador, es el nuevo, es *el pescador* para sus compañeros de planta. La identidad es siempre lo que te nombran los demás. O lo que heredaste.
+Lo que sigue es una historia de trasplante —de isla a ciudad, de río a fábrica— narrada desde adentro de un cuerpo que todavía no aprendió a vivir en cemento. El narrador no tiene nombre: es el nuevo, es *el pescador* para sus compañeros de planta. La identidad es siempre lo que te nombran los demás. O lo que heredaste.
 
 Y lo que heredó es esto: un aro de hierro cromado, oxidado, húmedo. Un mediomundo. La herramienta de pesca que muestra el futuro cuando le cae sangre. No la sangre de cualquiera: la propia. La que uno derrama despacio, sobre el metal, como quien firma.
 
@@ -24,7 +24,7 @@ La red salió pesada.
 
 Tiré. El lomo crujió. Les pegué con el remo. El ruido sordo. Dejaron de moverse.
 
-Agarré el facón. Les abrí la panza. Tripas brillando, tiré al agua. La sangre chorreó por los dedos, cayó sobre el mediomundo.
+Agarré el facón y les abrí la panza. Tripas brillando. Tiré al agua. La sangre chorreó por los dedos, cayó sobre el mediomundo.
 
 Y vi.
 
@@ -42,7 +42,7 @@ El mediomundo muestra cuando le cae sangre. Sangre de pescado, de persona, de lo
 
 Matungo me enseñó a leer el agua.
 
-Fue una tarde de invierno. Yo era pibe, él ya estaba viejo. Se paró en la canoa, con el agujero en la frente. Brillaba donde le entraron perdigones de escopeta.
+Fue una tarde de invierno. Yo era pibe, él ya estaba viejo. Se paró en la canoa. Un agujero le comía la frente, donde le entraron perdigones de escopeta.
 
 Estábamos en el muelle. El río quieto. Los sauces reflejándose.
 
@@ -94,12 +94,10 @@ Se quedó mirándome. Se calló. Después se dio vuelta y me miró otra vez.
 
 <!-- ANALISIS -->
 
-No se puede tirar. No se puede escapar. Matungo lo intentó con Lucas. No pudo. Yo lo intenté con Tomás. Tampoco voy a poder.
+No se puede tirar. No se puede escapar. *Matungo lo intentó con Lucas. No pudo. Yo lo intenté con Tomás. Tampoco voy a poder.*
 
-La maldición sobrenatural es el vehículo del libro. El tema real es si la violencia heredada puede cortarse, o si solo puede pasarse. Chiri le pega a Carmina. El abuelo Negro dice que a las mujeres hay que tenerlas cortitas. El narrador en *Cochambre* no sabe si quiere proteger al pibe o ser el tipo que lo marca. Esa cadena es más poderosa que cualquier objeto maldito.
+La maldición sobrenatural es el vehículo del libro. El tema real es si la violencia heredada puede cortarse, o si solo puede pasarse. ¿Qué decisión es la correcta? ¿Cuál tomarías vos? En el relato *Cochambre* Tato le pega a La Piba Carmina. En *Belcebú* El abuelo Negro dice que a las mujeres hay que tenerlas cortitas. El narrador en *Cochambre* no sabe si quiere proteger al pibe o ser el tipo que lo marca. Esa cadena es más poderosa que cualquier objeto maldito.
 
-El final no cierra. Clausura, sí: el narrador toma una decisión. Pero no resuelve la pregunta. *Los dedos chiquitos se cerraron alrededor del metal.* Tomás tiene días de nacido y ya está sosteniendo lo que lo va a perseguir. ¿Es eso condena o transmisión? El cuento no lo dice. Lo vas a tener que responder vos.
-
-El hallazgo mayor del relato es... lo vas a tener que leer.
+El final no cierra. Clausura, sí: el narrador toma una decisión. Pero no resuelve la pregunta. *Los dedos chiquitos se cerraron alrededor del metal.* Tomás tiene días de nacido y ya está sosteniendo lo que lo va a perseguir. ¿Es eso condena o transmisión? El cuento no lo dice. Lo vas a tener que responder vos. Lo vas a tener que leer.
 
 Dentro de *Promesa y Castigo*, este relato tiene una función precisa: es el puente entre el mundo histórico y el presente. La herencia llegó al siglo XXI. Llegó a Rosario. Llegó a la fábrica. Se adaptó. Y sigue.
