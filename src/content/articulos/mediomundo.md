@@ -42,7 +42,7 @@ El mediomundo muestra cuando le cae sangre. Sangre de pescado, de persona, de lo
 
 Matungo me enseñó a leer el agua.
 
-Fue una tarde de invierno. Yo era pibe, él ya estaba viejo. Se paró en la canoa. Un agujero le comía la frente, donde le entraron perdigones de escopeta.
+Fue una tarde de invierno. Yo era pibe, él ya estaba viejo. Se paró en la canoa. Un agujero le comía la frente, de cuando le tiraron con escopeta y no lo mataron.
 
 Estábamos en el muelle. El río quieto. Los sauces reflejándose.
 
