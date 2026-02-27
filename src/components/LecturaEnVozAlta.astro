@@ -125,7 +125,7 @@ const EMAIL = "matiasjoelortiz11@gmail.com";
   overflow: hidden;   /* ← acá */
   border-top: 1px solid var(--linea);
   border-bottom: 1px solid var(--linea);
-  padding: 5rem 3rem 4.5rem;
+  padding: 5rem 0 4.5rem;
   position: relative;
 }
 
@@ -133,6 +133,7 @@ const EMAIL = "matiasjoelortiz11@gmail.com";
 .lecturas-encabezado {
   max-width: 780px;
   margin: 0 auto 3rem;
+  padding: 0 3rem;
 }
 
 .lecturas-eyebrow {
@@ -172,6 +173,7 @@ const EMAIL = "matiasjoelortiz11@gmail.com";
 .lecturas-lista {
   max-width: 780px;
   margin: 0 auto;
+  padding: 0 3rem;
 }
 
 /* ── Track ──────────────────────────── */
@@ -379,7 +381,7 @@ const EMAIL = "matiasjoelortiz11@gmail.com";
 .lecturas-cta {
   max-width: 780px;
   margin: 3.5rem auto 0;
-  padding-top: 2.5rem;
+  padding: 2.5rem 3rem 0;
   border-top: 1px solid var(--linea);
   display: flex;
   flex-direction: column;
@@ -436,8 +438,11 @@ const EMAIL = "matiasjoelortiz11@gmail.com";
 
 /* ── Responsive ─────────────────────── */
 @media (max-width: 700px) {
-  .lecturas {
-    padding: 4rem 1.5rem 2rem;
+  .lecturas-encabezado,
+  .lecturas-lista,
+  .lecturas-cta {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .track {
