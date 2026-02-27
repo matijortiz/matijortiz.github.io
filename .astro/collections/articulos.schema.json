@@ -36,6 +36,12 @@
         "orden": {
           "type": "number"
         },
+        "seoTitulo": {
+          "type": "string"
+        },
+        "seoDescripcion": {
+          "type": "string"
+        },
         "$schema": {
           "type": "string"
         }

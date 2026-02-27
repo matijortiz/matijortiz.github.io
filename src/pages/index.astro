@@ -4,6 +4,8 @@ import Layout from '../layouts/Layout.astro';
 import ArticuloCard from '../components/ArticuloCard.astro';
 import { getCollection } from 'astro:content';
 import { parseArticulo } from '../utils/parseArticulo';
+import Lecturas from '../components/LecturaEnVozAlta.astro';
+
 
 // Cargar artículos publicados, ordenados por campo "orden" (menor = primero)
 const articulos = (await getCollection('articulos', ({ data }) => !data.draft))
@@ -108,7 +110,7 @@ const items = articulos.map((art) => ({
   </main>
 
   <!-- SIDEBAR DER -->
-  <aside class="sidebar-der" id="lecturas" aria-label="Lecturas">
+  <aside class="sidebar-der" aria-label="Lecturas">
     <div class="widget">
       <h2 class="widget-titulo">Leyendo ahora</h2>
       <div class="lectura-item"><div class="lectura-titulo">Trafalgar</div><div class="lectura-autor">Angélica Gorodischer</div></div>
@@ -186,6 +188,14 @@ const items = articulos.map((art) => ({
 
   </div>
 </section>
+
+</div>
+</section>
+
+<Lecturas />   <!-- ← acá -->
+
+<!-- ── SOBRE MÍ ── -->
+<section class="sobre-mi" id="sobre" ...>
 
 <!-- ── SOBRE MÍ ── -->
 <section class="sobre-mi" id="sobre" aria-label="Sobre el autor">

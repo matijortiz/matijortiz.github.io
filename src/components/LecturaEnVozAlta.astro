@@ -1,0 +1,538 @@
+---
+// LecturaEnVozAlta.astro
+// src/components/LecturaEnVozAlta.astro
+//
+// Insertar en el layout entre #libros y #sobre:
+//   import Lecturas from '../components/LecturaEnVozAlta.astro'
+//   <Lecturas />
+//
+// Audios: subí los .mp3 a public/audio/
+// Editá el array `muestras` con tus grabaciones reales.
+
+const muestras = [
+  {
+    id: "m1",
+    titulo: "El jardín de senderos que se bifurcan",
+    autor: "Borges",
+    genero: "Cuento · Fantástico",
+    duracion: "3:12",
+    src: "/audio/muestra-borges.mp3",
+  },
+  {
+    id: "m2",
+    titulo: "La autopista del sur",
+    autor: "Cortázar",
+    genero: "Cuento · Realismo mágico",
+    duracion: "2:48",
+    src: "/audio/muestra-cortazar.mp3",
+  },
+];
+
+const EMAIL = "matiasjoelortiz11@gmail.com";
+---
+
+<section id="lecturas" class="lecturas">
+
+  <div class="lecturas-encabezado">
+    <span class="lecturas-eyebrow">Servicio</span>
+    <h2 class="lecturas-titulo">Lectura en voz alta</h2>
+    <p class="lecturas-bajada">
+      Ninguna voz sintética. Escuchá cómo suena tu texto antes de publicarlo.
+    </p>
+  </div>
+
+  <div class="lecturas-lista">
+    {muestras.map((m, i) => (
+      <div
+        class="track"
+        data-id={m.id}
+        data-src={m.src}
+        role="button"
+        tabindex="0"
+        aria-label={`Reproducir: ${m.titulo}`}
+        style={`animation-delay: ${i * 70}ms`}
+      >
+        <span class="track-num">0{i + 1}</span>
+
+        <div class="track-info">
+          <span class="track-titulo">{m.titulo}</span>
+          <span class="track-meta">
+            {m.autor && <span class="track-autor">{m.autor} ·&nbsp;</span>}
+            {m.genero}
+          </span>
+        </div>
+
+        <div class="track-wave" aria-hidden="true">
+          {Array.from({ length: 24 }).map((_, j) => (
+            <i
+              class="bar"
+              style={`--h: ${28 + Math.round(Math.sin(j * 0.72) * 18 + Math.cos(j * 0.38) * 12)}%; --i: ${j}`}
+            />
+          ))}
+        </div>
+
+        <div class="track-derecha">
+          <div class="track-progreso">
+            <div class="progreso-barra">
+              <div class="progreso-fill" id={`fill-${m.id}`} />
+            </div>
+            <div class="progreso-tiempos">
+              <span class="t-actual" id={`cur-${m.id}`}>0:00</span>
+              <span class="t-total">{m.duracion}</span>
+            </div>
+          </div>
+
+          <button
+            class="track-btn"
+            id={`btn-${m.id}`}
+            aria-label={`Play ${m.titulo}`}
+            data-playing="false"
+          >
+            <svg class="ico-play" viewBox="0 0 16 16" fill="none">
+              <polygon points="3,1 14,8 3,15" fill="currentColor"/>
+            </svg>
+            <svg class="ico-pause" viewBox="0 0 16 16" fill="none">
+              <rect x="2" y="1" width="4" height="14" fill="currentColor"/>
+              <rect x="10" y="1" width="4" height="14" fill="currentColor"/>
+            </svg>
+          </button>
+        </div>
+
+        <audio id={`audio-${m.id}`} src={m.src} preload="none" />
+      </div>
+    ))}
+  </div>
+
+  <div class="lecturas-cta">
+    <p class="cta-pregunta">¿Querés que lea tu texto?</p>
+    <p class="cta-cuerpo">
+      Un capítulo, un cuento, un libro completo.<br />
+      Cotizo por hora de grabación entregada.
+    </p>
+    <a
+      href={`mailto:${EMAIL}?subject=Consulta%20%E2%80%94%20lectura%20en%20voz%20alta`}
+      class="cta-link"
+    >
+      Escribime
+    </a>
+    <span class="cta-precio">USD 40 / hora de audio · ≈ 9.000 palabras aprox.</span>
+  </div>
+
+</section>
+
+<style>
+.lecturas {
+  overflow: hidden;   /* ← acá */
+  border-top: 1px solid var(--linea);
+  border-bottom: 1px solid var(--linea);
+  padding: 5rem 3rem 4.5rem;
+  position: relative;
+}
+
+/* ── Encabezado ─────────────────────── */
+.lecturas-encabezado {
+  max-width: 780px;
+  margin: 0 auto 3rem;
+}
+
+.lecturas-eyebrow {
+  display: block;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--oxido);
+  margin-bottom: 0.8rem;
+}
+
+.lecturas-titulo {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  color: var(--crema);
+  line-height: 1.1;
+  margin: 0 0 0.9rem;
+}
+
+/* Mismo motif que .hero-bajada */
+.lecturas-bajada {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--gris);
+  line-height: 1.55;
+  margin: 0;
+  border-left: 2px solid var(--oxido);
+  padding-left: 1rem;
+  max-width: 400px;
+}
+
+/* ── Lista ──────────────────────────── */
+.lecturas-lista {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+/* ── Track ──────────────────────────── */
+.track {
+  display: grid;
+  grid-template-columns: 2.2rem 1fr auto auto;
+  align-items: center;
+  gap: 1.4rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--linea);
+  cursor: pointer;
+  position: relative;
+  /* Entrada animada — mismo patrón que .entrada en el feed */
+  opacity: 0;
+  transform: translateY(10px);
+  animation: trackIn 0.5s ease forwards;
+}
+
+.track:first-child {
+  border-top: 1px solid var(--linea);
+}
+
+/* Acento lateral — mismo motif que .hero-bajada y .entrada-imagen */
+.track::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0; bottom: 0;
+  width: 2px;
+  background: transparent;
+  transition: background 0.25s;
+}
+
+.track.activo::before {
+  background: var(--oxido);
+}
+
+@keyframes trackIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Número ─────────────────────────── */
+.track-num {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--gris);
+  opacity: 0.45;
+  user-select: none;
+  transition: color 0.2s, opacity 0.2s;
+}
+
+.track.activo .track-num {
+  color: var(--oxido);
+  opacity: 1;
+}
+
+/* ── Info ───────────────────────────── */
+.track-info {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+/* Mismo estilo que .pub-titulo en sidebar */
+.track-titulo {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--crema);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.2s;
+}
+
+.track.activo .track-titulo {
+  color: #fff;
+}
+
+/* Mismo estilo que .pub-donde en sidebar */
+.track-meta {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gris);
+  opacity: 0.6;
+}
+
+/* ── Waveform ───────────────────────── */
+.track-wave {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  height: 22px;
+  opacity: 0.15;
+  transition: opacity 0.3s;
+}
+
+.track.activo .track-wave {
+  opacity: 1;
+}
+
+.bar {
+  display: block;
+  width: 2px;
+  height: var(--h, 40%);
+  background: var(--gris);
+  border-radius: 1px;
+}
+
+.track.activo:not(.pausado) .bar {
+  background: var(--oxido);
+  animation: ola 0.85s ease-in-out infinite alternate;
+  animation-delay: calc(var(--i) * 38ms);
+}
+
+.track.activo.pausado .bar {
+  background: var(--oxido);
+}
+
+@keyframes ola {
+  from { transform: scaleY(0.3); }
+  to   { transform: scaleY(1); }
+}
+
+/* ── Derecha ────────────────────────── */
+.track-derecha {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.track-progreso {
+  width: 80px;
+}
+
+.progreso-barra {
+  height: 1px;
+  background: var(--linea);
+  margin-bottom: 0.4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progreso-fill {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 0%;
+  background: var(--oxido);
+  transition: width 0.5s linear;
+}
+
+.progreso-tiempos {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  color: var(--gris);
+  opacity: 0.55;
+}
+
+.t-actual { opacity: 1; }
+
+/* ── Botón ──────────────────────────── */
+.track-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--linea);
+  background: transparent;
+  color: var(--gris);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.track-btn:hover {
+  border-color: rgba(184, 74, 26, 0.4);
+  color: var(--oxido);
+}
+
+.track.activo .track-btn {
+  border-color: var(--oxido);
+  color: var(--oxido);
+}
+
+.track-btn svg {
+  width: 11px;
+  height: 11px;
+}
+
+.ico-pause { display: none; }
+.track-btn[data-playing="true"] .ico-play  { display: none; }
+.track-btn[data-playing="true"] .ico-pause { display: block; }
+
+/* ── CTA ────────────────────────────── */
+.lecturas-cta {
+  max-width: 780px;
+  margin: 3.5rem auto 0;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--linea);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cta-pregunta {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.35rem;
+  color: var(--crema);
+  margin: 0;
+}
+
+.cta-cuerpo {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  font-size: 0.95rem;
+  color: var(--gris);
+  line-height: 1.6;
+  margin: 0 0 1rem;
+}
+
+/* Mismo estilo que .libro-fin-contacto en global.css */
+.cta-link {
+  display: inline-block;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--oxido);
+  border: 1px solid rgba(184, 74, 26, 0.28);
+  padding: 0.55rem 1.8rem;
+  text-decoration: none;
+  border-radius: 2px;
+  width: fit-content;
+  transition: background 0.2s, color 0.2s;
+}
+
+.cta-link:hover {
+  background: var(--oxido);
+  color: var(--negro);
+}
+
+.cta-precio {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gris);
+  opacity: 0.4;
+  margin-top: 0.4rem;
+}
+
+/* ── Responsive ─────────────────────── */
+@media (max-width: 700px) {
+  .lecturas {
+    padding: 4rem 1.5rem 3.5rem;
+  }
+
+  .track {
+    grid-template-columns: 1.8rem 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 0.6rem 0.8rem;
+  }
+
+  .track-wave { display: none; }
+
+  .track-derecha {
+    grid-column: 3;
+    grid-row: 1 / 3;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .track-progreso { width: 50px; }
+
+  .track::before { left: -1.5rem; }
+}
+</style>
+
+<script>
+  function fmtSeg(s: number): string {
+    const m = Math.floor(s / 60);
+    const seg = Math.floor(s % 60);
+    return `${m}:${seg.toString().padStart(2, '0')}`;
+  }
+
+  type Estado = {
+    audio: HTMLAudioElement;
+    btn:   HTMLButtonElement;
+    fill:  HTMLElement;
+    cur:   HTMLElement;
+    card:  HTMLElement;
+  };
+
+  const tracks = new Map<string, Estado>();
+  let activo: string | null = null;
+
+  document.querySelectorAll<HTMLElement>('.track').forEach(card => {
+    const id    = card.dataset.id!;
+    const audio = document.getElementById(`audio-${id}`) as HTMLAudioElement;
+    const btn   = document.getElementById(`btn-${id}`) as HTMLButtonElement;
+    const fill  = document.getElementById(`fill-${id}`) as HTMLElement;
+    const cur   = document.getElementById(`cur-${id}`) as HTMLElement;
+
+    tracks.set(id, { audio, btn, fill, cur, card });
+
+    audio.addEventListener('timeupdate', () => {
+      if (!audio.duration) return;
+      fill.style.width = `${(audio.currentTime / audio.duration) * 100}%`;
+      cur.textContent  = fmtSeg(audio.currentTime);
+    });
+
+    audio.addEventListener('ended', () => detener(id));
+
+    function toggle() {
+      if (activo && activo !== id) detener(activo);
+      btn.dataset.playing === 'true' ? pausar(id) : reproducir(id);
+    }
+
+    btn.addEventListener('click', e => { e.stopPropagation(); toggle(); });
+    card.addEventListener('click', toggle);
+    card.addEventListener('keydown', (e: KeyboardEvent) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+    });
+  });
+
+  function reproducir(id: string) {
+    const t = tracks.get(id); if (!t) return;
+    t.audio.play();
+    t.btn.dataset.playing = 'true';
+    t.card.classList.add('activo');
+    t.card.classList.remove('pausado');
+    activo = id;
+  }
+
+  function pausar(id: string) {
+    const t = tracks.get(id); if (!t) return;
+    t.audio.pause();
+    t.btn.dataset.playing = 'false';
+    t.card.classList.add('pausado');
+  }
+
+  function detener(id: string) {
+    const t = tracks.get(id); if (!t) return;
+    t.audio.pause();
+    t.audio.currentTime = 0;
+    t.btn.dataset.playing = 'false';
+    t.fill.style.width = '0%';
+    t.cur.textContent = '0:00';
+    t.card.classList.remove('activo', 'pausado');
+    if (activo === id) activo = null;
+  }
+</script>
