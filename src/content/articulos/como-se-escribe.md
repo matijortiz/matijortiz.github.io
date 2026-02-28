@@ -32,7 +32,9 @@ Y si alguno de ustedes la quiere, va a tener que pelear. Porque hay otro que la 
 
 No vaya nunca la sangre mía a pelearse entre sí por ese pedazo de tierra. Más bien, van a tener que fortalecerse antes de habitar. Y reclamar a nombre suyo, a fuerza de facón o férrea voluntad. Porque es nuestro. Porque el campo de La Ortiga no es solo campo. Es promesa y castigo.
 
+
 <p align="center">***</p>
+
 
 Yo nací en una de esas casas con frente a medio construir: patio de barro, chapas mediante con los vecinos. Papá solía azotarme con la hebilla del cinturón cuando me ponía a cazar palomas con la gomera. No quería que yo ande por ahí haciéndome el indio. Decía que toda vida es sagrada.
 
@@ -66,7 +68,9 @@ El viejo apagó la máquina. Me miró con los ojos grandes. Tenía la cara blanc
 
 Después el mundo se apagó.
 
+
 <p align="center">***</p>
+
 
 Compramos un pedazo de tierra en las afueras de Entre Ríos, a unos treinta kilómetros de Paraná. Contraté dos peones que me ayudaban con la carretilla, las piedras y la arena. Yo mezclar podía, llevar cosas y martillar podía. Y mientras tanto, La Magdalena se hacía en el fondo un jardín lleno de helechos y flores.
 
@@ -100,7 +104,9 @@ Ahí estaba. Un gaucho. Sombrero ladeado. En el cinto, algo que brillaba. Un fac
 
 —Güen día pa regar la tierra, ¿no te parece?
 
+
 <p align="center">***</p>
+
 
 La lluvia seguía. El barro me frenaba. El caballo iba despacio. Yo lo espoleaba. Pensaba en el changuito. En La Magdalena. En la fiebre.
 
