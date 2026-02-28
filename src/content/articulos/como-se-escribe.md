@@ -66,7 +66,7 @@ El viejo apagó la máquina. Me miró con los ojos grandes. Tenía la cara blanc
 
 Después el mundo se apagó.
 
-***
+<p align="center">***</p>
 
 Compramos un pedazo de tierra en las afueras de Entre Ríos, a unos treinta kilómetros de Paraná. Contraté dos peones que me ayudaban con la carretilla, las piedras y la arena. Yo mezclar podía, llevar cosas y martillar podía. Y mientras tanto, La Magdalena se hacía en el fondo un jardín lleno de helechos y flores.
 
@@ -100,7 +100,7 @@ Ahí estaba. Un gaucho. Sombrero ladeado. En el cinto, algo que brillaba. Un fac
 
 —Güen día pa regar la tierra, ¿no te parece?
 
-***
+<p align="center">***</p>
 
 La lluvia seguía. El barro me frenaba. El caballo iba despacio. Yo lo espoleaba. Pensaba en el changuito. En La Magdalena. En la fiebre.
 
