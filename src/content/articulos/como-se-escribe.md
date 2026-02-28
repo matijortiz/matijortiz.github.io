@@ -31,11 +31,9 @@ Esa tierra está maldita.
 Y si alguno de ustedes la quiere, va a tener que pelear. Porque hay otro que la reclama. Uno que murió hace mucho pero que no se fue. Uno que enfrenté yo cuando era joven. Y va a volver cuando ustedes sean grandes.
 
 No vaya nunca la sangre mía a pelearse entre sí por ese pedazo de tierra. Más bien, van a tener que fortalecerse antes de habitar. Y reclamar a nombre suyo, a fuerza de facón o férrea voluntad. Porque es nuestro. Porque el campo de La Ortiga no es solo campo. Es promesa y castigo.
-<div style="text-align: center; margin: 1.5em 0;">
 
-***
+<p align="center">***</p>
 
-</div>
 Yo nací en una de esas casas con frente a medio construir: patio de barro, chapas mediante con los vecinos. Papá solía azotarme con la hebilla del cinturón cuando me ponía a cazar palomas con la gomera. No quería que yo ande por ahí haciéndome el indio. Decía que toda vida es sagrada.
 
 Con mis hermanas íbamos a la escuela, cruzando los rieles con el mate cocido en la panza. Ni pateábamos piedras para cuidar las zapatillas. Mi vieja amasaba los guardapolvos en un agua espesa y cuando te lo calzaba pesaban como armadura. A la tardecita, especialmente en días de lluvia, salíamos con una bicicleta a vender torta frita por el barrio.
