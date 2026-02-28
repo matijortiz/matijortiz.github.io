@@ -46,8 +46,6 @@ A los trece, ya cruzaba la vía engrasado hasta las mangas, con el perfume ácid
 
 El dueño de la fábrica era un viejo de cabellos marmolados, la cara cuatreada, flaquito como palo de escoba. Le temblaban mucho las manos. Mucho. Me enseñaron que uno no debe de andar discriminando a la gente, pero a este viejo no sé cómo le daba la cara para seguir trabajando así. Yo tenía miedo de que en uno de esos tiros se le resbalase la máquina y me cortara limpitos los dedos.
 
-Mi intuición era correcta.
-
 Un día, el viejo y yo estábamos haciendo herrería. Él cortaba. Yo sostenía. Me dijo que sostenga el fierro. Yo lo agarré con las dos manos. El hierro pesaba. Estaba muy frío.
 
 Encendió la amoladora y el ruido llenó el taller. Las chispas saltaron.
@@ -130,7 +128,7 @@ No contesté. Me quedé clavado en el barro. Mirándolo a los ojos.
 
 <!-- EXTRA -->
 
-La cosa va escalando. El animal lo ayuda, la mujer lo ayuda, pero es él quien tiene que agarrar la posta y enfrentar.
+Les comparto fragmentos. Está todo cortado, como la mano del protagonista. La cosa va escalando. El animal lo ayuda, la mujer lo ayuda, pero es él quien tiene que agarrar la posta y enfrentar.
 
 El libro fue creciendo alrededor de ese primer corte, relato por relato, hasta llegar a once. Que hay cosas que recibís sin pedirlas. Que el cuerpo recuerda lo que la cabeza descarta. Que algunas familias se pasan el daño de generación en generación con la misma precisión que una receta de cocina.
 
