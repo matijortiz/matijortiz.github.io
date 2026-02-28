@@ -14,7 +14,7 @@ seoDescripcion: "Cómo se escribe un libro que te asusta. El proceso detrás de 
 
 <!-- ANALISIS -->
 
-Promesa y Castigo empezó con un solo cuento: La Ortiga. Lo llevé a mis compañeros de Editorial Patas de Cabra y me dijeron que les traía recuerdos de "El Sur" de Borges. Semanas antes yo había encontrado ese cuento por primera vez y me había roto la cabeza —nunca me había gustado Borges y de repente lo amaba—. Me dijeron que La Ortiga estaba para presentar en algún concurso: no me lo tomé en serio. ¿Era ese u otro? Lo que sí sé es que La Ortiga llegó como un manuscrito crudo, lleno de grasa, con voz impostada y errores graves. Pero la idea estaba.
+Promesa y Castigo empezó con un solo cuento: La Ortiga. Lo llevé a mis compañeros de Editorial Patas de Cabra y me dijeron que les traía recuerdos de "El Sur" de Borges. Semanas antes yo había encontrado ese cuento y me rompió la cabeza —nunca me había gustado Borges y de repente lo amaba—. Me dijeron que La Ortiga estaba para presentar en algún concurso: no me lo tomé en serio. ¿Era ese u otro? Lo que sí sé es que La Ortiga llegó como un manuscrito crudo, lleno de grasa, con voz impostada y errores graves. Pero la idea estaba.
 
 Lo rompí. Lo armé de nuevo. Le pasé la amoladora. Lo volví a pulir. Le puse voz matrera y textura al gaucho, les regalé un perro, cerré los agujeros con soldadura. Solo mi novia sabe cuántas horas silla-culo durante meses llevo trabajando en mis escritos. Cuando más o menos lo tenía, con mucha vergüenza se lo mostré a mi familia. Mi hermana se lo leyó a mis viejos en voz alta.
 
