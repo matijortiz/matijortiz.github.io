@@ -26,7 +26,7 @@ No me llaman por nombre. Me llaman por función: "técnico". En el idioma de ell
 
 La primera vez que uno me lo dijo tardé en entender que me estaba hablando a mí. La segunda vez ya sabía. A la tercera dejé de tener nombre.
 
-El taller queda en el subsuelo de lo que antes era la terminal de ómnibus de Rosario. Los Egixi vaciaron el hall de arriba, sacaron los asientos, los kioskos, los paneles de horarios, y pusieron las líneas de montaje donde antes pasaban los colectivos a Córdoba, a Buenos Aires, a Entre Ríos. Abajo, donde estaban las boleterías y los baños vidriaron, sellaron con poliuretano y armaron los talleres de servicio.
+El taller queda en el subsuelo de lo que antes era la terminal de ómnibus de Rosario. Los Egixi vaciaron el hall de arriba, sacaron los asientos, los kioskos, los paneles de horarios, y pusieron las líneas de montaje donde antes pasaban los colectivos a Córdoba, a Buenos Aires, a Entre Ríos. Abajo, donde estaban las boleterías y los baños, ellos vidriaron, sellaron con poliuretano y armaron los talleres de servicio.
 
 Plomería alienígena le dice Serena, mi compañera de turno. Ellos quizá le dicen laboratorio. Yo le digo la pecera, pero en voz baja, porque el Capataz tiene los sensores finos y la escopeta con muerte azul siempre colgada del caparazón.
 
