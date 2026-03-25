@@ -14,7 +14,7 @@ seoDescripcion: "Análisis del relato Mediomundo: una herramienta de pesca que m
 
 *La red salió pesada.* Cuatro palabras. Sujeto, verbo, adjetivo. Sin ornamento. El narrador de "Mediomundo" no anuncia, no prepara, no pide permiso: tira la red y arranca. Ese es el tono. Ese es el pacto.
 
-Lo que sigue es una historia de trasplante —de isla a ciudad, de río a fábrica— narrada desde adentro de un cuerpo que todavía no aprendió a vivir en cemento. El narrador no tiene nombre: es el nuevo, es *el pescador* para sus compañeros de planta. La identidad es siempre lo que te nombran los demás. O lo que heredaste.
+Lo que sigue es una historia de trasplante —de isla a ciudad, de río a fábrica— narrada desde adentro de un cuerpo que todavía no aprendió a vivir el cemento. El narrador no tiene nombre: es el nuevo, es *el pescador* para sus compañeros de planta. La identidad es siempre lo que te nombran los demás. O lo que heredaste.
 
 Y lo que heredó es esto: un aro de hierro cromado, oxidado, húmedo. Un mediomundo. La herramienta de pesca que muestra el futuro cuando le cae sangre. No la sangre de cualquiera: la propia. La que uno derrama despacio, sobre el metal, como quien firma.
 
@@ -38,11 +38,11 @@ Me agarré la cara. Me toqué el tajo de la cicatriz. Los dedos me olían a trip
 
 ***
 
-El mediomundo muestra cuando le cae sangre. Sangre de pescado, de persona, de lo que sea. A veces, solo pocas, te muestra lo que viene. No sé por qué. Ni cómo anda esto. Pero es así. Siempre.
+El mediomundo muestra cuando le cae sangre. Sangre de pescado, de persona, de lo que sea. A veces, solo pocas, te muestra lo que viene. No sé por qué. Ni cómo anda eso. Pero es así. Siempre.
 
 Matungo me enseñó a leer el agua.
 
-Fue una tarde de invierno. Yo era pibe, él ya estaba viejo. Se paró en la canoa. Un agujero le comía la frente, de cuando le tiraron con escopeta y no lo mataron.
+Fue una tarde de invierno. Yo era gurí, él ya estaba viejo. Se paró en la canoa. Un agujero le comía la frente, de cuando le tiraron con escopeta y no lo mataron.
 
 Estábamos en el muelle. El río quieto. Los sauces reflejándose.
 
@@ -54,13 +54,13 @@ Estábamos en el muelle. El río quieto. Los sauces reflejándose.
 
 Tiró la línea, esperó. Dos minutos. Sacó un bagre del tamaño de mi brazo.
 
-Me miró. Los ojos hundidos. Cansados.
+Me miró la boca. Los ojos hundidos. Cansados.
 
 —Algún día te voy a mostrar otra cosa —dijo—. Algo que también hay que saber escuchar.
 
 Ni idea qué decía. Yo era gurí. Tardé años en entender.
 
-El día que se hundió yo estaba en el muelle. Ya de grande. Vi la canoa alejarse. Matungo se paró. Lo vi saltar. La mano levantada. Saludando.
+El día que se hundió yo estaba en el muelle. Ya de grande. Vi la canoa alejarse. Matungo se paró. Lo vi saltar. La mano levantada, saludando.
 
 Después el agua se lo tragó.
 
