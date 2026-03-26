@@ -14,7 +14,7 @@ seoDescripcion: "Análisis del relato Genius: un técnico repara respiradores al
 
 Cuando estaba escribiendo Genius tenía hambre. Hambre real, de las nueve horas de jornada y el cuerpo que no alcanza a reponer. Me imaginé a mi novia dándome bochas de dulce de leche gratis, una detrás de otra, sin preguntar. Un cucurucho infinito. Eso no está en el cuento pero está en el cuento.
 
-Imaginate arreglarles los respiradores a estos bichos y cuando vas a preguntar por qué no mandan a un técnico de ellos, te responden: "Es que está demasiado ocupado comiendo helado". A nuestro protagonista eso le pica durante todo el relato. Pero sigue. Su patrón se llama Timoteo Cucurucho. Sí, es una alusión a Tim Cook. El Noble Egixi que dirige la operación más poderosa del subsuelo rosarino tiene el apellido de un vasito de helado. Me pareció justo. Nuestro narrador — el que trabaja, que aprende, que transpira — no tiene nombre aristocrático. Tiene las manos.
+Imaginate arreglarles los respiradores a estos bichos y cuando vas a preguntar por qué no mandan a un técnico de ellos, te responden: "Es que está demasiado ocupado comiendo helado". A nuestro protagonista eso le pica durante todo el relato. Pero sigue. En las primeras versiones el patrón se llamaba Timoteo Cucurucho, una alusión a Tim Cook. El patrón con apellido de vasito de helado. Me daba gracia. Pero el cuento creció y el chiste se quedó chico. Ahora se llama H. Peralta. Apellido de los que heredan empresas y nunca usaron guantes. Ni siquiera es Egixi: es humano. Un coordinador con oficina donde antes estaban las boleterías, que escribió COORDINACIÓN HUMANA con fibrón negro sobre una chapa. La C le salió torcida. A PEralta todo le sale torcido. Es peor que Cucurucho. Eso era caricatura. Peralta es el tipo que ya conocés. Nuestro narrador —el que trabaja, aprende, transpira— no tiene nombre aristocrático. Tiene las manos.
 
 <!-- FRAGMENTO -->
 
@@ -56,6 +56,6 @@ La segunda: los romanos tenían el concepto de *genius*. No era lo que entendemo
 
 La tercera: el protagonista es un genio en el sentido liso y llano. Lo ponen adelante de un respirador — tecnología extraterrestre que ningún manual explica, que nadie le enseñó a reparar — y lo aprende solo. A prueba y error. A maña y cuerpo.
 
-La cuarta: los Genius de Apple en Argentina. Los que sueldan tecnología ajena en locales de una corporación que los trata exactamente igual que Timoteo Cucurucho trata al protagonista.
+La cuarta: los Genius de Apple en Argentina. Los que sueldan tecnología ajena en locales de una corporación que los trata exactamente igual que H. Peralta trata al protagonista.
 
 *Las cuatro capas son la misma: hay algo que crece solo adentro de todo y que no le pide permiso a nadie para existir. Todavía.*
