@@ -16,13 +16,13 @@ Rompe Piernas lo escribí tercero, cuando todavía no sabía bien de qué iba el
 
 Goya pintó Duelo a garrotazos en 1820, en la pared de su propia casa. Dos hombres en la llanura, golpeándose con garrotes. Pero si mirás bien, los dos están hundidos hasta las rodillas en el mismo barro. Ninguno puede ganar. El campo los está tragando mientras pelean. Eso es Rompe Piernas: El Narrador en silla de ruedas y el enforcer Egixi que cumple órdenes. Ninguno eligió el barro. Los dos se hunden en él.
 
-El Narrador en Rompe Piernas construye resistencia de la única manera que puede: rompe piernas. No como crueldad — como táctica. Los pibes que no pueden caminar no pueden trabajar en las canteras. Tienen que quedarse adentro y aprender a leer. Su violencia es la única que le devuelve la piña al sistema. Cuando Julián mata al Quitinoso de un picazo, es un antes y un después. Devuelve el golpe por todos. Ellos descubren que lo que está al margen del límite, es pintura despegándose de las paredes, como la protagonista de La Muda poniéndoles nombres de animales a los protagonistas del otro relato: Rompe Piernas; humanos de la cantera que le resultan incognoscibles.
+El Narrador en Rompe Piernas construye resistencia de la única manera que puede: rompe piernas. No como crueldad — como táctica. Los pibes que no pueden caminar no pueden trabajar en las canteras. Tienen que quedarse adentro y aprender a leer. Su violencia es la única que le devuelve la piña al sistema. Cuando Julián mata al Cascarudo de un picazo, es un antes y un después. Devuelve el golpe por todos. Ellos descubren que lo que está al margen del límite, es pintura despegándose de las paredes, como la protagonista de La Muda poniéndoles nombres de animales a los protagonistas del otro relato: Rompe Piernas; humanos de la cantera que le resultan incognoscibles.
 
 <!-- FRAGMENTO -->
 
 Dibujo animales en los márgenes de la tablet.
 
-No debería. Los datos van en el centro, las cantidades a la derecha, los dibujitos de las unidades a la izquierda. Los márgenes son para las correcciones. Pero yo los uso para otra cosa.
+No debería. Los datos van en el centro, las cantidades a la derecha, los trazos de las unidades a la izquierda. Los márgenes son para las correcciones. Pero yo los uso para otra cosa.
 
 El Chancho tiene veintitrés marcas en rojo. Empecé a dibujarlo el día que levantó al de la silla con una sola mano y lo cargó por el barro sin que el otro se lo pidiera. Lo cargó como se carga a una cría: desde abajo, sin apretar. No sé por qué lo dibujé. Hay cosas que no tienen casillero en la tablet.
 
@@ -30,9 +30,9 @@ Al Monito le llevo diecisiete. Es el que más trabajo me da. Se mueve distinto c
 
 Eso me molesta. Me molesta y me interesa. Que son dos versiones del mismo problema.
 
-A la Tortuga Sentada le dediqué nueve dibujitos, no más. Es difícil de dibujar porque casi no se mueve. Está siempre en la misma posición, sobre esa estructura con ruedas que rechinan, las extremidades superiores caídas, la cabeza ladeada, un hilo de baba colgando. Categoría: inválido, prescindible. Eso dice mi informe. Mis trazos dicen otra cosa.
+A la Tortuga Sentada le dediqué nueve trazos, no más. Es difícil de dibujar porque casi no se mueve. Está siempre en la misma posición, sobre esa estructura con ruedas que rechinan, las extremidades superiores caídas, la cabeza ladeada, un hilo de baba colgando. Categoría: inválido, prescindible. Eso dice mi informe. Mis trazos dicen otra cosa.
 
-Los nueve dibujitos muestran algo que no tiene que ver con la posición del cuerpo: muestran los sensores. Ellos les dicen: ojos.
+Los nueve muestran algo que no tiene que ver con la posición del cuerpo: muestran los sensores. Ellos les dicen: ojos.
 
 Los de la Tortuga Sentada son los más rápidos de toda la cantera. Se mueven cuando cree que no lo miro. Calculan distancias, cuentan pasos, registran intenciones y ángulos. Hace exactamente lo mismo que yo.
 
