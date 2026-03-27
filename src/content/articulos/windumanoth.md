@@ -5,7 +5,7 @@ fecha: "Febrero 2026"
 imagen: "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=900&q=80&fit=crop"
 imagenAlt: "Espera — escritor sin un mango"
 pintura: false
-orden: 8
+orden: 7
 seoTitulo: "Esperando Windumanoth — Matias J. Ortiz | Diario de escritura"
 seoDescripcion: "Sobre la economía del escritor argentino: setenta y cinco euros, dos cuentos listos y una convocatoria que no abre. Arroz con sal y estrategia."
 ---
