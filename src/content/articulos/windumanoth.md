@@ -7,7 +7,7 @@ imagenAlt: "Espera — escritor sin un mango"
 pintura: false
 orden: 7
 seoTitulo: "Esperando Windumanoth — Matias J. Ortiz | Diario de escritura"
-seoDescripcion: "Sobre la economía del escritor argentino: setenta y cinco euros, dos cuentos listos y una convocatoria que no abre. Arroz con sal y estrategia."
+seoDescripcion: "Sobre la economía del escritor argentino: setenta y cinco euros, dos cuentos listos y una convocatoria que no abre. Arroz con sal y estrategia"
 ---
 
 Windumanoth es una revista española de ciencia ficción que paga. Setenta y cinco euros por relato. Eso es plata real cuando trabajás nueve horas en una picadora de carne y escribís el resto.
