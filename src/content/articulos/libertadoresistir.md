@@ -12,6 +12,7 @@ seoTitulo: "LIBERTAD o RESISTIR — Matias J. Ortiz | Metal Que Crece"
 seoDescripcion: "El mismo narrador cuenta la misma historia dos veces y cambia los hechos. Un paralítico en silla de ruedas, un búnker, chapas grabadas con clavo: qué pasa cuando el testigo edita su propio testimonio."
 ---
 
+
 <!-- ANALISIS -->
 Tengo un problema. Un tipo en silla de ruedas me contó su historia dos veces y no me cierra.
 
