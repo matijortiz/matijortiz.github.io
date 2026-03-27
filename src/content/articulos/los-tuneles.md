@@ -9,7 +9,7 @@ fragmento: "LOS TÚNELES"
 coleccion: "Egixi · Matias J. Ortiz · Rosario"
 orden: 5
 seoTitulo: "Los Túneles — Matias J. Ortiz | Libro Egixi"
-seoDescripcion: "El último relato del libro Egixi: lo que queda debajo de la ciudad ocupada cuando se saca todo lo que los Egixi pusieron arriba. Satánico y la Iguana."
+seoDescripcion: "El último relato del libro Egixi: lo que queda debajo de la ciudad ocupada cuando se saca todo lo que los Egixi pusieron arriba. Satánico y la Iguana"
 ---
 
 Un libro de relatos necesita un final que justifique todo lo que vino antes. No un resumen. No un cierre prolijo. Algo que deje al lector en un lugar distinto al que estaba cuando empezó.
