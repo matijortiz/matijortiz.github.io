@@ -96,7 +96,7 @@ La primera versión de este cuento se caía en ese punto. En el embarazo, en la 
 
 Entonces el cuento creció. Se fue a Rosario. Se metió en una fábrica de autopartes. El narrador dejó el río, dejó la canoa, dejó el olor a barro y se puso a operar una fresadora nueve horas por día. Aprendió a vivir con el ruido de una máquina que no cambia nunca, no se mueve con el viento ni con la lluvia, que tapa todo lo que tenías adentro hasta que dejás de escucharlo. Y cuando dejás de escuchar, la máquina aprovecha.
 
-Hay un momento en el cuento donde la fresadora le agarra el guante. Le roza los nudillos. Tres líneas rojas. Sangre. Y él no piensa en la fábrica: piensa en Lucas, el hijo de Matungo, el que se ahogó con una moneda apretada en el puño. Esa conexión es una vértebra del relato. El accidente de la máquina y el ahogamiento son la misma cosa: la herencia que te tira del brazo para abajo cuando más necesitás soltarte.
+Hay un momento en el cuento donde la fresadora le agarra el guante. Le roza los nudillos. Tres líneas rojas. Sangre. Y él no piensa en la fábrica: piensa en Lucas, el hijo de Matungo, el que se ahogó con una moneda apretada en el puño. Esa conexión es una vértebra del relato.
 
 Lo que también creció fue Noelia. En la versión vieja era la mujer que nada más porta el embarazo. Ahora es la que pelea. La que dice: *Acá no hay hospital, no hay escuela, no hay nada. ¿Querés que el nene nazca acá?* La que reza con un rosario apretado en la mano. La que tiene un corte en la palma que dice que es de pelar bagre. La que te pone en la encrucijada. *Decidí — me dijo — El nene o la isla.* Noelia ya no es un personaje secundario. Es la fuerza que empuja contra la maldición. No gana. Ni pierde. Se planta.
 
