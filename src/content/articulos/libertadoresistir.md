@@ -1,6 +1,5 @@
 ---
-
-title: "LIBERTAD o RESISTIR: <em>la misma historia contada dos veces</em>"
+titulo: "LIBERTAD o RESISTIR: <em>la misma historia contada dos veces</em>"
 tipo: "Sobre un narrador"
 fecha: "Marzo 2026"
 imagen: "https://pbs.twimg.com/media/GW9oHxuWIAAKAIW.jpg"
@@ -11,7 +10,6 @@ coleccion: "Egixi · Matias J. Ortiz · Rosario"
 orden: 1
 seoTitulo: "LIBERTAD o RESISTIR — Matias J. Ortiz | Metal Que Crece"
 seoDescripcion: "El mismo narrador cuenta la misma historia dos veces y cambia los hechos. Un paralítico en silla de ruedas, un búnker, chapas grabadas con clavo: qué pasa cuando el testigo edita su propio testimonio."
-
 ---
 
 
