@@ -57,4 +57,4 @@ La tercera: el protagonista es un genio en el sentido liso y llano. Lo ponen ade
 
 La cuarta: los Genius de Apple en Argentina. Los que sueldan tecnología ajena en locales de una corporación que los trata exactamente igual que H. Peralta trata al protagonista.
 
-*Las cuatro capas son la misma: hay algo que crece solo adentro de todo y que no le pide permiso a nadie para existir. Todavía.*
+*Las cuatro capas son la misma: hay algo que crece solo adentro de todo y que no le pide permiso a nadie para existir*.
