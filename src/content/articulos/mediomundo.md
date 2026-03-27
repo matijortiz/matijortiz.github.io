@@ -92,7 +92,7 @@ Se quedó mirándome. Se calló. Después se dio vuelta y me miró otra vez.
 
 <!-- ANALISIS -->
 
-La primera versión de este cuento se caía en ese punto. En el embarazo, en la herencia anunciada. Pero no me convenció. Porque lo que me picaba a mí de verdad no era si el mediomundo muestra el futuro y no sabés cómo frenar eso, sino si lo que te muestra el mediomundo será verdad o mentira. Qué elegís creer.
+La primera versión de este cuento se caía en ese punto. En el embarazo, en la herencia anunciada. Pero no me convenció. Porque lo que me picaba a mí de verdad no era si el mediomundo muestra el futuro y no sabés cómo frenar eso, sino si lo que te muestra el mediomundo será verdad o mentira. Qué elegís creer. ¿Qué hacés con lo que viste?
 
 Entonces el cuento creció. Se fue a Rosario. Se metió en una fábrica de autopartes. El narrador dejó el río, dejó la canoa, dejó el olor a barro y se puso a operar una fresadora nueve horas por día. Aprendió a vivir con el ruido de una máquina que no cambia nunca, no se mueve con el viento ni con la lluvia, que tapa todo lo que tenías adentro hasta que dejás de escucharlo. Y cuando dejás de escuchar, la máquina aprovecha.
 
