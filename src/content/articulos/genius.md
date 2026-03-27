@@ -45,7 +45,6 @@ Serena me dice que la secreción de los respiradores tiene un componente que se 
 Aprendí solo. Sin manual. Sin instructor. Los Egixi no te enseñan: observan. Cuando entré me pusieron un respirador roto adelante, herramientas que parecían pinzas de dentista diseñadas por alguien que nunca vio un diente, y me miraron. Me miraron con esos sensores que se mueven como ojos de camaleón, y esperaron, a ver qué hacía.
 
 Tardé tres días en abrir el primero sin romperlo. Dos semanas en entender las válvulas. Un mes en hacer mi primera reparación completa. El Capataz que me supervisaba —uno de caparazón oscuro, casi pulido a negro, con las placas rajadas en el hombro— asintió una vez. Fue el gesto más parecido a un elogio que recibí en años de ocupación.
-
 <!-- ANALISIS -->
 
 El título tiene cuatro capas y las cuatro son necesarias.
