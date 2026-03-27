@@ -7,7 +7,7 @@ imagenAlt: "Escritura a mano — proceso"
 pintura: true
 fragmento: "LA ORTIGA"
 coleccion: "Promesa y Castigo · Matias J. Ortiz · Rosario"
-orden: 3
+orden: 4
 seoTitulo: "Promesa y Castigo — Matias J. Ortiz | Escritor Rosario"
 seoDescripcion: "Cómo se escribe un libro que te asusta. El proceso detrás de Promesa y Castigo: once herencias malditas del litoral santafesino, desde La Ortiga hasta el jurado."
 ---
