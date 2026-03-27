@@ -7,7 +7,7 @@ imagenAlt: "Río Paraná — Mediomundo"
 pintura: false
 fragmento: "MEDIOMUNDO"
 coleccion: "Promesa y Castigo · Matias J. Ortiz · Rosario"
-orden: 4
+orden: 5
 seoTitulo: "Mediomundo — Matias J. Ortiz | Promesa y Castigo"
 seoDescripcion: "Análisis del relato Mediomundo: una herramienta de pesca que muestra el futuro, un pescador trasplantado a la fábrica rosarina, y una herencia que no se puede tirar."
 ---
