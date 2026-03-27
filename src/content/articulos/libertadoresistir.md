@@ -50,7 +50,7 @@ La chapa se queda en el búnker. Eso es la regla. No es del pibe, es del lugar. 
 
 Las chapas acumuladas en la pared del fondo son una por pibe. Julián las hizo todas. Con el mismo clavo, con el mismo ruido, con esas manos que cuando hacen algo lo marcan bien fuerte.
 
-Después de Juanchito vino la Polenta, doce años, memoria que avergonzaba. La Poca, muy callada, que copiaba diagramas de memoria. Rodrigo Ezequiel Martínez Benavídez, completo, cada vez, el nombre como lo único que tenía y no estaba dispuesto a recortar. Leía más rápido que yo a los dos meses.
+Después de Juanchito vino La Polenta, doce años, memoria que avergonzaba. La Poca, muy callada, que copiaba diagramas de memoria. Rodrigo Ezequiel Martínez Benavídez, completo, cada vez, el nombre como lo único que tenía y no estaba dispuesto a recortar. Leía más rápido que yo a los dos meses.
 
 Las madres venían de noche. Las que entendían que lo que apostaban era más largo que su propia vida. Dejaban a los pibes. No todas lloraban. Las que preguntaban: ¿va a estar bien? Yo decía: va a estar diferente. Eso era lo verdadero.
 
