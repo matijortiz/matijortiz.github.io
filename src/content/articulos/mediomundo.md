@@ -12,7 +12,7 @@ seoTitulo: "Mediomundo — Matias J. Ortiz | Promesa y Castigo"
 seoDescripcion: "Análisis del relato Mediomundo: una herramienta de pesca que muestra el futuro, un pescador trasplantado a la fábrica rosarina, y una herencia que no se puede tirar."
 ---
 
-*La red salió pesada.* Cuatro palabras. Sujeto, verbo, adjetivo. Sin ornamento. El narrador de "Mediomundo" no anuncia, no prepara, no pide permiso: tira la red y arranca. Ese es el tono. Ese es el pacto.
+*La red salió pesada.* Cuatro palabras. Sujeto, verbo, adjetivo. Sin ornamento. El narrador de *Mediomundo* no anuncia, no prepara, no pide permiso: tira la red y arranca. Ese es el tono. Ese es el pacto.
 
 Lo que sigue es una historia de trasplante —de isla a ciudad, de río a fábrica— narrada desde adentro de un cuerpo que todavía no aprendió a vivir el cemento. El narrador no tiene nombre: es el nuevo, es *el pescador* para sus compañeros de planta. La identidad es siempre lo que te nombran los demás. Apodo como bautismo.
 
