@@ -14,7 +14,7 @@ seoDescripcion: "Análisis del relato Mediomundo: una herramienta de pesca que m
 
 *La red salió pesada.* Cuatro palabras. Sujeto, verbo, adjetivo. Sin ornamento. El narrador de "Mediomundo" no anuncia, no prepara, no pide permiso: tira la red y arranca. Ese es el tono. Ese es el pacto.
 
-Lo que sigue es una historia de trasplante —de isla a ciudad, de río a fábrica— narrada desde adentro de un cuerpo que todavía no aprendió a vivir el cemento. El narrador no tiene nombre: es el nuevo, es *el pescador* para sus compañeros de planta. La identidad es siempre lo que te nombran los demás. O el apodo como bautismo.
+Lo que sigue es una historia de trasplante —de isla a ciudad, de río a fábrica— narrada desde adentro de un cuerpo que todavía no aprendió a vivir el cemento. El narrador no tiene nombre: es el nuevo, es *el pescador* para sus compañeros de planta. La identidad es siempre lo que te nombran los demás. Apodo como bautismo.
 
 Y lo que heredó es esto: un aro de hierro cromado, oxidado, húmedo. Un mediomundo. La herramienta de pesca que muestra el futuro cuando le cae sangre. No la sangre de cualquiera: la propia. La que uno derrama despacio, sobre el metal, como quien firma.
 
