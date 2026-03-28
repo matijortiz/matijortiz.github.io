@@ -5,7 +5,7 @@ fecha: "Marzo 2026"
 imagen: "https://pbs.twimg.com/media/GW9oHxuWIAAKAIW.jpg"
 imagenAlt: "Hombre Roto — Artista Desconocido, 2026"
 pintura: true
-fragmento: "METAL QUE CRECE"
+fragmento: "METAL QUE CRECE / FRAGMENTO"
 coleccion: "Egixi · Matias J. Ortiz · Rosario"
 orden: 1
 seoTitulo: "LIBERTAD o RESISTIR — Matias J. Ortiz | Metal Que Crece"
