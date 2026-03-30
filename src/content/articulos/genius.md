@@ -47,6 +47,7 @@ Aprendí solo. Sin manual. Sin instructor. Los Egixi no te enseñan: observan. C
 Tardé tres días en abrir el primero sin romperlo. Dos semanas en entender las válvulas. Un mes en hacer mi primera reparación completa. El Capataz que me supervisaba —uno de caparazón oscuro, casi pulido a negro, con las placas rajadas en el hombro— asintió una vez. Fue el gesto más parecido a un elogio que recibí en años de ocupación.
 <!-- ANALISIS -->
 
+
 El título tiene cuatro capas y las cuatro son necesarias.
 
 La primera: la que buscás cuando leés por primera vez el título. Decís: Ah, genio. Inteligencia artificial, tecnología. Entrás esperando algo cerebral, frío, con pantallas y código. Y te encontrás al protagonista en el subsuelo de lo que era la terminal de ómnibus de Rosario, con las manos cada vez más violetas de trabajar con ácido, reparando placas de tecnología extranjera que lo trata como si él fuera estaño.
