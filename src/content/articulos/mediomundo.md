@@ -106,6 +106,6 @@ Hay un relato adentro del relato que no se cuenta con palabras. Son intrusiones,
 
 El final no cierra. Clausura, sí: el narrador toma una decisión. Pero no resuelve la pregunta. *Los dedos chiquitos se cerraron alrededor del metal.* Tomás tiene días de nacido y ya está sosteniendo lo que lo va a perseguir. El narrador le pasa la mano por la cabeza —el mismo gesto que Matungo le hizo a él— y la nuca le deja de arder. ¿Eso es condena o es amor? ¿Es transmisión o es la única forma que conoce de decir: *esto es tuyo, es lo que somos*?
 
-El cuento no lo dice. Lo que Noelia calla es lo más importante y lo vas a tener que responder vos. Lo vas a tener que leer.
+El relato no lo dice. Lo que Noelia calla es lo más importante y lo vas a tener que responder vos. Lo vas a tener que leer.
 
 Esto está fuera de *Promesa y Castigo*. Es un relato que llegó tarde, con el libro ya cerrado. Y como ningún manuscrito cae en saco vacío, voy a estar presentándolo en algún concurso de este año junto a una colección de cuentos, no como el candidato que pisa más fuerte, ése se llama *Fierro*. La herencia se sigue propagando, ahora toma voz propia. Llegó al siglo XXI. Llegó de la isla a Rosario. Llegó a la fábrica. Se adaptó. Y sigue. En *Cochambre* Tato le pega a La Piba Carmina. En *Belcebú* el abuelo Negro dice que a las mujeres hay que tenerlas cortitas. En *Mediomundo* el narrador no sabe si está salvando a su hijo o marcándolo. No sabemos dónde la herencia mintió o dijo la verdad. Esa cadena es más poderosa que cualquier objeto maldito.
