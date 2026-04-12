@@ -106,7 +106,7 @@ Por último, el proceso creativo tiene dos compañeros. Uno soy yo frente a la p
 
 No es poco.
 
-La literatura argentina tiene a muchos escritores que cuentan la opresión desde afuera. Rosa la cuenta desde adentro del vestido de las cincuenta lenguas. Y cuando sale, canta.
+La literatura argentina tiene a muchos escritores que cuentan la opresión desde afuera. Rosa no, Rosa te la cuenta desde adentro del vestido de las cincuenta lenguas. Y cuando sale, canta.
 
 *Qua resurget ex favilla.*
 
