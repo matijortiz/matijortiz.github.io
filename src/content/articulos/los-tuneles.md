@@ -12,9 +12,9 @@ seoTitulo: "Los Túneles — Matias J. Ortiz | Libro Egixi"
 seoDescripcion: "El último relato del libro Egixi: lo que queda debajo de la ciudad ocupada cuando se saca todo lo que los Egixi pusieron arriba. Satánico y la Iguana"
 ---
 
-Un libro de relatos necesita un final que justifique todo lo que vino antes. No un resumen. No un cierre prolijo. Algo que deje al lector en un lugar distinto al que estaba cuando empezó.
+Un libro de relatos necesita un final que justifique todo lo que vino antes. Si das un resumen, aburrís. Si das un cierre prolijo, secás. Tenés que terminar las cosas con algo que deje al lector en un lugar distinto al que estaba cuando empezó.
 
-Los Túneles es ese relato. Lo que pasa abajo — literalmente abajo, en la estructura subterránea de la ciudad ocupada — es lo que pasa en todos los demás relatos pero sin la capa de normalidad encima. Sin los caparazones. Sin los respiradores. Sin los escopetazos de muerte azul. Solo lo que queda cuando sacás todo lo que los Egixi pusieron arriba.
+Los Túneles es ese relato. Y cumple. Lo que pasa abajo —literalmente abajo, en la estructura subterránea de la argentina ocupada— es lo que pasa en todos los demás relatos pero sin la capa de normalidad encima. Sin los caparazones. Sin los respiradores. Sin los escopetazos de muerte azul. Solo lo que queda cuando sacás todo lo que los Egixi pusieron arriba.
 
 <!-- FRAGMENTO -->
 
@@ -76,7 +76,7 @@ Le hablaba. No con palabras, porque las palabras se le enredaban en la lengua y 
 
 <!-- ANALISIS -->
 
-El libro completo — Los Egixi, Rosa Carnívora, Rompe Piernas, Reina Madre, El Tajo, Los Túneles — está guardado en un cajón. Pudriéndose ahí, como se pudren los libros que nadie pidió pero que ya existen y no tienen adonde ir.
+El libro completo —Los Egixi, Rosa Carnívora, Rompe Piernas, Reina Madre, El Tajo, Los Túneles— está guardado en un cajón. Pudriéndose ahí, como se pudren los libros que nadie pidió pero que ya existen y no tienen adonde ir.
 
 Cuando esté listo para salir, va directo a dos editoriales. *Sigilo*, porque lo que hacen con la narrativa argentina de los márgenes es exactamente lo que este libro necesita que alguien haga con él. Y *Caja Negra*, porque tiene el espacio para algo que no entra fácil en ninguna categoría, y Egixi no entra fácil en ninguna categoría.
 
