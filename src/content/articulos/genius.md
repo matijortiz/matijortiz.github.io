@@ -54,7 +54,7 @@ La primera: la que buscás cuando leés por primera vez el título. Decís: Ah, 
 
 La segunda: los romanos tenían el concepto de *genius*. No era lo que entendemos hoy. Era el espíritu propio de cada cosa. Cada persona tenía su genius. Cada lugar. Cada objeto. Lo que pulsaba adentro, independientemente de quién lo poseyera.
 
-La tercera: el protagonista es un genio en el sentido liso y llano. Lo ponen adelante de un respirador — tecnología extraterrestre que ningún manual explica, que nadie le enseñó a reparar — y lo aprende solo. A prueba y error. A maña y cuerpo.
+La tercera: el protagonista es un genio en el sentido liso y llano. Lo ponen adelante de un respirador —tecnología extraterrestre que ningún manual explica, que nadie le enseñó a reparar— y lo aprende solo. A prueba y error. A maña y cuerpo.
 
 La cuarta: los Genius de Apple en Argentina. Los que sueldan tecnología ajena en locales de una corporación que los trata exactamente igual que H. Peralta trata al protagonista.
 
