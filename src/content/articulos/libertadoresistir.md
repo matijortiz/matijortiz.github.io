@@ -7,7 +7,7 @@ imagenAlt: "Hombre Roto — Artista Desconocido, 2026"
 pintura: true
 fragmento: "METAL QUE CRECE · FRAGMENTO"
 coleccion: "Egixi · Matias J. Ortiz · Rosario"
-orden: 1
+orden: 2
 seoTitulo: "LIBERTAD o RESISTIR — Matias J. Ortiz | Metal Que Crece"
 seoDescripcion: "El mismo narrador cuenta la misma historia dos veces y cambia los hechos. Un paralítico en silla de ruedas, un búnker, chapas grabadas con clavo: qué pasa cuando el testigo edita su propio testimonio."
 ---
