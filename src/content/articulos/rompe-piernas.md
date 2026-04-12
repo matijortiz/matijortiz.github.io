@@ -7,7 +7,7 @@ imagenAlt: "Duelo a garrotazos — Francisco de Goya, 1820-1823"
 pintura: true
 fragmento: "LA MUDA"
 coleccion: "Egixi · Matias J. Ortiz · Rosario"
-orden: 6
+orden: 7
 seoTitulo: "Rompe Piernas y La Muda — Matias J. Ortiz | Egixi"
 seoDescripcion: "Dos relatos del universo Egixi narrados desde orillas opuestas: el narrador humano en silla de ruedas y la capataz alienígena que empieza a sentir lo que no tiene casillero."
 ---
