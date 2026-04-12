@@ -1,5 +1,5 @@
 ---
-titulo: "ROSA CARNÍVORA: <em>treinta páginas escritas con el teléfono en la fábrica</em>"
+titulo: "ROSA CARNÍVORA: <em>una ronrisa perlada esconde una *diva asesina*</em>"
 tipo: "Sobre un relato"
 fecha: "Abril 2026"
 imagen: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f7c09af1-6e86-4801-9b33-022eef5b83b3/d8ijd4s-d1dd925b-5680-4eaa-b22f-215bb9e3f325.jpg/v1/fit/w_670,h_1100,q_70,strp/the_impaled_queen_by_deharme_d8ijd4s-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTEwMCIsInBhdGgiOiIvZi9mN2MwOWFmMS02ZTg2LTQ4MDEtOWIzMy0wMjJlZWY1YjgzYjMvZDhpamQ0cy1kMWRkOTI1Yi01NjgwLTRlYWEtYjIyZi0yMTViYjllM2YzMjUuanBnIiwid2lkdGgiOiI8PTY3MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.JhyJwNgnCgxaflsQN83_L_x9JV7ltLggc1tzKqzzj_U"
