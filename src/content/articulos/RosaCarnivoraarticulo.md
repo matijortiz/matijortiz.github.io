@@ -7,7 +7,7 @@ imagenAlt: "Rosa — Belleza Purasangre"
 pintura: true
 fragmento: "ROSA CARNÍVORA · FRAGMENTO"
 coleccion: "Egixi · Matias J. Ortiz · Rosario"
-orden: 1
+orden: 2
 seoTitulo: "Rosa Carnívora — Matias J. Ortiz | Egixi"
 seoDescripcion: "Un obrero metalúrgico de Rosario escribe en el teléfono durante el turno de nueve horas. De esas notas sale Rosa Carnívora: una esclava con perlas en las encías, un vestido de cincuenta lenguas muertas y un incendio que no se apaga."
 ---
