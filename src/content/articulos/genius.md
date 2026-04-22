@@ -7,7 +7,7 @@ imagenAlt: "Circuito electrónico — Genius"
 pintura: false
 fragmento: "GENIUS"
 coleccion: "Egixi · Matias J. Ortiz · Rosario"
-orden: 3
+orden: 4
 seoTitulo: "Genius — Matias J. Ortiz | Ciencia Ficción Argentina"
 seoDescripcion: "Análisis del relato Genius: un técnico repara respiradores alienígenas en la ex terminal de ómnibus de Rosario. Resistencia obrera y ocupación extraterrestre."
 ---
