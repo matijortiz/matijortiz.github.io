@@ -78,8 +78,6 @@ Le hablaba. No con palabras, porque las palabras se le enredaban en la lengua y 
 
 El libro completo —Los Egixi, Rosa Carnívora, Rompe Piernas, Reina Madre, El Tajo, Los Túneles— está guardado en un cajón. Pudriéndose ahí, como se pudren los libros que nadie pidió pero que ya existen y no tienen adonde ir.
 
-Cuando esté listo para salir, va directo a dos editoriales. *Sigilo*, porque lo que hacen con la narrativa argentina de los márgenes es exactamente lo que este libro necesita que alguien haga con él. Y *Caja Negra*, porque tiene el espacio para algo que no entra fácil en ninguna categoría, y Egixi no entra fácil en ninguna categoría.
-
 No le estoy pidiendo nada a nadie. Estoy diciendo que el libro existe, que está terminado, y que cuando llegue el momento va a poder pararse solo.
 
 *Mientras tanto, sigo excavando.*
