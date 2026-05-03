@@ -10,6 +10,7 @@ coleccion: "El Lomo · Matias J. Ortiz · Rosario"
 orden: 1
 seoTitulo: "La Turna — Matias J. Ortiz | El Lomo"
 seoDescripcion: "Tres mujeres en el turno noche de una fábrica de plástico. Un técnico de mantenimiento que no vuelve del fondo del galpón. Un detective con un cuaderno rayado. Y una que se quedó callada."
+
 ---
 
 
@@ -120,6 +121,7 @@ Lo que pasa después no lo cuento acá. Eso lo tiene que leer el que agarre el l
 Cuando un hombre escribe mujeres, puede caer en la trampa de pensar que hay que *explicarlas*. Eso es un narrador que no puede cerrar la maldita boca. Es una cabeza flotando, un tipo filosofando en papeles. No. A mí eso no me interesa en absoluto. Lo que hago es hacer exactamente lo que hago cuando escribo hombres: mostrar las manos, el cuerpo, cómo pesan las decisiones y confiar en que el lector complete. Ruth no necesita que yo le explique la cicatriz de la muñeca. La cicatriz está. El lector la ve. Y la ve cada vez que Ruth se la rasca, cada vez que se la tapa o el guante de nitrilo le aprieta un poco más ese lado. Eso es todo.
 
 El título del cuento viene del turno. *Turna*. No va de errores ortográficos, eh. Es un modismo que se me pegó del taller, cuando caés tanto en la rutina que buscás variaciones a lo que estás haciendo, siempre. Y que suena exactamente como lo que es: una cosa medio torcida, medio deforme, que funciona igual.
+
 
 ---
 
