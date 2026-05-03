@@ -221,7 +221,7 @@ nav a:hover { color: var(--crema); }
 
 .badge-buscandoeditorial {
   background: rgba(212, 160, 60, 0.28);
-  color: var(--ambar);
+  color: #f0c878;
   border: 1px solid rgba(212, 160, 60, 0.4);
 }
 
