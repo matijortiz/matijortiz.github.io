@@ -48,6 +48,6 @@ La muda es el momento en que la coraza cae. La carne nueva queda expuesta al fr�
 
 <!-- EXTRA -->
 
-Eso es lo que une a los dos relatos. No la violencia — la violencia está en los dos, pero no es el centro. El centro es el gesto que la violencia no puede producir ni explicar. Lo que cruza la línea de la especie sin pedir disculpas. El garrotazo que llega desde el barro de la Cantera. El narrador enseña a leer desde la silla de ruedas. El Monito abriga a la que lo vigila.
+Eso es lo que une a los dos relatos. No la violencia. La violencia está en los dos, pero no es el centro. El centro es el gesto que la violencia no puede producir ni explicar. Lo que cruza la línea de la especie. El garrotazo que llega desde el barro de la Cantera. El narrador enseña a leer desde la silla de ruedas. El Monito abriga a la que lo vigila.
 
 *Rompe Piernas termina cuando el primer pibe dice en silencio la primera palabra que aprendió. La Muda termina cuando la Capataz no devuelve la campera. Lo que pasó en el medio, eso, no tiene nombre todavía en ningún idioma.*
