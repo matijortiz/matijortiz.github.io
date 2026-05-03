@@ -14,9 +14,9 @@ seoDescripcion: "Cómo se escribe un libro que te asusta. El proceso detrás de 
 
 <!-- ANALISIS -->
 
-Promesa y Castigo empezó con un solo cuento: La Ortiga. Lo llevé a mis compañeros de Editorial Patas de Cabra y me dijeron que les traía recuerdos de "El Sur" de Borges. Semanas antes yo había encontrado ese cuento y me rompió la cabeza —nunca me había gustado Borges y de repente lo amaba—. Me dijeron que La Ortiga estaba para presentar en algún concurso: no me lo tomé en serio. ¿Era ese u otro? Lo que sí sé es que La Ortiga llegó como un manuscrito crudo, lleno de grasa, con voz impostada y errores graves. Pero la idea estaba.
+*Promesa y Castigo* empezó con un solo cuento: *La Ortiga*. Lo llevé a mis compañeros de Editorial *Patas de Cabra* y me dijeron que les traía recuerdos de *El Sur* de *Borges*. Semanas antes yo había encontrado ese cuento y me rompió la cabeza. Nunca me había gustado Borges y de repente lo amaba. Me dijeron que *La Ortiga* estaba para presentar en algún concurso: no me lo tomé en serio. ¿Era ese u otro? Lo que sí sé es que La Ortiga llegó como un manuscrito crudo, lleno de grasa, con voz impostada y errores graves. *Pero la idea estaba*.
 
-Lo rompí. Lo armé de nuevo. Le pasé la amoladora. Lo volví a pulir. Le puse voz matrera y textura al gaucho, les regalé un perro, cerré los agujeros con soldadura. Solo mi novia sabe cuántas horas silla-culo durante meses llevo trabajando en mis escritos. Cuando más o menos lo tenía, con mucha vergüenza se lo mostré a mi familia. Mi hermana se lo leyó a mis viejos en voz alta.
+Lo rompí. Lo armé de nuevo. Le pasé la amoladora. Lo volví a pulir. Le puse voz matrera y textura al gaucho, a los protagonistas les regalé un perro protector, *divino*. Cerré los agujeros con soldadura. Solo mi novia sabe cuántas horas silla-culo durante meses llevo trabajando en mis escritos. Cuando más o menos lo tenía, con mucha vergüenza se lo mostré a mi familia. *Mi hermana se lo leyó a mis viejos, en voz alta*.
 
 <!-- FRAGMENTO -->
 
@@ -128,10 +128,10 @@ No contesté. Me quedé clavado en el barro. Mirándolo a los ojos.
 
 <!-- EXTRA -->
 
-Les comparto fragmentos. Está todo cortado, como la mano del protagonista. La cosa va escalando. El animal lo ayuda, la mujer lo ayuda, pero es él quien tiene que agarrar la posta y enfrentar.
+Les comparto fragmentos. Está todo cortado como la mano del protagonista. La cosa va escalando. El animal lo ayuda, la mujer lo ayuda, pero es él quien tiene que agarrar la posta y enfrentar.
 
-El libro fue creciendo alrededor de ese primer corte, relato por relato, hasta llegar a once. Que hay cosas que recibís sin pedirlas. Que el cuerpo recuerda lo que la cabeza descarta. Que algunas familias se pasan el daño de generación en generación con la misma precisión que una receta de cocina.
+El libro fue creciendo alrededor de ese primer corte, relato por relato, hasta llegar a once. Que hay cosas que recibís sin pedirlas. Que el cuerpo recuerda lo que la cabeza descarta.
 
-Cuando lo mandé a Fundación El Libro tenía 130 páginas en A4 — unas 200 en formato libro real, con márgenes y tipografía de libro de verdad. Once relatos que no se conocen entre sí pero que respiran el mismo aire. Juro que nunca planeé que fueran once. Juro que no sabía que era un libro hasta que lo fue.
+Cuando lo mandé a *Fundación El Libro 2026* tenía 130 páginas en A4, unas 200 en formato libro real, con márgenes y tipografía de libro de verdad. Once relatos que no se conocen entre sí pero que respiran del mismo pulmón. Juro que nunca planeé que fueran once. *Número impar*. Hay una mística atrás.
 
 *Ahora está en manos del jurado. No sé qué hacer con eso.*
