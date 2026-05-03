@@ -131,7 +131,7 @@ No hay aliens, no hay sistema de objetos-herencia malditos ni esclavitud cósmic
 
 Yo sigo en Rosario. Laburo nueve horas al día para otros, hago mi propia historia con el teléfono en los huecos que puedo, los capataces atrás. La diferencia es que ahora, cuando salgo, no me voy derecho a la pantalla. Primero paso por lo de la rubia, la que me hizo probar los canelones más ricos sobre la faz de la tierra, la del cucurucho infinito del artículo *Genius*, la que me ceba el mate en *Rosa Carnívora*. La misma de siempre. La que un día me agarró de la mano y me llevó a comer a un lugar que no conocía y me llenó el pecho de una cosa que no tiene nombre pero que me acompañó durante todo este libro. Una cosa más simple que la literatura y más difícil de fabricar. Se deja entrar y se cuida. Nada más.
 
-Escribir *El Lomo* me dejó respirar. Sacar la jeta del universo *Egixi* y meter las manos en la grasa del mundo real, el mío. El de las pibas que limpian moldes a las dos de la mañana y saben que si llaman a alguien van a tener que explicar por qué estaban ahí cuando la mayoría duerme. *La Turna* es para ellas. Para las que se quedan quietas porque así se sobrevive. Y para el perro que las espera en la vereda sin pedirles nada a cambio.
+Escribir *El Lomo* me dejó respirar. Sacar la jeta del universo *Egixi* y meter las manos en la grasa del mundo real, el mío. El de las pibas que limpian moldes a las dos de la mañana y saben que si llaman a alguien van a tener que explicar por qué estaban ahí cuando la mayoría duerme. *La Turna* es para ellas. Para las que se quedan quietas porque así se sobrevive. Y para el perro que las espera en la vereda sin pedirles nada.
 
 El libro está terminado. Falta siempre una vuelta más de tuerca.
 
