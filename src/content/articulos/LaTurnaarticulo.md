@@ -123,8 +123,6 @@ Cuando un hombre escribe mujeres, puede caer en la trampa de pensar que hay que 
 El título del cuento viene del turno. *Turna*. No va de errores ortográficos, eh. Es un modismo que se me pegó del taller, cuando caés tanto en la rutina que buscás variaciones a lo que estás haciendo, siempre. Y que suena exactamente como lo que es: una cosa medio torcida, medio deforme, que funciona igual.
 
 
----
-
 <!-- EXTRA -->
 
 
