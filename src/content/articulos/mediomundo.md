@@ -36,7 +36,7 @@ Me agarré la cara. Me toqué el tajo de la cicatriz. Los dedos me olían a trip
 
 *Sangre de escama en fierro tibio. Dedos grandes sobre mano chica. Metal sobre pecho. Latido nuevo.*
 
-El mediomundo muestra. Lo hace cuando le cae sangre. Sangre de pescado, de persona, de lo que sea. A veces, solo pocas, te muestra lo que viene. No sé por qué. Ni cómo anda eso. Pero es así. Siempre.
+El mediomundo muestra. Lo hace cuando le cae sangre. Sangre de pescado, de persona, de lo que sea. A veces, solo pocas, te muestra lo que viene. No sé por qué. Ni cómo anda eso. Pero es así.
 
 Matungo me enseñó a leer el agua.
 
