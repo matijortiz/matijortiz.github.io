@@ -220,7 +220,7 @@ nav a:hover { color: var(--crema); }
 .badge-inedito {
   background: rgba(212, 160, 60, 0.28);
   color: #f0c878;
-  border: 1px solid rgba(127, 196, 122, 0.4);
+  border: 1px solid rgba(212, 160, 60, 0.4);
 }
 .badge-proceso {
   background: rgba(80, 130, 180, 0.25);
@@ -237,7 +237,6 @@ nav a:hover { color: var(--crema); }
   content: '\2937';
   position: absolute; left: 0;
   color: var(--oxido);
-  border: 1px solid rgba(212, 212, 212, 0.4);
 }
 
 /* ── FEED ── */
