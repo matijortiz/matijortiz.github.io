@@ -15,7 +15,7 @@ const articulos = defineCollection({
     draft:           z.boolean().default(false),
     orden:           z.number().optional(),
 
-    // ── Campos SEO ──────────────────────────────────────────────────────────
+    // ── Campos SEO ─────────────────────────────────────────────────────────
     // Si no se definen, el Layout usa el título genérico del sitio.
     // Escribirlos en texto plano, sin HTML.
     seoTitulo:       z.string().optional(),   // Ej: "Genius — Matias J. Ortiz — Ciencia Ficción Argentina"
