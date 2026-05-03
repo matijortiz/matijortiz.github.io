@@ -3,7 +3,7 @@ name: Deploy Astro a GitHub Pages
 on:
   push:
     branches: [main]
-  workflow_dispatch:   # permite trigger manual desde la web de GitHub
+  workflow_dispatch:   # permite trigger manual desd la web de GitHub
 
 permissions:
   contents: read
