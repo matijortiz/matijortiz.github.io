@@ -207,9 +207,29 @@ nav a:hover { color: var(--crema); }
   text-transform: uppercase;
   padding: 2px 7px; border-radius: 2px; margin-top: 0.3rem;
 }
-.badge-publicado { background: rgba(127,196,122,0.15); color: var(--raiz); }
-.badge-concurso  { background: rgba(184,74,26,0.15);   color: var(--ambar); }
-.badge-espera    { background: rgba(100,100,120,0.2);   color: var(--gris); }
+.badge-publicado {
+  background: rgba(127, 196, 122, 0.28);
+  color: #b8e8b3;
+  border: 1px solid rgba(127, 196, 122, 0.4);
+}
+
+.badge-concurso {
+  background: rgba(184, 74, 26, 0.28);
+  color: #e8a884;
+  border: 1px solid rgba(184, 74, 26, 0.4);
+}
+
+.badge-inedito {
+  background: rgba(212, 160, 60, 0.28);
+  color: #f0c878;
+  border: 1px solid rgba(212, 160, 60, 0.4);
+}
+
+.badge-proceso {
+  background: rgba(80, 130, 180, 0.25);
+  color: #a8c4e0;
+  border: 1px solid rgba(80, 130, 180, 0.4);
+}
 .escribiendo-item {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1rem; color: var(--gris);
