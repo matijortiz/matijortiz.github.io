@@ -237,6 +237,7 @@ nav a:hover { color: var(--crema); }
   content: '\2937';
   position: absolute; left: 0;
   color: var(--oxido);
+  border: 1px solid rgba(212, 212, 212, 0.4);
 }
 
 /* ── FEED ── */
