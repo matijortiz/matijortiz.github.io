@@ -219,11 +219,10 @@ nav a:hover { color: var(--crema); }
   border: 1px solid rgba(184, 74, 26, 0.4);
 }
 
-.badge-inedito {
-  background: rgba(212, 160, 60, 0.28)
-  color: #d4a03c;
+.badge-buscandoeditorial {
+  background: rgba(212, 160, 60, 0.28);
+  color: var(--ambar);
   border: 1px solid rgba(212, 160, 60, 0.4);
-  opacity: 1
 }
 
 .badge-proceso {
