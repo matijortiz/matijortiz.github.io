@@ -70,6 +70,6 @@ No lo vamos a saber hasta que no estemos ahí. Lo que decidí es que el lector t
 
 <!-- EXTRA -->
 
-La palabra que elijo cuando escribo esto es *deliberado*. *Rompe Piernas* es un relato de mi libro *Egixi*, no tiene editorial, no está publicado en ningún lado. *Metal Que Crece* es una novela corta que está compitiendo en el *Premio UPC de Ciencia Ficción Miquel Barceló 2026*, donde ese mismo narrador vuelve con otra voz, otro tono, otras palabras. La contradicción es el punto.
+La palabra que elijo cuando escribo esto es *deliberado*. *Rompe Piernas* es un relato de mi libro *Egixi*, es inédito, no está publicado en ningún lado. *Metal Que Crece* es una novela corta que está compitiendo en el *Premio UPC de Ciencia Ficción Miquel Barceló 2026*, donde ese mismo narrador vuelve con otra voz, otro tono, otras palabras. La contradicción es el punto.
 
 *LIBERTAD o RESISTIR. Las dos se escriben en el polvo. Las dos se borran cuando soplás.*
