@@ -9,7 +9,7 @@ fragmento: "LA TURNA · FRAGMENTO"
 coleccion: "El Lomo · Matias J. Ortiz · Rosario"
 orden: 1
 seoTitulo: "La Turna — Matias J. Ortiz | El Lomo"
-seoDescripcion: "Tres mujeres en el turno noche de una fábrica de plástico. Un técnico de mantenimiento que no vuelve del fondo del galpón. Un detective con un cuaderno rayado. Y una que se quedó callada porque así aprendés a sobrevivir."
+seoDescripcion: "Tres mujeres en el turno noche de una fábrica de plástico. Un técnico de mantenimiento que no vuelve del fondo del galpón. Un detective con un cuaderno rayado. Y una que se quedó callada."
 ---
 
 
