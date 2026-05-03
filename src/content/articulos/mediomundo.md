@@ -32,17 +32,13 @@ Me agarré la cara. Me toqué el tajo de la cicatriz. Los dedos me olían a trip
 
 —Voy a tener un gurí. La puta madre.
 
-***
+<p align="center">***</p>
 
 *Sangre de escama en fierro tibio. Dedos grandes sobre mano chica. Metal sobre pecho. Latido nuevo.*
 
 El mediomundo muestra. Lo hace cuando le cae sangre. Sangre de pescado, de persona, de lo que sea. A veces, solo pocas, te muestra lo que viene. No sé por qué. Ni cómo anda eso. Pero es así.
 
-Matungo me enseñó a leer el agua.
-
-Fue una tarde de invierno. Yo era gurí, él ya estaba viejo. Se paró en la canoa. Un agujero le comía la frente, de cuando le tiraron con escopeta y no lo mataron.
-
-Estábamos en el muelle. El río quieto. Los sauces reflejándose.
+Matungo me enseñó a leer el agua. Fue una tarde de invierno. Yo era gurí, él ya estaba viejo. Se paró en la canoa. Un agujero le comía la frente, de cuando le tiraron con escopeta y no lo mataron. Estábamos en el muelle. El río quieto. Los sauces reflejándose.
 
 —Mirá —dijo señalando un punto donde el agua hacía un remolino chico—. Ahí hay bagre. Amarillo. Grande.
 
@@ -50,33 +46,23 @@ Estábamos en el muelle. El río quieto. Los sauces reflejándose.
 
 —Porque el agua te muestra. Si sabés mirar.
 
-Tiró la línea, esperó. Dos minutos. Sacó un bagre del tamaño de mi brazo.
-
-Me miró la boca. Los ojos hundidos. Cansados.
+Tiró la línea, esperó. Dos minutos. Sacó un bagre del tamaño de mi brazo. Me miró la boca. Los ojos hundidos. Cansados.
 
 —Algún día te voy a mostrar otra cosa —dijo—. Y hay que ser precavido con lo que muestra.
 
 Ni idea qué decía. Yo era gurí. Tardé años en entender.
 
-El día que se hundió yo estaba en el muelle. Ya de grande. Vi la canoa alejarse. Matungo se paró. Lo vi saltar. La mano levantada, saludando.
-
-Después el agua se lo tragó.
-
-Nunca salió a flote.
+El día que se hundió yo estaba en el muelle. Ya de grande. Vi la canoa alejarse. Matungo se paró. Lo vi saltar. La mano levantada, saludando. Después el agua se lo tragó. Nunca salió a flote.
 
 La caja siempre volvía a la puerta de mi rancho. Cerrada. Con el candado roto. Y adentro, el caño de mediomundo, todavía húmedo.
 
-***
+<p align="center">***</p>
 
-Noelia se llama.
-
-No Jesica. Noelia. Así le puso la madre. Así le digo yo.
+Noelia se llama. No Jesica. Noelia. Así le puso la madre. Así le digo yo.
 
 La conocí en Victoria. Ella trabajaba en un kiosco cerca del puerto. Yo iba a vender pescado. La vi. Me vio. Un día le hablé. Otro día me habló ella.
 
-No es linda. Tiene la nariz torcida y los dientes chuecos. Pero tiene algo. Una fuerza que te tira.
-
-Dijo que quería irse de allá. Quería otra cosa. No sabía qué, pero algo distinto.
+No es linda. Tiene la nariz torcida y los dientes chuecos. Pero tiene algo. Una fuerza que te tira. Dijo que quería irse de allá. Quería otra cosa. No sabía qué, pero algo distinto.
 
 —¿Y vos? —me preguntó una noche. Estábamos en el rancho. Ella mirando el techo de chapa—. ¿No querés otra cosa?
 
