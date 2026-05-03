@@ -220,16 +220,17 @@ nav a:hover { color: var(--crema); }
 }
 
 .badge-inedito {
-  background: rgba(127, 196, 122, 0.28);
-  color: #d4a03c;
+  background: rgba(212, 160, 60, 0.28);
+  color: var(--ambar);
   border: 1px solid rgba(212, 160, 60, 0.4);
 }
 
 .badge-proceso {
-  background: rgba(127, 196, 122, 0.28);
+  background: rgba(80, 130, 180, 0.25);
   color: #a8c4e0;
   border: 1px solid rgba(80, 130, 180, 0.4);
 }
+
 .escribiendo-item {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1rem; color: var(--gris);
