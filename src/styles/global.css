@@ -219,7 +219,7 @@ nav a:hover { color: var(--crema); }
   border: 1px solid rgba(184, 74, 26, 0.4);
 }
 
-.badge-inedito {
+.badge-espera {
   background: rgba(212, 160, 60, 0.28);
   color: #f0c878;
   border: 1px solid rgba(212, 160, 60, 0.4);
