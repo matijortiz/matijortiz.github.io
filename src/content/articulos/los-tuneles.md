@@ -80,4 +80,6 @@ El libro completo —Los Egixi, Rosa Carnívora, Rompe Piernas, Reina Madre, El 
 
 No le estoy pidiendo nada a nadie. Estoy diciendo que el libro existe, que está terminado, y que cuando llegue el momento va a poder pararse solo.
 
+Cuando esté listo para salir, va a buscar editorial. Una que entienda que la ciencia ficción argentina no es la traducción de la del norte sino que se puede hacer desde acá, con olor a río y a interior.
+
 *Mientras tanto, sigo excavando.*
