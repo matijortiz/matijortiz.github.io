@@ -132,6 +132,6 @@ Les comparto fragmentos. Está todo cortado como la mano del protagonista. La co
 
 El libro fue creciendo alrededor de ese primer corte, relato por relato, hasta llegar a once. Que hay cosas que recibís sin pedirlas. Que el cuerpo recuerda lo que la cabeza descarta.
 
-Cuando lo mandé a *Fundación El Libro 2026* tenía 130 páginas en A4, unas 200 en formato libro real, con márgenes y tipografía de libro de verdad. Once relatos que no se conocen entre sí pero que respiran del mismo pulmón. Juro que nunca planeé que fueran once. *Número impar*. Hay una mística atrás.
+Cuando lo mandé a *Fundación El Libro 2026* tenía 130 páginas en A4, unas 200 en formato libro real, con márgenes y tipografía de libro de verdad. Once relatos que no se conocen entre sí pero que respiran con el mismo pulmón. Juro que nunca planeé que fueran once. Once.
 
 *Ahora está en manos del jurado. No sé qué hacer con eso.*
