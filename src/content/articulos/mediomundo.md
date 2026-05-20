@@ -36,8 +36,6 @@ Me agarré la cara. Me toqué el tajo de la cicatriz. Los dedos me olían a trip
 
 *Sangre de escama en fierro tibio. Dedos grandes sobre mano chica. Metal sobre pecho. Latido nuevo.*
 
-El mediomundo muestra. Lo hace cuando le cae sangre. Sangre de pescado, de persona, de lo que sea. A veces, solo pocas, te muestra lo que viene. No sé por qué. Ni cómo anda eso. Pero es así.
-
 Matungo me enseñó a leer el agua. Fue una tarde de invierno. Yo era gurí, él ya estaba viejo. Se paró en la canoa. Un agujero le comía la frente, de cuando le tiraron con escopeta y no lo mataron. Estábamos en el muelle. El río quieto. Los sauces reflejándose.
 
 —Mirá —dijo señalando un punto donde el agua hacía un remolino chico—. Ahí hay bagre. Amarillo. Grande.
