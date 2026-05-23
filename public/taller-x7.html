@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="color-scheme" content="only light">
+<meta name="darkreader-lock">
+<title>Banco de Pruebas · interno</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Lora:ital,wght@0,400;0,500;1,400&family=Spectral:ital,wght@0,400;0,500;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&family=Crimson+Pro:ital,wght@0,400;0,500;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
+<style>
+  :root{
+    --ink:#16130f; --bone:#f1ebdf; --paper:#fbf8f1;
+    --rust:#9a3b22; --rust-d:#7a2c17; --moss:#3d4a36;
+    --line:#d8cfbe; --line-d:#c2b6a0; --gold:#b08534;
+    --shadow:rgba(20,15,8,.18);
+    --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+    --ui:"PT Serif",Georgia,serif;
+    --display:"Cormorant Garamond",Georgia,serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{font-family:var(--ui);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased;
+    background:radial-gradient(120% 80% at 0% 0%,#efe7d6 0,transparent 55%),radial-gradient(110% 90% at 100% 100%,#e8ddc8 0,transparent 50%),var(--bone);
+    background-attachment:fixed;}
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.05;mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+
+  .wrap{position:relative;z-index:1;display:grid;grid-template-columns:340px 1fr;min-height:100vh}
+  @media(max-width:920px){.wrap{grid-template-columns:1fr}}
+
+  aside{background:linear-gradient(170deg,#1d1813,#272019);color:var(--bone);padding:26px 22px 60px;
+    border-right:1px solid #000;box-shadow:4px 0 24px var(--shadow);overflow-y:auto;max-height:100vh;position:sticky;top:0}
+  @media(max-width:920px){aside{position:static;max-height:none}}
+  aside::-webkit-scrollbar{width:8px}
+  aside::-webkit-scrollbar-thumb{background:#3f362a;border-radius:8px}
+
+  .brand{display:flex;align-items:baseline;gap:10px}
+  .brand h1{font-family:var(--display);font-weight:500;font-size:31px;letter-spacing:.5px;line-height:.95;color:var(--paper)}
+  .brand .mark{font-family:var(--mono);font-size:9px;letter-spacing:2.5px;color:var(--gold);text-transform:uppercase;
+    border:1px solid var(--gold);padding:2px 6px;border-radius:2px}
+  .tag{font-style:italic;color:#b9ad97;font-size:13.5px;margin:8px 0 22px;border-bottom:1px solid #3a3128;padding-bottom:18px}
+
+  .section-label{font-family:var(--mono);font-size:9.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);
+    margin:22px 0 11px;display:flex;align-items:center;gap:9px}
+  .section-label::after{content:"";flex:1;height:1px;background:#3a3128}
+
+  .drop{display:block;border:1.5px dashed #5a4d3c;border-radius:6px;padding:20px 16px;text-align:center;cursor:pointer;
+    transition:.18s;background:rgba(0,0,0,.18)}
+  .drop:hover,.drop.over{border-color:var(--gold);background:rgba(176,133,52,.08)}
+  .drop strong{display:block;font-size:15px;color:var(--paper);margin-bottom:3px}
+  .drop span{font-size:11.5px;color:#9a8e78;font-family:var(--mono)}
+  .drop input{display:none}
+  .filename{margin-top:9px;font-family:var(--mono);font-size:11px;color:var(--gold);word-break:break-all;min-height:13px}
+
+  select,input[type=text]{width:100%;background:#15110c;color:var(--paper);border:1px solid #3f362a;border-radius:4px;
+    padding:9px 10px;font-family:var(--ui);font-size:14px}
+  select:focus,input:focus{outline:none;border-color:var(--gold)}
+  select option{background:#15110c;color:var(--paper)}
+
+  .ctrl{margin-bottom:13px}
+  .ctrl>label{font-family:var(--mono);text-transform:uppercase;font-size:9.5px;letter-spacing:1.4px;color:#c8bba3;
+    display:block;margin-bottom:5px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .grid2 .ctrl{margin-bottom:0}
+  .num{display:flex;align-items:center;gap:7px}
+  .num input{width:100%;background:#15110c;color:var(--paper);border:1px solid #3f362a;border-radius:4px;
+    padding:7px 9px;font-family:var(--mono);font-size:13px}
+  .num .u{font-family:var(--mono);font-size:10px;color:#7d715c}
+
+  .seg{display:flex;gap:5px;margin-top:2px}
+  .seg button{flex:1;background:#15110c;border:1px solid #3f362a;color:#9a8e78;border-radius:4px;padding:7px 4px;
+    font-family:var(--mono);font-size:10.5px;cursor:pointer;transition:.15s}
+  .seg button.on{background:var(--rust);border-color:var(--rust);color:#fff}
+
+  .toggle-row{display:flex;align-items:center;justify-content:space-between;padding:7px 0;font-size:13.5px;color:#d8ccb6}
+  .switch{position:relative;width:38px;height:20px;cursor:pointer;flex-shrink:0}
+  .switch input{display:none}
+  .switch .track{position:absolute;inset:0;background:#3f362a;border-radius:20px;transition:.18s}
+  .switch .thumb{position:absolute;top:2px;left:2px;width:16px;height:16px;background:#9a8e78;border-radius:50%;transition:.18s}
+  .switch input:checked+.track{background:var(--rust)}
+  .switch input:checked+.track+.thumb{transform:translateX(18px);background:var(--paper)}
+
+  .approx{font-family:var(--mono);font-size:10px;color:var(--gold);margin-top:5px;display:block;line-height:1.55}
+  .conf{display:inline-block;font-family:var(--mono);font-size:8.5px;letter-spacing:.5px;padding:1px 5px;border-radius:3px;margin-right:5px;vertical-align:middle}
+  .conf.firm{background:#2f3a2a;color:#9bc07f}
+  .conf.est{background:#3a2f1a;color:#d6a851}
+  .note{font-size:11.5px;color:#8a7e68;font-style:italic;line-height:1.5;margin-top:8px}
+
+  .save-row{display:flex;gap:8px;margin-top:14px}
+  button.act{flex:1;background:var(--rust);color:#fff;border:none;border-radius:4px;padding:10px;font-family:var(--mono);
+    font-size:10px;letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:.15s}
+  button.act:hover{background:var(--rust-d)}
+  button.act.ghost{background:transparent;border:1px solid #4a4032;color:#c8bba3}
+  button.act.ghost:hover{border-color:var(--gold);color:var(--gold)}
+
+  main{position:relative;overflow:hidden}
+  .topbar{position:sticky;top:0;z-index:5;background:rgba(241,235,223,.92);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);padding:13px 26px;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+  .stat{display:flex;flex-direction:column;line-height:1}
+  .stat b{font-family:var(--mono);font-size:23px;color:var(--rust-d);font-weight:500}
+  .stat small{font-family:var(--mono);font-size:9px;letter-spacing:1.4px;text-transform:uppercase;color:#8a7e68;margin-top:4px}
+  .topbar .spacer{flex:1}
+  .zoomctl{display:flex;align-items:center;gap:7px;font-family:var(--mono);font-size:11px;color:#6b5f4a}
+  .zoomctl button{width:26px;height:26px;border:1px solid var(--line-d);background:var(--paper);border-radius:4px;cursor:pointer;font-size:15px;color:var(--ink);line-height:1}
+  .zoomctl button:hover{border-color:var(--rust)}
+  .printbtn{background:var(--moss);color:#fff;border:none;border-radius:4px;padding:9px 15px;font-family:var(--mono);
+    font-size:9.5px;letter-spacing:1px;text-transform:uppercase;cursor:pointer}
+  .printbtn:hover{background:#2c3527}
+
+  .stage{padding:42px 20px 120px;overflow-y:auto;height:calc(100vh - 58px)}
+  .pages{display:flex;flex-direction:column;align-items:center;gap:30px}
+
+  .empty{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#8a7e68;
+    padding:80px 20px;max-width:470px;margin:0 auto}
+  .empty .ico{font-size:44px;margin-bottom:16px;opacity:.45}
+  .empty h2{font-family:var(--display);font-size:31px;font-weight:500;color:#6b5f4a;margin-bottom:12px}
+  .empty p{font-size:14.5px;line-height:1.65}
+  .empty .kbd{font-family:var(--mono);font-size:11px;background:#e6dcc8;border:1px solid var(--line-d);border-radius:3px;padding:1px 6px;color:var(--ink)}
+
+  /* La hoja — papel real, inmune al modo oscuro */
+  .sheet{background:#fffdf7;color:#1a1712;color-scheme:only light;
+    box-shadow:0 1px 2px rgba(0,0,0,.08),0 12px 32px var(--shadow);position:relative;overflow:hidden;flex-shrink:0}
+  .sheet .body{overflow:hidden}
+  .sheet p{margin:0;text-align:inherit;orphans:2;widows:2}
+  .sheet p.flush{text-indent:0!important}
+  .sheet .chaphead{text-align:center;font-weight:500;text-indent:0}
+  .sheet .scenebreak{text-align:center;text-indent:0;color:#9a8d76}
+  .sheet .folio{position:absolute;left:0;right:0;text-align:center;color:#9a8d76}
+  .sheet.titlepage .body{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;height:100%}
+  .sheet.titlepage .tt{font-style:italic;letter-spacing:.5px}
+
+  .loading{position:fixed;inset:0;background:rgba(241,235,223,.78);backdrop-filter:blur(3px);display:none;
+    align-items:center;justify-content:center;z-index:50;flex-direction:column;gap:16px}
+  .loading.on{display:flex}
+  .spinner{width:34px;height:34px;border:3px solid var(--line-d);border-top-color:var(--rust);border-radius:50%;animation:spin .8s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .loading span{font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--rust-d)}
+
+  #measure{position:fixed;left:-99999px;top:0;visibility:hidden;background:#fff}
+
+  @media print{
+    aside,.topbar,.loading,.empty{display:none!important}
+    body{background:#fff} body::before{display:none}
+    .wrap{display:block} main{overflow:visible}
+    .stage{padding:0;height:auto;overflow:visible}
+    .pages{gap:0}
+    .sheet{box-shadow:none;break-after:page;margin:0 auto}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <aside>
+    <div class="brand"><h1>Banco&nbsp;de&nbsp;Pruebas</h1><span class="mark">interno</span></div>
+    <p class="tag">Verlo encuadernado antes de que lo encuadernen.</p>
+
+    <div class="section-label">El texto</div>
+    <label class="drop" id="drop">
+      <strong>Soltá tu manuscrito</strong>
+      <span>.docx · .md · .txt</span>
+      <input type="file" id="file" accept=".docx,.md,.markdown,.txt">
+      <div class="filename" id="fname"></div>
+    </label>
+    <div class="ctrl" style="margin-top:12px">
+      <label>Título (portadilla)</label>
+      <input type="text" id="bookTitle" placeholder="sin título">
+    </div>
+
+    <div class="section-label">El sello</div>
+    <div class="ctrl">
+      <select id="editorial"></select>
+      <span class="approx" id="approxFont"></span>
+    </div>
+
+    <div class="section-label">El pliego &mdash; trim</div>
+    <div class="grid2">
+      <div class="ctrl"><label>Ancho</label><div class="num"><input type="number" id="trimW" step="0.5"><span class="u">mm</span></div></div>
+      <div class="ctrl"><label>Alto</label><div class="num"><input type="number" id="trimH" step="0.5"><span class="u">mm</span></div></div>
+    </div>
+
+    <div class="section-label">Márgenes</div>
+    <div class="grid2">
+      <div class="ctrl"><label>Superior</label><div class="num"><input type="number" id="mTop" step="0.5"><span class="u">mm</span></div></div>
+      <div class="ctrl"><label>Inferior</label><div class="num"><input type="number" id="mBot" step="0.5"><span class="u">mm</span></div></div>
+      <div class="ctrl"><label>Interior · lomo</label><div class="num"><input type="number" id="mIn" step="0.5"><span class="u">mm</span></div></div>
+      <div class="ctrl"><label>Exterior</label><div class="num"><input type="number" id="mOut" step="0.5"><span class="u">mm</span></div></div>
+    </div>
+
+    <div class="section-label">La caja tipográfica</div>
+    <div class="ctrl">
+      <label>Tipografía</label>
+      <select id="font"></select>
+    </div>
+    <div class="grid2">
+      <div class="ctrl"><label>Cuerpo</label><div class="num"><input type="number" id="size" step="0.25"><span class="u">pt</span></div></div>
+      <div class="ctrl"><label>Interlineado</label><div class="num"><input type="number" id="lead" step="0.25"><span class="u">pt</span></div></div>
+    </div>
+    <div class="ctrl" style="margin-top:13px">
+      <label>Sangría de primera línea</label>
+      <div class="num"><input type="number" id="indent" step="0.1"><span class="u">em</span></div>
+    </div>
+    <div class="ctrl">
+      <label>Alineación</label>
+      <div class="seg" id="alignSeg">
+        <button data-v="justify" class="on">Justificado</button>
+        <button data-v="left">Bandera izq.</button>
+      </div>
+    </div>
+    <div class="toggle-row">
+      <span>Partido de palabras (guionado)</span>
+      <label class="switch"><input type="checkbox" id="hyphen"><span class="track"></span><span class="thumb"></span></label>
+    </div>
+    <div class="toggle-row">
+      <span>Folio (número de página)</span>
+      <label class="switch"><input type="checkbox" id="showFolio" checked><span class="track"></span><span class="thumb"></span></label>
+    </div>
+
+    <div class="save-row">
+      <button class="act ghost" id="resetBtn">Restablecer sello</button>
+      <button class="act" id="recalcBtn">Recalcular</button>
+    </div>
+    <p class="note" id="calibNote"></p>
+  </aside>
+
+  <main>
+    <div class="topbar">
+      <div class="stat"><b id="sPages">—</b><small>páginas</small></div>
+      <div class="stat"><b id="sWords">—</b><small>palabras</small></div>
+      <div class="stat"><b id="sWpp">—</b><small>palabras / pág.</small></div>
+      <div class="stat"><b id="sChars">—</b><small>caracteres</small></div>
+      <div class="spacer"></div>
+      <div class="zoomctl"><button id="zOut">−</button><span id="zVal">100%</span><button id="zIn">+</button></div>
+      <button class="printbtn" id="printBtn">↧ Proof en PDF</button>
+    </div>
+    <div class="stage" id="stage">
+      <div class="empty" id="empty">
+        <div class="ico">𝌆</div>
+        <h2>El banco está vacío</h2>
+        <p>Soltá un manuscrito en el panel de la izquierda y elegí el sello. Lo vas a ver caer en pliego, con la caja real de la editorial, página por página, como sale de imprenta. Probá con un <span class="kbd">.docx</span> o un <span class="kbd">.md</span>.</p>
+      </div>
+      <div class="pages" id="pages"></div>
+    </div>
+  </main>
+</div>
+
+<div class="loading" id="loading"><div class="spinner"></div><span id="loadMsg">Componiendo el pliego…</span></div>
+<div id="measure"></div>
+
+<script>
+// ─────────── PERFILES ───────────
+// trim/cara con CONFIANZA marcada. cuerpo+interlineado son SIEMPRE estimación:
+// ninguna editorial los publica. Se calibran contra un libro físico.
+const PROFILES = {
+  custom:   {label:"— Personalizado —", conf:"est", trimW:130, trimH:200, mTop:18, mBot:20, mIn:17, mOut:15, font:"EB Garamond", size:11, lead:14.5, indent:1.2, align:"justify", hyphen:false, approx:"Perfil libre."},
+  sigilo:   {label:"Sigilo", conf:"firm", trimW:140, trimH:220, mTop:18, mBot:22, mIn:17, mOut:15, font:"Spectral", size:10.5, lead:14.5, indent:1.2, align:"justify", hyphen:false, approx:"Trim 14×22 cm rústica (confirmado, sitio Sigilo). Cara: estimada humanista."},
+  eterna:   {label:"Eterna Cadencia", conf:"firm", trimW:140, trimH:220, mTop:19, mBot:22, mIn:18, mOut:16, font:"EB Garamond", size:11, lead:15, indent:1.2, align:"justify", hyphen:false, approx:"Trim 14×22 cm rústica (confirmado, su catálogo). Cara: estimada Garamond."},
+  espuma:   {label:"Páginas de Espuma · cuento", conf:"firm", trimW:135, trimH:200, mTop:18, mBot:22, mIn:17, mOut:15, font:"EB Garamond", size:11, lead:15, indent:1.2, align:"justify", hyphen:true, approx:"Voces/Literatura ≈13,5×20 cm (confirmado, su web). Colección de cuento."},
+  anagrama: {label:"Anagrama · Narrativas Hispánicas", conf:"firm", trimW:140, trimH:215, mTop:17, mBot:21, mIn:16, mOut:14, font:"EB Garamond", size:10.5, lead:14, indent:1.1, align:"justify", hyphen:true, approx:"≈14×21,5 cm. Cara: Garamond en el interior (confirmado por fuente tipográfica)."},
+  random:   {label:"Random House Argentina", conf:"est", trimW:135, trimH:230, mTop:20, mBot:24, mIn:19, mOut:16, font:"Source Serif 4", size:11, lead:15, indent:1.2, align:"justify", hyphen:true, approx:"Formato comercial alto ≈13,5×23 cm (estimado)."},
+  entropia: {label:"Entropía", conf:"est", trimW:130, trimH:205, mTop:18, mBot:21, mIn:17, mOut:15, font:"Spectral", size:11, lead:15, indent:1.2, align:"justify", hyphen:false, approx:"Narrativa, caja media (estimado, sin dato firme)."},
+  blatt:    {label:"Blatt & Ríos", conf:"est", trimW:130, trimH:195, mTop:18, mBot:21, mIn:17, mOut:15, font:"Crimson Pro", size:10.5, lead:14, indent:1.2, align:"justify", hyphen:false, approx:"Formato chico de autor (estimado)."},
+  cajanegra:{label:"Caja Negra", conf:"est", trimW:140, trimH:210, mTop:20, mBot:23, mIn:19, mOut:17, font:"PT Serif", size:10.5, lead:15, indent:0, align:"justify", hyphen:false, approx:"Ensayo/híbrido, austero, a veces sin sangría (estimado)."},
+  indent:   {label:"Indent", conf:"est", trimW:125, trimH:190, mTop:17, mBot:20, mIn:16, mOut:14, font:"Crimson Pro", size:10, lead:13.5, indent:1.1, align:"justify", hyphen:false, approx:"Libro-objeto breve (estimado)."}
+};
+
+const FONTS = {
+  "EB Garamond":"imita Garamond — la cara más usada en narrativa literaria (Anagrama, Eterna, Espuma)",
+  "Spectral":"humanista contemporánea, parecida a Sigilo/Entropía",
+  "Lora":"serifa cálida, transicional",
+  "Source Serif 4":"neutra y limpia, formato comercial",
+  "Crimson Pro":"garalda clásica, buena para formatos chicos",
+  "Libre Caslon Text":"imita Caslon — aire de bolsillo",
+  "PT Serif":"transicional sobria, austera",
+  "Cormorant Garamond":"display fina, sólo portadillas"
+};
+
+const MM = 96/25.4, PT = 96/72;
+let rawParas=[], totalWords=0, totalChars=0, zoom=1;
+const S={};
+const $=id=>document.getElementById(id);
+
+(function init(){
+  const edSel=$("editorial");
+  Object.entries(PROFILES).forEach(([k,p])=>{const o=document.createElement("option");o.value=k;o.textContent=p.label;edSel.appendChild(o);});
+  const fSel=$("font");
+  Object.keys(FONTS).forEach(f=>{const o=document.createElement("option");o.value=f;o.textContent=f;fSel.appendChild(o);});
+  edSel.value="sigilo"; applyProfile("sigilo");
+
+  edSel.addEventListener("change",e=>applyProfile(e.target.value));
+  $("font").addEventListener("change",e=>{S.font=e.target.value;updateApprox();markCustom();render();});
+  ["trimW","trimH","mTop","mBot","mIn","mOut","size","lead","indent"].forEach(id=>{
+    $(id).addEventListener("input",()=>{S[id]=parseFloat($(id).value)||0;markCustom();render();});
+  });
+  $("hyphen").addEventListener("change",e=>{S.hyphen=e.target.checked;markCustom();render();});
+  $("showFolio").addEventListener("change",render);
+  $("bookTitle").addEventListener("input",render);
+  document.querySelectorAll("#alignSeg button").forEach(b=>b.addEventListener("click",()=>{
+    document.querySelectorAll("#alignSeg button").forEach(x=>x.classList.remove("on"));
+    b.classList.add("on");S.align=b.dataset.v;markCustom();render();
+  }));
+  $("recalcBtn").addEventListener("click",render);
+  $("resetBtn").addEventListener("click",()=>applyProfile($("editorial").value));
+  $("printBtn").addEventListener("click",()=>window.print());
+  $("zIn").addEventListener("click",()=>setZoom(zoom+.1));
+  $("zOut").addEventListener("click",()=>setZoom(zoom-.1));
+
+  const fileInput=$("file"),drop=$("drop");
+  fileInput.addEventListener("change",e=>{if(e.target.files[0])loadFile(e.target.files[0]);});
+  ["dragover","dragenter"].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.add("over");}));
+  ["dragleave","drop"].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.remove("over");}));
+  drop.addEventListener("drop",e=>{const f=e.dataTransfer.files[0];if(f)loadFile(f);});
+})();
+
+function applyProfile(key){
+  const p=PROFILES[key];
+  Object.assign(S,JSON.parse(JSON.stringify(p)));
+  $("trimW").value=p.trimW;$("trimH").value=p.trimH;
+  $("mTop").value=p.mTop;$("mBot").value=p.mBot;$("mIn").value=p.mIn;$("mOut").value=p.mOut;
+  $("font").value=p.font;$("size").value=p.size;$("lead").value=p.lead;$("indent").value=p.indent;
+  $("hyphen").checked=p.hyphen;
+  document.querySelectorAll("#alignSeg button").forEach(x=>x.classList.toggle("on",x.dataset.v===p.align));
+  updateApprox();
+  $("calibNote").innerHTML = key==="custom"
+    ? "Perfil libre. Guardá tus propios valores midiendo el libro que tengas a mano."
+    : "El cuerpo y el interlineado son SIEMPRE estimados: ninguna editorial los publica. Para el calco exacto, abrí un libro físico de este sello, contá las palabras de una página llena y ajustá esos dos números hasta que coincida.";
+  render();
+}
+function updateApprox(){
+  const badge = S.conf==="firm" ? '<span class="conf firm">trim firme</span>' : '<span class="conf est">estimado</span>';
+  $("approxFont").innerHTML = badge + (S.approx?S.approx+" · ":"") + (FONTS[S.font]?("Cara: "+FONTS[S.font]):"");
+}
+function markCustom(){if($("editorial").value!=="custom"){$("editorial").value="custom";PROFILES.custom=JSON.parse(JSON.stringify(S));PROFILES.custom.label="— Personalizado —";PROFILES.custom.conf="est";updateApprox();}}
+function setZoom(z){zoom=Math.max(.4,Math.min(1.6,Math.round(z*10)/10));$("zVal").textContent=Math.round(zoom*100)+"%";$("pages").style.transform=`scale(${zoom})`;$("pages").style.transformOrigin="top center";}
+
+// ─────────── CARGA ───────────
+function loadFile(file){
+  const name=file.name,ext=name.split(".").pop().toLowerCase();
+  $("fname").textContent=name;
+  if(!$("bookTitle").value)$("bookTitle").value=name.replace(/\.[^.]+$/,"").replace(/[_-]/g," ");
+  if(ext==="doc"){alert("El .doc viejo (binario) no se lee acá. Guardalo como .docx o .md y volvé a soltarlo.");return;}
+  showLoad("Leyendo el manuscrito…");
+  if(ext==="docx"){
+    file.arrayBuffer().then(buf=>mammoth.convertToHtml({arrayBuffer:buf}))
+      .then(r=>ingestHtml(r.value)).catch(err=>{hideLoad();alert("No pude leer el .docx: "+err.message);});
+  } else file.text().then(txt=>(ext==="md"||ext==="markdown")?ingestMarkdown(txt):ingestPlain(txt));
+}
+
+// detección de marcas
+const RE_SCENE=/^\s*(\*\s*\*\s*\*|\*{2,}|·\s*·\s*·|—\s*—\s*—|#{3,}|\.\s*\.\s*\.|\*)\s*$/;
+function looksLikeHeading(t){
+  if(t.length>60) return false;
+  const words=t.split(/\s+/).length;
+  // todo en mayúsculas (con tildes), pocas palabras
+  const letters=t.replace(/[^A-Za-zÁÉÍÓÚÜÑáéíóúüñ]/g,"");
+  const allCaps = letters.length>1 && letters===letters.toUpperCase() && /[A-ZÁÉÍÓÚÑ]/.test(letters);
+  if(allCaps && words<=10) return true;
+  if(/^(cap[íi]tulo|parte|prólogo|prologo|ep[íi]logo|interludio)\b/i.test(t) && words<=6) return true;
+  if(/^[IVXLCDM]{1,7}$/.test(t.trim())) return true;            // números romanos
+  if(/^\d{1,3}$/.test(t.trim())) return true;                    // capítulos numerados solos
+  return false;
+}
+
+function classify(text){
+  const t=text.replace(/\s+/g," ").trim();
+  if(!t) return null;
+  if(RE_SCENE.test(t)) return {kind:"scene"};
+  if(looksLikeHeading(t)) return {kind:"h",text:t};
+  return {kind:"p",text:t};
+}
+
+function ingestHtml(html){
+  const div=document.createElement("div");div.innerHTML=html;
+  rawParas=[];
+  div.querySelectorAll("p,h1,h2,h3,blockquote,li").forEach(el=>{
+    const raw=el.textContent.replace(/\s+/g," ").trim();if(!raw)return;
+    if(/^H[123]$/.test(el.tagName)){rawParas.push({kind:"h",text:raw});return;}
+    const c=classify(raw); if(c) rawParas.push(c);
+  });
+  finishIngest();
+}
+function ingestMarkdown(md){
+  rawParas=[];
+  md.split(/\n{2,}/).forEach(block=>{
+    let t=block.replace(/\s+/g," ").trim();if(!t)return;
+    if(/^#{1,3}\s/.test(t)){rawParas.push({kind:"h",text:t.replace(/^#{1,3}\s/,"")});return;}
+    t=t.replace(/\*\*(.+?)\*\*/g,"$1").replace(/(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)/g,"$1").replace(/_(.+?)_/g,"$1").replace(/`(.+?)`/g,"$1");
+    const c=classify(t); if(c) rawParas.push(c);
+  });
+  finishIngest();
+}
+function ingestPlain(txt){
+  rawParas=[];
+  txt.split(/\n{2,}/).forEach(b=>{const c=classify(b);if(c)rawParas.push(c);});
+  finishIngest();
+}
+function finishIngest(){
+  const all=rawParas.filter(p=>p.kind!=="scene").map(p=>p.text).join(" ");
+  totalWords=(all.match(/\S+/g)||[]).length;
+  totalChars=all.replace(/\s/g,"").length;
+  $("empty").style.display="none";
+  render();
+}
+
+// ─────────── PAGINACIÓN ───────────
+function render(){if(!rawParas.length){hideLoad();return;}showLoad("Componiendo el pliego…");setTimeout(()=>{try{paginate();}finally{hideLoad();}},30);}
+
+function paginate(){
+  const pagesEl=$("pages");pagesEl.innerHTML="";
+  const trimWpx=S.trimW*MM,trimHpx=S.trimH*MM;
+  const padT=S.mTop*MM,padB=S.mBot*MM,padIn=S.mIn*MM,padOut=S.mOut*MM;
+  const boxW=trimWpx-padIn-padOut, boxH=trimHpx-padT-padB;
+  const fontPx=S.size*PT, leadPx=S.lead*PT, indentEm=S.indent;
+  const showFolio=$("showFolio").checked;
+  const usableH=boxH-(showFolio?leadPx*1.6:0);
+
+  const m=$("measure");m.innerHTML="";m.lang="es";
+  m.style.cssText=`width:${boxW}px;font-family:'${S.font}',Georgia,serif;font-size:${fontPx}px;line-height:${leadPx}px;`+
+    `text-align:${S.align};hyphens:${S.hyphen?"auto":"none"};-webkit-hyphens:${S.hyphen?"auto":"none"};`;
+
+  function mkP(text,{flush=false,head=false,scene=false}={}){
+    const p=document.createElement("p");
+    if(scene){p.className="scenebreak";p.textContent="* * *";p.style.margin=leadPx+"px 0";}
+    else if(head){p.className="chaphead";p.textContent=text;p.style.margin=(leadPx*1.2)+"px 0 "+(leadPx)+"px";}
+    else{p.textContent=text; if(flush)p.className="flush"; else p.style.textIndent=indentEm+"em";}
+    return p;
+  }
+  function heightOf(node){m.appendChild(node);const h=node.getBoundingClientRect().height;m.removeChild(node);return h;}
+
+  const sheets=[];let cur=[],curH=0,flushNext=true;
+  function pushSheet(){if(cur.length){sheets.push(cur);cur=[];curH=0;}}
+  function place(node){const h=heightOf(node);if(curH+h>usableH&&cur.length){pushSheet();}cur.push(node);curH+=heightOf(node);}
+
+  rawParas.forEach((par)=>{
+    if(par.kind==="scene"){ const n=mkP(null,{scene:true}); place(n); flushNext=true; return; }
+    if(par.kind==="h"){ pushSheet(); const n=mkP(par.text,{head:true}); cur.push(n);curH+=heightOf(n); flushNext=true; return; }
+    // párrafo normal
+    const flush=flushNext; flushNext=false;
+    const node=mkP(par.text,{flush});
+    if(curH+heightOf(node)<=usableH){ place(node); return; }
+    // partir por palabras
+    const words=par.text.split(" ");let lo=0,firstChunk=true;
+    while(lo<words.length){
+      const remaining=usableH-curH;
+      let fit=fitWords(words.slice(lo),remaining,leadPx,(firstChunk&&flush));
+      if(fit===0){pushSheet();continue;}
+      const chunk=words.slice(lo,lo+fit).join(" ");
+      const cn=mkP(chunk,{flush:(firstChunk&&flush)});
+      if(!firstChunk){cn.className="flush";cn.style.textIndent="0";}
+      cur.push(cn);curH+=heightOf(cn);
+      lo+=fit;firstChunk=false;
+      if(lo<words.length)pushSheet();
+    }
+  });
+  pushSheet();
+
+  function fitWords(words,remaining,lpx,isFlush){
+    if(remaining<lpx*0.9)return 0;
+    const probe=document.createElement("p");
+    probe.style.textIndent=isFlush?"0":(S.indent+"em");
+    m.appendChild(probe);
+    let best=0,n=Math.min(words.length,Math.max(8,Math.floor(remaining/lpx*14)));
+    while(n<=words.length){probe.textContent=words.slice(0,n).join(" ");if(probe.getBoundingClientRect().height<=remaining+0.5){best=n;n+=8;}else break;}
+    for(let k=best+1;k<=Math.min(words.length,best+8);k++){probe.textContent=words.slice(0,k).join(" ");if(probe.getBoundingClientRect().height<=remaining+0.5)best=k;else break;}
+    m.removeChild(probe);return best;
+  }
+
+  // pintar
+  const titleText=$("bookTitle").value.trim();let folio=0;
+  if(titleText){
+    const tp=document.createElement("div");tp.className="sheet titlepage";
+    styleSheet(tp,trimWpx,trimHpx,padT,padB,padIn,padOut,fontPx,leadPx);
+    const body=document.createElement("div");body.className="body";body.style.height=boxH+"px";
+    const h=document.createElement("div");h.className="tt";h.style.fontSize=(fontPx*1.5)+"px";h.textContent=titleText;
+    body.appendChild(h);tp.appendChild(body);pagesEl.appendChild(tp);folio++;
+  }
+  sheets.forEach(nodes=>{
+    folio++;
+    const sh=document.createElement("div");sh.className="sheet";
+    styleSheet(sh,trimWpx,trimHpx,padT,padB,padIn,padOut,fontPx,leadPx);
+    const body=document.createElement("div");body.className="body";body.style.height=usableH+"px";
+    nodes.forEach(n=>body.appendChild(n));sh.appendChild(body);
+    if(showFolio){const f=document.createElement("div");f.className="folio";f.style.bottom=(padB*0.42)+"px";f.style.fontSize=(fontPx*0.82)+"px";f.textContent=folio;sh.appendChild(f);}
+    pagesEl.appendChild(sh);
+  });
+
+  const pageCount=sheets.length;
+  $("sPages").textContent=pageCount;
+  $("sWords").textContent=totalWords.toLocaleString("es-AR");
+  $("sWpp").textContent=pageCount?Math.round(totalWords/pageCount):"—";
+  $("sChars").textContent=totalChars.toLocaleString("es-AR");
+  setZoom(zoom);
+}
+
+function styleSheet(el,w,h,pt,pb,pin,pout,fpx,lpx){
+  el.style.width=w+"px";el.style.height=h+"px";
+  el.style.paddingTop=pt+"px";el.style.paddingBottom=pb+"px";el.style.paddingLeft=pin+"px";el.style.paddingRight=pout+"px";
+  el.style.fontFamily=`'${S.font}',Georgia,serif`;el.style.fontSize=fpx+"px";el.style.lineHeight=lpx+"px";
+  el.style.textAlign=S.align;el.style.hyphens=S.hyphen?"auto":"none";el.style.webkitHyphens=S.hyphen?"auto":"none";el.lang="es";
+}
+function showLoad(msg){$("loadMsg").textContent=msg;$("loading").classList.add("on");}
+function hideLoad(){$("loading").classList.remove("on");}
+</script>
+</body>
+</html>
