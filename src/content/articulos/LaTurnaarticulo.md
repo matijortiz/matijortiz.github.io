@@ -4,7 +4,7 @@ tipo: "Sobre un relato"
 fecha: "Abril 2026"
 imagen: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Agnus60x60.jpg"
 imagenAlt: "La Turna — Turno Noche"
-pintura: false
+pintura: true
 fragmento: "LA TURNA · FRAGMENTO"
 coleccion: "El Lomo · Matias J. Ortiz · Rosario"
 orden: 1
