@@ -3,12 +3,12 @@ titulo: "Mediomundo: <em>lo que no se puede tirar</em>"
 tipo: "Sobre un relato"
 fecha: "Febrero 2026"
 imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Csontv%C3%A1ry_Kosztka%2C_Tivadar_-_Old_Fisherman_%281902%29.jpg/960px-Csontv%C3%A1ry_Kosztka%2C_Tivadar_-_Old_Fisherman_%281902%29.jpg"
-imagenAlt: "Río Paraná — Mediomundo"
-pintura: false
+imagenAlt: "El viejo pescador - Csontváry, 1902"
+pintura: true
 fragmento: "MEDIOMUNDO"
-coleccion: "Promesa y Castigo · Matias J. Ortiz · Rosario"
+coleccion: "El Lomo · Matias J. Ortiz · Rosario"
 orden: 5
-seoTitulo: "Mediomundo — Matias J. Ortiz | Promesa y Castigo"
+seoTitulo: "Mediomundo — Matias J. Ortiz | El Lomo"
 seoDescripcion: "Análisis del relato Mediomundo: una herramienta de pesca que muestra el futuro, un pescador trasplantado a la fábrica rosarina, y una herencia que no se puede tirar"
 ---
 
@@ -76,18 +76,26 @@ Se quedó mirándome. Se calló. Después se dio vuelta y me miró otra vez.
 
 La primera versión de este cuento se caía a pedazos en ese punto. En el embarazo, en la herencia anunciada. No me convenció. Lo que me picaba a mí —no era si el mediomundo muestra el futuro, y los personajes no saben cómo pelear contra eso— era si lo que te muestra será verdad o mentira. ¿Qué elegís creer cuando a vos te cuentan algo? Si la imagen que te ofrecen es tan nítida que ni siquiera sospechás: ¿no será que hay en el fondo una cosa oculta?
 
-Entonces el cuento creció. Se fue a Rosario. Se metió en una fábrica de autopartes. El narrador dejó el río, dejó la canoa, dejó el olor a barro y se puso a operar una fresadora nueve horas por día. Aprendió a vivir con el ruido de una máquina que no cambia nunca, no se mueve con el viento ni con la lluvia, que tapa todo lo que tenías adentro hasta que dejás de escucharlo. Y cuando dejás de escuchar, la máquina aprovecha.
+Tuve dos cuentos arriba de la mesa durante unas semanas. Dos criaturas distintas.
 
-Hay un momento en el cuento donde la fresadora le agarra el guante. Le roza los nudillos. Tres líneas rojas. Sangre. Y él no piensa en la fábrica: piensa en Lucas, el hijo de Matungo, el que se ahogó con una moneda apretada en el puño. Esa conexión es una vértebra del relato.
+En uno, el mediomundo mentía. Le mostraba al narrador lo que él ya quería creer. A Noelia, la madre, le mostraba a Tomás grande, con camisa y zapatos, un escritorio, lejos del olor a río. Cada uno veía la excusa de la decisión que ya había tomado. Él quería quedarse: el fierro le dijo que no tenía opción. Ella quería irse: el fierro le dio la razón.
 
-Lo que también creció fue Noelia. En la versión vieja era la mujer que nada más porta el embarazo. Ahora es la que pelea. La que dice: *Acá no hay hospital, no hay escuela, no hay nada. ¿Querés que el nene nazca acá?* La que reza con un rosario apretado en la mano. Que tiene un corte en la palma que dice que es de pelar bagre. La que te pone en la encrucijada. *Decidí —me dijo— El nene o la isla.* Noelia ya no es un personaje secundario. Es la fuerza que empuja contra la maldición. No gana. Ni pierde. Se planta.
+En el otro, el mediomundo no mentía. Mostraba. Y lo que mostraba no se aguantaba.
 
-Y después, el narrador hizo algo que haríamos vos o yo si descubriéramos que tenemos una tarantula en un brazo. Agarró el mediomundo y lo tiró a la mierda. Pero cuando el protagonista llega al departamento vacío, ahí está: en la esquina del comedor, cromado, oxidado, húmedo, con barro del Paraná pegado todavía.
+Qué ve cada uno no lo digo acá. Está en el cuento, en lo que callan, en una cicatriz del labio que aparece cerrada toda la historia y que alguien, en algún momento, pudo haber visto abierta. El padre y la madre miran al mismo hijo en el agua y ven cosas opuestas. Ninguno le cuenta al otro lo que vio. Eso es un matrimonio: dos personas mirando lo mismo y viendo cosas que no se dicen. Cuando Noelia dice, en el hospital, *no quiero saber*, el que lee apurado lee firmeza. El que relee escucha otra cosa. Y escucha a alguien que ya vio y está cerrando una puerta que abrió ella misma.
 
-Hay un relato adentro del relato que no se cuenta con palabras. Son intrusiones, dos relámpagos escritos como latidos del fierro. *Sangre de escama en fierro tibio. Dedos grandes sobre mano chica. Metal sobre pecho. Latido nuevo.* Después: *Fierro frío. Manos nuevas. La marca es blanda.* Son la voz del objeto. Son el metal contando lo que sabe en un idioma que elude verbos.
+El narrador empieza en la isla. Río, canoa, bagre, Matungo como el viejo que le enseñó a leer el agua. Después se tiene que ir a Rosario, a una fábrica de autopartes, dejó el olor a barro atrás y se puso a operar una fresadora nueve horas por día. Esa parte del cuento fue una de las más flojas del libro entero. Mal escrita no estaba. Pero era peor, estaba escrita como otro cuento, con otra temperatura, metida adentro del mío. Saltaba del río del Litoral a una cosa gris, urbana, y se notaba el tropezón. No suavicé el salto. Lo hice más bruto, le di cuerpo. El narrador no se adapta a la fábrica: la fábrica lo invade. La fresadora *no respira*, no es como el agua contra la canoa: *empieza con el turno y cuando te vas sigue*. El aceite de corte se le mete en la nariz y le tapa el chamamé que quiere acordarse. La mano deja de ser suya, se le llena de costras *sobre las marcas del río*: dos pieles en la misma mano. El cuerpo de isleño se le va volviendo cuerpo de obrero sin que él lo decida. El día que entendí que el trasplante tenía que sentirse como una enfermedad —el cemento creciéndole encima como el óxido al fierro— esa parte dejó de ser el punto débil y pasó a ser una vértebra.
+
+Ahí, casi sin buscar, apareció un puente que dejé porque era verdad. El que le enseña a cuidarse ahí adentro, en la fábrica, el negro Almirón, viene de la cerealera y entró a una fábrica que en otro cuento del libro tiene nombre. Dos hombres distintos, dos cuentos distintos, la misma planta. El que lee los siete lo encaja solo.
+
+Lo que también creció fue Noelia. En la versión vieja era la mujer que nada más porta el embarazo. Ahora es la que pelea. La que dice: *Acá no hay hospital, no hay escuela, no hay nada. ¿Querés que el nene nazca acá?* La que reza con un rosario apretado en la mano. Que tiene un corte en la palma que dice que es de pelar bagre. La que te pone en la encrucijada. *Decidí —me dijo— El nene o la isla.* Noelia ya no es un personaje secundario. Es la fuerza que empuja. No gana. Ni pierde. Se planta.
+
+Y después, el narrador hizo algo que haríamos vos o yo si descubriéramos que tenemos una tarántula en un brazo. Agarró el mediomundo y lo tiró a la mierda. Pero cuando el protagonista llega al departamento vacío, ahí está: en la esquina del comedor, cromado, oxidado, húmedo, con barro del Paraná pegado todavía.
+
+Hay algo adentro del cuento que no se cuenta con palabras del narrador. Son intrusiones en cursiva, dos relámpagos escritos como latidos del fierro. *Sangre de escama en fierro tibio. Dedos grandes sobre mano chica. Metal sobre pecho. Latido nuevo.* Después: *Fierro frío. Manos nuevas. La marca es blanda.* Son la voz del objeto. Son el metal contando lo que sabe en un idioma que elude verbos.
 
 El final no cierra. El narrador toma una decisión. *Los dedos chiquitos se cerraron alrededor del metal.* Tomás tiene días de nacido y ya está sosteniendo lo que lo va a perseguir. El padre le pasa la mano por la cabeza —el mismo gesto que Matungo le hizo a él— y la nuca le deja de arder. ¿Eso es condena o es amor? ¿Es transmisión o es la única forma que conoce de decir: *esto es tuyo, es lo que somos*?
 
-El relato no lo dice. Lo que Noelia calla es lo más importante y lo vas a tener que responder vos. Lo vas a tener que leer.
+No lo dice. Lo que Noelia calla es lo más importante y lo vas a tener que responder vos. Lo vas a tener que leer.
 
 Esto está fuera de *Promesa y Castigo* y encontró su lugar en *El Lomo*. Es un relato que llegó justo a tiempo. La herencia se sigue propagando, ahora toma voz propia. Llegó al siglo XXI. Llegó de la isla a Rosario. Llegó a la fábrica. Se adaptó. Y sigue. En *Cochambre* Tato le pega a La Piba Carmina. En *Belcebú* el abuelo Negro dice que a las mujeres hay que tenerlas cortitas. En *Mediomundo* el narrador no sabe si está salvando a su hijo o marcándolo. No sabemos dónde la herencia mintió o dijo la verdad. Esa cadena es más poderosa que cualquier objeto maldito.
