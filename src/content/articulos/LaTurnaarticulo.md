@@ -56,7 +56,7 @@ Esa escena fue la primera. Previa al interrogatorio, de las máquinas, mucho ant
 
 <!-- FRAGMENTO -->
 
-La primera vez que le preguntaron, Ruth dijo que no sabía nada. La segunda, que ya había dicho que no sabía nada. La tercera vez se calló la boca, porque el silencio era más barato que las palabras y en ningún lugar eso era más verdad que ahí adentro.
+Las dos manos de Ruth se quedaron sobre la mesa, largas, huesudas. La primera vez que le preguntaron dijo que no sabía nada. La segunda, que ya había dicho que no sabía nada. La tercera se calló la boca, porque el silencio era más barato que las palabras y en ningún lugar eso era más verdad que ahí adentro.
 
 El detective ocupaba toda la silla. Tenía un cuaderno rayado con la tapa despegada. Escribía sin mirarla. De vez en cuando levantaba los ojos, la medía, volvía a bajarlos. Olor a naftalina y a café quemado. La bombilla del techo parpadeaba cada tanto. Ruth miraba.
 
@@ -68,7 +68,7 @@ El detective ocupaba toda la silla. Tenía un cuaderno rayado con la tapa despeg
 
 —Nunca me dijo el nombre.
 
-El detective la miró. Escribió algo y arrancó la hoja. La arrugó. La tiró al piso.
+El detective la miró. Anotó sin arrancar la hoja, sin levantar la voz.
 
 —Empezá de nuevo.
 
@@ -80,7 +80,7 @@ El turno arrancaba a las once. Ruth llegaba siempre diez minutos antes porque ve
 
 Entraba por la puerta de atrás, la de chapa con pestillo roto que levantaba con la rodilla mientras giraba la manija. Adentro, un olor a plástico quemado que te hacía sacar los dientes afuera. Con el tiempo dejó de intentarlo. Colgaba la mochila en el gancho del fondo. Se ataba el pelo. Se ponía los guantes de nitrilo.
 
-Cuando se los ajustaba en la muñeca izquierda presionaba un poco más que en la derecha, sin pensar, por costumbre, porque la piel de ahí era diferente —una más lisa, piel que creció empujando la otra— y el guante resbalaba si no apretaba. Empezaba a trabajar. Las máquinas inyectoras eran cuatro, una fila. Moldes que bajaban, que mordían, que soltaban piezas de plástico gris. Tapas. Carcasas. Partes de un cuadro más grande que Ruth nunca vio completo.
+Cuando se los ajustaba en la muñeca izquierda presionaba un poco más que en la derecha, sin pensar, por costumbre, porque la piel de ahí era diferente —una más lisa, piel que creció empujando la otra— y el guante resbalaba si no apretaba. Empezaba a trabajar. Las máquinas inyectoras eran cuatro, una fila. Moldes que bajaban, que mordían, que soltaban piezas de plástico gris. Tapas. Carcasas.
 
 Ocho horas atrás de una inyectora espatuleando remanente, revisando bordes, apilando bandejas, y empezando de nuevo. Las manos largas y huesudas se movían solas. Hacía meses que no necesitaba pensar en hacerlo. Esa era la parte buena, si se podía decir así. Que las manos trabajaban y la cabeza podía irse a cualquier lado.
 
@@ -102,7 +102,7 @@ La Pirincha se lo dijo a la otra en voz baja mientras cambiaban un molde.
 
 No dijeron más. Ruth mascó aire para adentro. Tragó. Pero esa noche, pedaleando de vuelta, con la helada de agosto metiéndose en los dedos, con un hueco en el bolsillo, con lo que faltaba para el alquiler y el homebanking que no abría, lloró. Lágrimas que le hicieron esconder la cara aunque nadie miraba. Que la apuraron a entrar en la casa aunque nadie estuviera esperando.
 
-Era el perro el que la esperaba. En la esquina. Más espalda que patas, sin raza, con una oreja mordida. Siguiéndola hasta la puerta y después quedándose en la vereda hasta que ella apagaba la luz.
+Era el perro el que la esperaba. En la esquina. Más espalda que patas, sin raza, con una oreja partida. Siguiéndola hasta la puerta y después quedándose en la vereda hasta que ella apagaba la luz.
 
 —Andate —le dijo esa noche.
 
