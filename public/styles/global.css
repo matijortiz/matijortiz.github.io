@@ -1147,8 +1147,19 @@ footer::before {
   .hero-texto { padding: 2.5rem 1.5rem; }
   .hero-nombre { font-size: 3.5rem; }
   .contenedor { grid-template-columns: 1fr; }
-  .sidebar-izq { display: none; }
-  .feed { padding: 2rem 1.5rem; max-width: 100%; }
+  /* Semáforo en móvil: en vez de morir, baja después del feed.
+     Se le desarma el esqueleto de escritorio (sticky + 100vh + scroll propio)
+     para que fluya como bloque normal. */
+  .feed { order: 1; padding: 2rem 1.5rem; max-width: 100%; }
+  .sidebar-izq {
+    order: 2;
+    position: static;
+    height: auto;
+    overflow: visible;
+    border-right: none;
+    border-top: 1px solid var(--linea);
+    padding: 2.5rem 1.5rem;
+  }
   .sobre-mi { padding: 2.5rem 1.5rem; }
   .sobre-mi::after { display: none; }
   footer {
