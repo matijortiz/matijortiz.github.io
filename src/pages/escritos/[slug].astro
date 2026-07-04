@@ -1,0 +1,51 @@
+---
+// src/pages/escritos/[slug].astro — página propia de cada artículo (SEO + modo lector + libro-lector)
+import Layout from '../../layouts/Layout.astro';
+import ArticuloCard from '../../components/ArticuloCard.astro';
+import { getCollection } from 'astro:content';
+import { parseArticulo } from '../../utils/parseArticulo';
+
+export async function getStaticPaths() {
+  const articulos = await getCollection('articulos', ({ data }) => !data.draft);
+  return articulos.map((art) => ({ params: { slug: art.slug }, props: { art } }));
+}
+
+const { art } = Astro.props;
+const secciones = parseArticulo(art.body);
+
+// Solo paso ogImage si es una ruta local del sitio (las externas romperían la URL del OG)
+const ogLocal = art.data.imagen && art.data.imagen.startsWith('/') ? art.data.imagen : undefined;
+const fechaPub = art.data.fechaISO.toISOString().slice(0, 10);
+---
+<Layout
+  seoTitulo={art.data.seoTitulo}
+  seoDescripcion={art.data.seoDescripcion}
+  ogImage={ogLocal}
+  tipoSchema="article"
+  fechaPublicacion={fechaPub}
+>
+  <article class="articulo-pagina">
+    <a class="articulo-volver" href="/escritos/">← Escritos</a>
+    <ArticuloCard
+      slug={art.slug}
+      titulo={art.data.titulo}
+      tipo={art.data.tipo}
+      fecha={art.data.fecha}
+      imagen={art.data.imagen}
+      imagenAlt={art.data.imagenAlt}
+      pintura={art.data.pintura}
+      fragmento={art.data.fragmento}
+      coleccion={art.data.coleccion}
+      cuerpoHtml={secciones.cuerpoHtml}
+      fragmentoHtml={secciones.fragmentoHtml}
+      analisisHtml={secciones.analisisHtml}
+      extraHtml={secciones.extraHtml}
+    />
+  </article>
+</Layout>
+
+<style>
+  .articulo-pagina { max-width: 780px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+  .articulo-volver { display: inline-block; margin-bottom: 1.5rem; color: var(--oxido); text-decoration: none; font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; letter-spacing: .04em; }
+  .articulo-volver:hover { color: var(--ambar); }
+</style>
