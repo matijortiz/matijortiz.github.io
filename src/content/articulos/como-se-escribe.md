@@ -2,6 +2,7 @@
 titulo: "Promesa y Castigo: cómo se escribe <em>un libro que te asusta</em>"
 tipo: "La Ortiga"
 fecha: "Febrero 2026"
+fechaISO: 2026-02-15
 imagen: "https://www.tooveys.com/lots/528470/0020-26.jpg"
 imagenAlt: "Escritura a mano — proceso"
 pintura: true
