@@ -1,0 +1,79 @@
+---
+// src/components/ArticuloTeaser.astro
+// Tarjeta resumida para la home y el archivo. NO usa la clase .entrada,
+// así main.js no le engancha el modo lector: el teaser navega a la página.
+export interface Props {
+  slug: string;
+  titulo: string;
+  tipo: string;
+  fecha: string;
+  imagen?: string;
+  imagenAlt?: string;
+  pintura?: boolean;
+  resumen?: string;
+}
+const { slug, titulo, tipo, fecha, imagen, imagenAlt, pintura = false, resumen } = Astro.props;
+const href = `/escritos/${slug}/`;
+const teaserClass = `teaser${imagen ? '' : ' sin-imagen'}`;
+const imgClass = `teaser-imagen${pintura ? ' pintura' : ''}`;
+---
+<a class={teaserClass} href={href} aria-label={`Leer: ${titulo.replace(/<[^>]+>/g, '')}`}>
+  {imagen && (
+    <img class={imgClass} src={imagen} alt={imagenAlt || ''} loading="lazy" />
+  )}
+  <div class="teaser-cuerpo">
+    <div class="entrada-meta">
+      <span class="entrada-tipo">{tipo}</span>
+      <span class="entrada-fecha">{fecha}</span>
+    </div>
+    <h2 class="entrada-titulo" set:html={titulo} />
+    {resumen && <p class="teaser-resumen">{resumen}</p>}
+    <span class="teaser-cta">Leer el artículo →</span>
+  </div>
+</a>
+
+<style>
+  .teaser {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 1.4rem;
+    padding: 1.6rem 0;
+    border-bottom: 1px solid var(--linea);
+    text-decoration: none;
+    color: inherit;
+    align-items: start;
+    transition: opacity .2s ease;
+  }
+  /* Sin imagen: el texto ocupa todo el ancho (no queda apretado en la columna de 120px) */
+  .teaser.sin-imagen { grid-template-columns: 1fr; }
+  .teaser:hover { opacity: .96; }
+  .teaser:hover .entrada-titulo { color: var(--ambar); }
+  .teaser-imagen {
+    width: 120px; height: 120px; object-fit: cover;
+    border: 1px solid var(--linea); display: block;
+    /* Tratamiento unificado tipo plancha de grabado: empareja las imágenes
+       prestadas (pinturas, fotos, artstation) hasta que lleguen las propias.
+       Al pasar el mouse, la imagen "revive" en color. */
+    filter: grayscale(100%) sepia(14%) contrast(1.08) brightness(.92);
+    transition: filter .35s ease;
+  }
+  .teaser:hover .teaser-imagen { filter: grayscale(0%) sepia(0%) contrast(1) brightness(1); }
+  .teaser-imagen.pintura { object-fit: contain; background: var(--grafito); }
+  .teaser-cuerpo .entrada-titulo { margin: .3rem 0 .5rem; transition: color .2s ease; }
+  .teaser-resumen {
+    color: var(--gris); font-family: 'Barlow', sans-serif; font-weight: 300;
+    line-height: 1.5; margin: 0 0 .7rem; font-size: .95rem;
+    /* Los resúmenes largos se cortan a 3 líneas para que las tarjetas queden parejas */
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .teaser-cta {
+    font-family: 'Barlow Condensed', sans-serif; letter-spacing: .04em;
+    text-transform: uppercase; font-size: .8rem; color: var(--oxido);
+  }
+  @media (max-width: 560px) {
+    .teaser { grid-template-columns: 84px 1fr; gap: 1rem; }
+    .teaser.sin-imagen { grid-template-columns: 1fr; }
+    .teaser-imagen { width: 84px; height: 84px; }
+  }
+</style>
