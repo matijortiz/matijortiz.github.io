@@ -2,6 +2,7 @@
 titulo: "Genius: <em>cuatro capas y un cucurucho de dulce de leche</em>"
 tipo: "Sobre un relato"
 fecha: "Febrero 2026"
+fechaISO: 2026-02-25
 imagen: "https://cdna.artstation.com/p/assets/images/images/015/019/928/large/kateryna-shpak-asset.jpg?1546737002"
 imagenAlt: "Circuito electrónico — Genius"
 pintura: false
