@@ -2,6 +2,7 @@
 titulo: "LA TURNA: <em>tres mujeres, una máquina apagada y lo que no se dice</em>"
 tipo: "Sobre un relato"
 fecha: "Abril 2026"
+fechaISO: 2026-04-20
 imagen: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Agnus60x60.jpg"
 imagenAlt: "La Turna — Turno Noche"
 pintura: true
