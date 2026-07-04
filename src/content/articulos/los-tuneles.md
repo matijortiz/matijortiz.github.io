@@ -2,6 +2,7 @@
 titulo: "Los Túneles: <em>el último relato del libro Egixi</em>"
 tipo: "Final de libro"
 fecha: "Febrero 2026"
+fechaISO: 2026-02-10
 imagen: "https://cdna.artstation.com/p/assets/images/images/043/543/634/large/oha-04.jpg?1637589441"
 imagenAlt: "Tunel oscuro — Los Tuneles"
 pintura: true
