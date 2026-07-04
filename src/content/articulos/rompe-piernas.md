@@ -2,6 +2,7 @@
 titulo: "Lo que en el Excel no tiene casillero: <em>Rompe Piernas y La Muda</em>"
 tipo: "Dos relatos · un espejo"
 fecha: "Febrero 2026"
+fechaISO: 2026-02-05
 imagen: "https://upload.wikimedia.org/wikipedia/commons/8/8c/Francisco_de_Goya_y_Lucientes_-_Duelo_a_garrotazos.jpg"
 imagenAlt: "Duelo a garrotazos — Francisco de Goya, 1820-1823"
 pintura: true
