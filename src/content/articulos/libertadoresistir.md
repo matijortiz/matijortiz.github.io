@@ -2,6 +2,7 @@
 titulo: "LIBERTAD o RESISTIR: <em>la misma historia contada dos veces</em>"
 tipo: "Sobre un narrador"
 fecha: "Marzo 2026"
+fechaISO: 2026-03-15
 imagen: "https://pbs.twimg.com/media/GW9oHxuWIAAKAIW.jpg"
 imagenAlt: "Hombre Roto — Artista Desconocido, 2026"
 pintura: true
