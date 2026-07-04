@@ -2,6 +2,7 @@
 titulo: "Mediomundo: <em>lo que no se puede tirar</em>"
 tipo: "Sobre un relato"
 fecha: "Febrero 2026"
+fechaISO: 2026-02-20
 imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Csontv%C3%A1ry_Kosztka%2C_Tivadar_-_Old_Fisherman_%281902%29.jpg/960px-Csontv%C3%A1ry_Kosztka%2C_Tivadar_-_Old_Fisherman_%281902%29.jpg"
 imagenAlt: "El viejo pescador - Csontváry, 1902"
 pintura: false
