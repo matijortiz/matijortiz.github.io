@@ -10,7 +10,7 @@ fragmento: "GENIUS"
 coleccion: "Egixi · Matias J. Ortiz · Rosario"
 orden: 4
 seoTitulo: "Genius — Matias J. Ortiz | Ciencia Ficción Argentina"
-seoDescripcion: "Análisis del relato Genius: un técnico repara respiradores alienígenas en la ex terminal de ómnibus de Rosario. Resistencia obrera y ocupación extraterrestre."
+seoDescripcion: "Un técnico repara respiradores alienígenas en la ex terminal de ómnibus de Rosario. Resistencia obrera y ocupación extraterrestre."
 ---
 
 Cuando estaba escribiendo Genius tenía hambre. Hambre real, de las nueve horas de jornada y el cuerpo que no alcanza a reponer. Me imaginé a mi novia dándome bochas de dulce de leche gratis, una detrás de otra, sin preguntar. Un cucurucho infinito. Eso no está en el cuento pero está en el cuento.
