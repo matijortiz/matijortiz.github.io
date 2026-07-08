@@ -10,7 +10,7 @@ fragmento: "MEDIOMUNDO"
 coleccion: "El Lomo · Matias J. Ortiz · Rosario"
 orden: 5
 seoTitulo: "Mediomundo — Matias J. Ortiz | El Lomo"
-seoDescripcion: "Análisis del relato Mediomundo: una herramienta de pesca que muestra el futuro, un pescador trasplantado a la fábrica rosarina, y una herencia que no se puede tirar"
+seoDescripcion: "¿Qué es un mediomundo? una herramienta de pesca que muestra el futuro, un pescador trasplantado a la fábrica rosarina, y una herencia que no se puede tirar"
 ---
 
 *La red salió pesada.* Cuatro palabras. Sujeto, verbo, adjetivo. Sin ornamento. El narrador de *Mediomundo* no anuncia, no prepara: tira la red y arranca. Ese es el tono. Ese es el pacto.
