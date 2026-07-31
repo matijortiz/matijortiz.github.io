@@ -10,7 +10,7 @@ fragmento: "LA ORTIGA"
 coleccion: "Promesa y Castigo · Matias J. Ortiz · Rosario"
 orden: 6
 seoTitulo: "Promesa y Castigo — Matias J. Ortiz | Escritor Rosario"
-seoDescripcion: "Cómo se escribe un libro que te asusta. El proceso detrás de Promesa y Castigo: once herencias malditas del litoral santafesino, desde La Ortiga hasta el jurado"
+seoDescripcion: "Cómo se escribe un libro que te asusta. El proceso detrás de Promesa y Castigo: once herencias malditas del litoral santafesino, desde La Ortiga hasta el manuscrito terminado"
 ---
 
 <!-- ANALISIS -->
@@ -135,4 +135,4 @@ El libro fue creciendo alrededor de ese primer corte, relato por relato, hasta l
 
 Cuando lo mandé a *Fundación El Libro 2026* tenía 130 páginas en A4, unas 200 en formato libro real, con márgenes y tipografía de libro de verdad. Once relatos que no se conocen entre sí pero que respiran con el mismo pulmón. Juro que nunca planeé que fueran once.
 
-*Ahora está en manos del jurado. No sé qué hacer con eso.*
+*Ahora está terminado y fuera de mis manos. No sé qué hacer con eso.*
